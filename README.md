@@ -18,4 +18,5 @@ jupyter notebook --version
 jupyter notebook
 ```
 ![Screenshot (38)](https://github.com/akashdip2001/ML-Machine-Learning/assets/81384987/bd3b3e3a-5d70-41a2-b412-14f1f109fc8e)
+
 ![Screenshot (39)](https://github.com/akashdip2001/ML-Machine-Learning/assets/81384987/d1b0208d-eca9-42d1-a800-8ca1cda97eb4)
