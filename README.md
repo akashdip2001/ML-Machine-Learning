@@ -8,10 +8,14 @@ Run Command Prompt as Administrator:
   - Select "Run as administrator".
   - Confirm the User Account Control prompt if prompted.
 
-```
-pip install pandas
-pip install jupyter
-jupyter notebook --version
+```python
+!pip install pandas
+!pip install jupyter
+# If you want to install matplotlib as well, uncomment the line below
+# !pip install matplotlib
+
+!jupyter notebook --version
+
 ```
 
 ```
