@@ -46,3 +46,6 @@ plt.show()
 
     
 ![png](pandas/output_0_0.png)
+
+| more about [pamdas](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/pandas) |
+|---
