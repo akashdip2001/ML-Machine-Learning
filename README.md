@@ -57,4 +57,6 @@ plt.show()
 ```python
 pip install numpy
 python.exe -m pip install --upgrade pip
+
+pip install jupyter
 ```
