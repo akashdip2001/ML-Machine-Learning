@@ -1,5 +1,7 @@
 # ML-Machine-Learning
 
+# [Pandas](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/pandas)
+
 ### Downlod [Pythin](https://www.python.org/downloads/_)
 
 Run Command Prompt as Administrator:
@@ -49,3 +51,10 @@ plt.show()
 
 | more about [pamdas](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/pandas) |
 |---
+
+# [numPy](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/numPy)
+
+```python
+pip install numpy
+python.exe -m pip install --upgrade pip
+```
