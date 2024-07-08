@@ -7,11 +7,6 @@
 | WebSite => |🍭 [ML](https://akashdip2001.github.io/ML-Machine-Learning/) 🍭|🐥 [Pandas](https://akashdip2001.github.io/ML-Machine-Learning/pandas.html) 🐥|❌ [numPy](https://akashdip2001.github.io/ML-Machine-Learning/numPy.html) ❌|
 |-------------------- |-------------------- |-------------------- |-------------------- |
 
-
-| python 10h => |🍭 [SourceCode](https://github.com/akashdip2001/Python-Course-10h) 🍭|🐥 [Notes 10h]() 🐥|❌ [complete Notes](https://www.codewithharry.com/notes/) ❌|
-|-------------------- |-------------------- |-------------------- |-------------------- |
-
-
 # [Pandas](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/pandas)
 
 ### Downlod [Pythin](https://www.python.org/downloads/_)
@@ -74,3 +69,8 @@ python.exe -m pip install --upgrade pip
 
 pip install jupyter
 ```
+
+
+| python 10h => |🍭 [SourceCode](https://github.com/akashdip2001/Python-Course-10h) 🍭|🐥 [Notes 10h]() 🐥|❌ [complete Notes](https://www.codewithharry.com/notes/) ❌|
+|-------------------- |-------------------- |-------------------- |-------------------- |
+
