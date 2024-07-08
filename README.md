@@ -1,5 +1,12 @@
 # ML-Machine-Learning
 
+| GitHub Repo |🍭 [ML](https://github.com/akashdip2001/ML-Machine-Learning) 🍭|🐥 [Pandas](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/pandas) 🐥|❌ [numPy](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/numPy) ❌|
+|-------------------- |-------------------- |-------------------- |-------------------- |
+
+
+| WebSite => |🍭 [ML](https://akashdip2001.github.io/ML-Machine-Learning/) 🍭|🐥 [Pandas](https://akashdip2001.github.io/ML-Machine-Learning/pandas.html) 🐥|❌ [numPy](https://akashdip2001.github.io/ML-Machine-Learning/numPy.html) ❌|
+|-------------------- |-------------------- |-------------------- |-------------------- |
+
 # [Pandas](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/pandas)
 
 ### Downlod [Pythin](https://www.python.org/downloads/_)
