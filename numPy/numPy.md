@@ -2,7 +2,7 @@
 
 #### [documentation](https://numpy.org/doc/stable/reference/)
 
-| GitHub Repo |🍭 [ML](https://www.mediafire.com/file/njc51t2ierhir85/akashdipmahapatraFreeCAD.apk/file) 🍭|🐥 [Pandas](https://akashdip2001.github.io/freecad_app/) 🐥|❌ [numPy](https://engineering-aot.github.io/custom-video-player/freecad_exam.html) ❌|
+| GitHub Repo |🍭 [ML](https://github.com/akashdip2001/ML-Machine-Learning) 🍭|🐥 [Pandas](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/pandas) 🐥|❌ [numPy](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/numPy) ❌|
 |-------------------- |-------------------- |-------------------- |-------------------- |
 
 
