@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>PDF Viewer</title>
+    <title>PDF in HTML</title>
 </head>
-<body style="margin: 0; padding: 0; overflow: hidden;">
-    <embed src="py/Py.pdf" type="application/pdf" width="100%" height="100vh" />
+<style>
+    .pdf {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+    }
+
+    .pdf,
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1,
+    h3 {
+        text-align: center;
+    }
+
+    h1 {
+        color: green;
+    }
+</style>
+
+<body>
+
+    <h1>GeeksforGeeks</h1>
+    <h3>Embedding the PDF file Using Object Tag</h3>
+    <object class="pdf" 
+            data=
+"py/Py.pdf"
+            width="800"
+            height="500">
+    </object>
 </body>
+
 </html>
