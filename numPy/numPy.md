@@ -2,8 +2,12 @@
 
 #### [documentation](https://numpy.org/doc/stable/reference/)
 
-|🍭 [ML](https://www.mediafire.com/file/njc51t2ierhir85/akashdipmahapatraFreeCAD.apk/file) 🍭|🐥 [Pandas](https://akashdip2001.github.io/freecad_app/) 🐥|❌ [numPy](https://engineering-aot.github.io/custom-video-player/freecad_exam.html) ❌|
-|-------------------- |-------------------- |-------------------- |
+| GitHub Repo |🍭 [ML](https://www.mediafire.com/file/njc51t2ierhir85/akashdipmahapatraFreeCAD.apk/file) 🍭|🐥 [Pandas](https://akashdip2001.github.io/freecad_app/) 🐥|❌ [numPy](https://engineering-aot.github.io/custom-video-player/freecad_exam.html) ❌|
+|-------------------- |-------------------- |-------------------- |-------------------- |
+
+
+| WebSite => |🍭 [ML](https://akashdip2001.github.io/ML-Machine-Learning/) 🍭|🐥 [Pandas](https://akashdip2001.github.io/ML-Machine-Learning/pandas.html) 🐥|❌ [numPy](https://akashdip2001.github.io/ML-Machine-Learning/numPy.html) ❌|
+|-------------------- |-------------------- |-------------------- |-------------------- |
 
 <p float="left">
   <img src="img/numPy_1.jpg" width="100%" />
