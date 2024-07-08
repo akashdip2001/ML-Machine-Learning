@@ -1,43 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>PDF in HTML</title>
+    <title>python</title>
 </head>
-<style>
-    .pdf {
-        width: 100%;
-        aspect-ratio: 4 / 3;
-    }
-
-    .pdf,
-    html,
-    body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    h1,
-    h3 {
-        text-align: center;
-    }
-
-    h1 {
-        color: green;
-    }
-</style>
-
-<body>
-
-    <h1>GeeksforGeeks</h1>
-    <h3>Embedding the PDF file Using Object Tag</h3>
-    <object class="pdf" 
-            data=
-"py/Py.pdf"
-            width="800"
-            height="500">
-    </object>
+<body style="margin: 0; padding: 0; overflow: hidden;">
+    <embed src="https://raw.githubusercontent.com/akashdip2001/ML-Machine-Learning/main/py/Py.pdf" type="application/pdf" width="100%" height="100vh" />
 </body>
-
 </html>
