@@ -47,6 +47,7 @@
 - **Esc + H**: Show keyboard shortcuts help dialog
 - **Esc + I, I**: Interrupt kernel
 - **Esc + 0, 0**: Restart kernel
+- **Ctrl + Shift + Enter**:Run All Cells
 
 ---
 
