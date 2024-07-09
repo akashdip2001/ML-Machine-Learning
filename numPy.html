@@ -3,7 +3,9 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>numPy</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>numPy</title>
+<link rel="icon" href="numPy/img/favicon.ico" type="image/x-icon"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7290,7 +7292,24 @@ a.anchor-link {
     display: block;
   }
 }
+
+    body {
+            zoom: 100%; /* Default zoom level */
+        }
 </style>
+    <script>
+        function isPC() {
+            return !/Mobi|Android/i.test(navigator.userAgent);
+        }
+
+        function setZoom() {
+            if (isPC()) {
+                document.body.style.zoom = "150%";
+            }
+        }
+
+        window.onload = setZoom;
+    </script>
 <!-- Load mathjax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML-full,Safe"> </script>
 <!-- MathJax configuration -->
