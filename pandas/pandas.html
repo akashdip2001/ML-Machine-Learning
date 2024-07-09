@@ -7292,7 +7292,24 @@ a.anchor-link {
     display: block;
   }
 }
+
+    body {
+            zoom: 100%; /* Default zoom level */
+        }
 </style>
+    <script>
+        function isPC() {
+            return !/Mobi|Android/i.test(navigator.userAgent);
+        }
+
+        function setZoom() {
+            if (isPC()) {
+                document.body.style.zoom = "150%";
+            }
+        }
+
+        window.onload = setZoom;
+    </script>
 <!-- Load mathjax -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS_CHTML-full,Safe"> </script>
 <!-- MathJax configuration -->
