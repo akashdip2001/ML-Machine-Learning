@@ -78,3 +78,33 @@ pip install jupyter
 | python 10h => |🍭 [SourceCode](https://github.com/akashdip2001/Python-Course-10h) 🍭|🐥 [Notes 10h]() 🐥|❌ [complete Notes](https://www.codewithharry.com/notes/) ❌|
 |-------------------- |-------------------- |-------------------- |-------------------- |
 
+```html
+7296
+
+body {
+            zoom: 100%; /* Default zoom level */
+        }
+
+<script>
+        function isPC() {
+            return !/Mobi|Android/i.test(navigator.userAgent);
+        }
+
+        function setZoom() {
+            if (isPC()) {
+                document.body.style.zoom = "150%";
+            }
+        }
+
+        window.onload = setZoom;
+    </script>
+
+
+
+7522
+
+<div style="text-align: right;">
+        <img src="pandas/img/Python-Pandas-logo.png" alt="Pandas Logo" width="300" />
+        <div style="font-size: 10px; margin-top: -10px; margin-bottom: 15px;">by Akashdip Mahapatra</div>
+    </div>
+```
