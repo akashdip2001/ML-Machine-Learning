@@ -1,5 +1,9 @@
 # ML-Machine-Learning
 
+<p align="right">
+  <img src="https://github.com/akashdip2001/ML-Machine-Learning/assets/81384987/dff140e6-3c24-4430-96b6-48877e6c98b9" alt="Pandas Logo" width="500" />
+</p>
+
 | GitHub Repo |🍭 [ML](https://github.com/akashdip2001/ML-Machine-Learning) 🍭|🐥 [Pandas](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/pandas) 🐥|❌ [numPy](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/numPy) ❌|
 |-------------------- |-------------------- |-------------------- |-------------------- |
 
