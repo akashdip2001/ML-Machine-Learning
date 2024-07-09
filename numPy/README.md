@@ -1,4 +1,7 @@
 # numPy
+<p align="middle">
+  <img src="img/numPy.png" alt="Pandas Logo" width="450" />
+</p>
 
 #### [documentation](https://numpy.org/doc/stable/reference/)
 
