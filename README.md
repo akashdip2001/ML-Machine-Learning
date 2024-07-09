@@ -13,7 +13,7 @@
 
 ---
 
-# Jupyter Notebook // JupyterLab
+# Jupyter Notebook // JupyterLab // .ipynb
 
 ### Command Mode Shortcuts (press Esc to activate)
 - **A**: Insert cell above
