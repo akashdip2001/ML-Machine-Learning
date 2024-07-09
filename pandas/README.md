@@ -1,4 +1,7 @@
 # Pandas 
+<p align="middle">
+  <img src="img/Python-Pandas-logo.png" alt="Pandas Logo" width="300" />
+</p>
 
 
 | GitHub Repo |🍭 [ML](https://github.com/akashdip2001/ML-Machine-Learning) 🍭|🐥 [Pandas](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/pandas) 🐥|❌ [numPy](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/numPy) ❌|
