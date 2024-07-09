@@ -1,9 +1,11 @@
 # numPy
+
+#### [documentation](https://numpy.org/doc/stable/reference/)
+
 <p align="middle">
   <img src="img/numPy.png" alt="Pandas Logo" width="450" />
 </p>
-
-#### [documentation](https://numpy.org/doc/stable/reference/)
+</br>
 
 | GitHub Repo |🍭 [ML](https://github.com/akashdip2001/ML-Machine-Learning) 🍭|🐥 [Pandas](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/pandas) 🐥|❌ [numPy](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/numPy) ❌|
 |-------------------- |-------------------- |-------------------- |-------------------- |
