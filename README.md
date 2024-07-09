@@ -11,6 +11,45 @@
 | WebSite => |🍭 [ML](https://akashdip2001.github.io/ML-Machine-Learning/) 🍭|🐥 [Pandas](https://akashdip2001.github.io/ML-Machine-Learning/pandas.html) 🐥|❌ [numPy](https://akashdip2001.github.io/ML-Machine-Learning/numPy.html) ❌|
 |-------------------- |-------------------- |-------------------- |-------------------- |
 
+---
+
+# Jupyter Notebook // JupyterLab
+
+### Command Mode Shortcuts (press Esc to activate)
+- **A**: Insert cell above
+- **B**: Insert cell below
+- **D, D** (press D twice): Delete selected cell
+- **Y**: Change cell to code mode
+- **M**: Change cell to markdown mode
+- **Shift + Arrow**: Select multiple cells
+- **Shift + M**: Merge selected cells
+- **Ctrl + Enter**: Run selected cell
+- **Shift + Enter**: Run cell and select below
+- **Alt + Enter**: Run cell and insert new cell below
+
+### Edit Mode Shortcuts (press Enter to activate)
+- **Ctrl + /**: Comment/uncomment selected lines
+- **Tab**: Code completion or indent
+- **Shift + Tab**: Tooltip (for function arguments)
+- **Ctrl + Shift + -**: Split cell at cursor
+- **Ctrl + Shift + P**: Command palette (access to all commands)
+
+### Navigation Shortcuts (in both modes)
+- **Up Arrow / Down Arrow**: Move up/down one cell
+- **Ctrl + Home**: Go to first cell
+- **Ctrl + End**: Go to last cell
+- **Ctrl + G**: Go to specific cell by number
+- **Shift + L**: Toggle line numbers
+
+### Other Useful Shortcuts
+- **Esc + F**: Find and replace
+- **Esc + O**: Toggle cell output
+- **Esc + H**: Show keyboard shortcuts help dialog
+- **Esc + I, I**: Interrupt kernel
+- **Esc + 0, 0**: Restart kernel
+
+---
+
 # [Pandas](https://github.com/akashdip2001/ML-Machine-Learning/tree/main/pandas)
 
 ### Downlod [Pythin](https://www.python.org/downloads/_)
