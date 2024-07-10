@@ -24,7 +24,8 @@ obj.fit_transform(encoded_dataset)
 <Compressed Sparse Row sparse matrix of dtype 'float64'
 	with 2456 stored elements and shape (614, 8)
 ```
-Because of i already filter two columns , so how it access 8 columns ?
+Because of i already filter two columns => Which break in 2 , 
+But, how it access 4 columns => Which break into 8 ?
 
 ---
 
