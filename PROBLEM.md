@@ -1,3 +1,33 @@
+# 🦖 Question
+
+i can filter columns, 
+
+```python
+data_set_06 = data_set_05[["Gender","Married"]]
+data_set_06
+```
+and then use 
+```python
+pd.get_dummies(data_set_06)
+```
+so how 
+
+```python
+obj = OneHotEncoder()
+obj.fit_transform(encoded_dataset)
+```
+ it can give output - 
+ 
+ ```mathematica
+<Compressed Sparse Row sparse matrix of dtype 'float64'
+	with 2456 stored elements and shape (614, 8)
+```
+Because of i already filter two columns , so how it access 8 columns ?
+
+---
+
+# 🦖 Reply
+
 I understand your question now. Let's clarify how `OneHotEncoder` works in relation to the columns you've filtered and encoded. Here’s the step-by-step explanation:
 
 ### Step-by-Step Explanation:
