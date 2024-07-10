@@ -10,6 +10,8 @@ and then use
 ```python
 pd.get_dummies(data_set_06)
 ```
+### .&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.
+
 so how 
 
 ```python
