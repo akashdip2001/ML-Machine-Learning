@@ -7531,6 +7531,9 @@ a.anchor-link {
 <tbody>
 </tbody>
 </table>
+<p align="middle">
+<img alt="excel file" src="ML/img/lone_csv.png"/>
+</p>
 </div>
 </div>
 </div>
@@ -8337,21 +8340,20 @@ dtype: int64</pre>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="highlight"><pre><span></span><span class="n">dataset</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
-<ul>
-<li>Loan_ID --------------- 0</li>
-<li>Gender --------------- 13</li>
-<li>Married --------------- 3</li>
-<li>Dependents ----------- 15</li>
-<li>Education ------------- 0</li>
-<li>Self_Employed -------- 32</li>
-<li>ApplicantIncome ------- 0</li>
-<li>CoapplicantIncome ----- 0</li>
-<li>LoanAmount ----------- 22</li>
-<li>Loan_Amount_Term ----- 14</li>
-<li><code>Credit_History ------ 50</code> &lt;= 50% -&gt; So, we <code>Remove</code> the Column</li>
-<li>Property_Area --------- 0</li>
-<li>Loan_Status ----------- 0</li>
-</ul>
+<div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">Loan_ID</span> <span class="o">---------------</span> <span class="mi">0</span>
+ <span class="o">-</span> <span class="n">Gender</span> <span class="o">---------------</span> <span class="mi">13</span>
+ <span class="o">-</span> <span class="n">Married</span> <span class="o">---------------</span> <span class="mi">3</span>
+ <span class="o">-</span> <span class="n">Dependents</span> <span class="o">-----------</span> <span class="mi">15</span>
+ <span class="o">-</span> <span class="n">Education</span> <span class="o">-------------</span> <span class="mi">0</span>
+ <span class="o">-</span> <span class="n">Self_Employed</span> <span class="o">--------</span> <span class="mi">32</span>
+ <span class="o">-</span> <span class="n">ApplicantIncome</span> <span class="o">-------</span> <span class="mi">0</span>
+ <span class="o">-</span> <span class="n">CoapplicantIncome</span> <span class="o">-----</span> <span class="mi">0</span>
+ <span class="o">-</span> <span class="n">LoanAmount</span> <span class="o">-----------</span> <span class="mi">22</span>
+ <span class="o">-</span> <span class="n">Loan_Amount_Term</span> <span class="o">-----</span> <span class="mi">14</span>
+ <span class="o">-</span> <span class="err">`</span><span class="n">Credit_History</span> <span class="o">------</span> <span class="mi">50</span><span class="err">`</span> <span class="o">&lt;=</span> <span class="mi">50</span><span class="o">%</span> <span class="o">-&gt;</span> <span class="n">So</span><span class="p">,</span> <span class="n">we</span> <span class="err">`</span><span class="n">Remove</span><span class="err">`</span> <span class="n">the</span> <span class="n">Column</span>
+ <span class="o">-</span> <span class="n">Property_Area</span> <span class="o">---------</span> <span class="mi">0</span>
+ <span class="o">-</span> <span class="n">Loan_Status</span> <span class="o">-----------</span> <span class="mi">0</span>
+</pre></div>
 <h3 id="%E2%98%81%EF%B8%8F-Remove">☁️ Remove<a class="anchor-link" href="#%E2%98%81%EF%B8%8F-Remove">¶</a></h3><p>=&gt; <code>pythondataset.drop(columns=["Credit_History"])</code> -----------&gt; But its not Permanent =&gt; change the View 
 =&gt; <code>dataset.drop(columns=["Credit_History"],inplace=True)</code> --&gt; It's Permanently change the variable <code>dataset</code></p>
 <h3 id="%E2%98%81%EF%B8%8F-So,-U-can-use-new-dataSet">☁️ So, U can use new <code>dataSet</code><a class="anchor-link" href="#%E2%98%81%EF%B8%8F-So,-U-can-use-new-dataSet">¶</a></h3><p>=&gt; <code>[new-Name] = pythondataset.drop(columns=["Credit_History"])</code></p>
@@ -10414,7 +10416,7 @@ Loan_Status
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\akash\AppData\Local\Temp\ipykernel_4164\3464004097.py:4: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+<pre>C:\Users\akash\AppData\Local\Temp\ipykernel_4000\3464004097.py:4: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
@@ -10783,7 +10785,11 @@ memory usage: 62.5+ KB
 <div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_set_02</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s2">"float64"</span><span class="p">)</span> <span class="c1"># show only numeric dataType columns</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># data_set_02.select_dtypes(include="float64") # show only numeric dataType columns</span>
+<span class="c1"># But there was float + int</span>
+
+<span class="n">numerical_columns</span> <span class="o">=</span> <span class="n">data_set_02</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">'int64'</span><span class="p">,</span> <span class="s1">'float64'</span><span class="p">])</span>
+<span class="n">numerical_columns</span>
 </pre></div>
 </div>
 </div>
@@ -10814,6 +10820,7 @@ memory usage: 62.5+ KB
 <thead>
 <tr style="text-align: right;">
 <th></th>
+<th>ApplicantIncome</th>
 <th>CoapplicantIncome</th>
 <th>LoanAmount</th>
 <th>Loan_Amount_Term</th>
@@ -10823,6 +10830,7 @@ memory usage: 62.5+ KB
 <tbody>
 <tr>
 <th>0</th>
+<td>5849</td>
 <td>0.0</td>
 <td>NaN</td>
 <td>360.0</td>
@@ -10830,6 +10838,7 @@ memory usage: 62.5+ KB
 </tr>
 <tr>
 <th>1</th>
+<td>4583</td>
 <td>1508.0</td>
 <td>128.0</td>
 <td>360.0</td>
@@ -10837,6 +10846,7 @@ memory usage: 62.5+ KB
 </tr>
 <tr>
 <th>2</th>
+<td>3000</td>
 <td>0.0</td>
 <td>66.0</td>
 <td>360.0</td>
@@ -10844,6 +10854,7 @@ memory usage: 62.5+ KB
 </tr>
 <tr>
 <th>3</th>
+<td>2583</td>
 <td>2358.0</td>
 <td>120.0</td>
 <td>360.0</td>
@@ -10851,6 +10862,7 @@ memory usage: 62.5+ KB
 </tr>
 <tr>
 <th>4</th>
+<td>6000</td>
 <td>0.0</td>
 <td>141.0</td>
 <td>360.0</td>
@@ -10862,9 +10874,11 @@ memory usage: 62.5+ KB
 <td>...</td>
 <td>...</td>
 <td>...</td>
+<td>...</td>
 </tr>
 <tr>
 <th>609</th>
+<td>2900</td>
 <td>0.0</td>
 <td>71.0</td>
 <td>360.0</td>
@@ -10872,6 +10886,7 @@ memory usage: 62.5+ KB
 </tr>
 <tr>
 <th>610</th>
+<td>4106</td>
 <td>0.0</td>
 <td>40.0</td>
 <td>180.0</td>
@@ -10879,6 +10894,7 @@ memory usage: 62.5+ KB
 </tr>
 <tr>
 <th>611</th>
+<td>8072</td>
 <td>240.0</td>
 <td>253.0</td>
 <td>360.0</td>
@@ -10886,6 +10902,7 @@ memory usage: 62.5+ KB
 </tr>
 <tr>
 <th>612</th>
+<td>7583</td>
 <td>0.0</td>
 <td>187.0</td>
 <td>360.0</td>
@@ -10893,6 +10910,7 @@ memory usage: 62.5+ KB
 </tr>
 <tr>
 <th>613</th>
+<td>4583</td>
 <td>0.0</td>
 <td>133.0</td>
 <td>360.0</td>
@@ -10900,7 +10918,7 @@ memory usage: 62.5+ KB
 </tr>
 </tbody>
 </table>
-<p>614 rows × 4 columns</p>
+<p>614 rows × 5 columns</p>
 </div>
 </div>
 </div>
@@ -10914,7 +10932,7 @@ memory usage: 62.5+ KB
 <div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_set_02</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s2">"float64"</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span> <span class="c1"># See only Column Names</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">numerical_columns</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">'int64'</span><span class="p">,</span> <span class="s1">'float64'</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span> <span class="c1"># See only Column Names</span>
 </pre></div>
 </div>
 </div>
@@ -10927,8 +10945,8 @@ memory usage: 62.5+ KB
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>Index(['CoapplicantIncome', 'LoanAmount', 'Loan_Amount_Term',
-       'Credit_History'],
+<pre>Index(['ApplicantIncome', 'CoapplicantIncome', 'LoanAmount',
+       'Loan_Amount_Term', 'Credit_History'],
       dtype='object')</pre>
 </div>
 </div>
@@ -10978,16 +10996,23 @@ memory usage: 62.5+ KB
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="highlight"><pre><span></span><span class="n">si</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">"mean"</span><span class="p">)</span>
-<span class="n">si</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data_set_02</span><span class="p">[[</span><span class="s1">'CoapplicantIncome'</span><span class="p">,</span> <span class="s1">'LoanAmount'</span><span class="p">,</span> <span class="s1">'Loan_Amount_Term'</span><span class="p">,</span>
-       <span class="s1">'Credit_History'</span><span class="p">]])</span>
+<span class="n">si</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data_set_02</span><span class="p">[[</span><span class="s1">'ApplicantIncome'</span><span class="p">,</span> <span class="s1">'CoapplicantIncome'</span><span class="p">,</span> <span class="s1">'LoanAmount'</span><span class="p">,</span>
+       <span class="s1">'Loan_Amount_Term'</span><span class="p">,</span> <span class="s1">'Credit_History'</span><span class="p">]])</span>
 </pre></div>
-<p>array([[0.00000000e+00, 1.46412162e+02, 3.60000000e+02, 1.00000000e+00],
-[1.50800000e+03, 1.28000000e+02, 3.60000000e+02, 1.00000000e+00],
-[0.00000000e+00, 6.60000000e+01, 3.60000000e+02, 1.00000000e+00],
-...,
-[2.40000000e+02, 2.53000000e+02, 3.60000000e+02, 1.00000000e+00],
-[0.00000000e+00, 1.87000000e+02, 3.60000000e+02, 1.00000000e+00],
-[0.00000000e+00, 1.33000000e+02, 3.60000000e+02, 0.00000000e+00]])</p>
+<h4 id="output:">output:<a class="anchor-link" href="#output:">¶</a></h4><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([[</span><span class="mf">5.84900000e+03</span><span class="p">,</span> <span class="mf">0.00000000e+00</span><span class="p">,</span> <span class="mf">1.46412162e+02</span><span class="p">,</span> <span class="mf">3.60000000e+02</span><span class="p">,</span>
+        <span class="mf">1.00000000e+00</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">4.58300000e+03</span><span class="p">,</span> <span class="mf">1.50800000e+03</span><span class="p">,</span> <span class="mf">1.28000000e+02</span><span class="p">,</span> <span class="mf">3.60000000e+02</span><span class="p">,</span>
+        <span class="mf">1.00000000e+00</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">3.00000000e+03</span><span class="p">,</span> <span class="mf">0.00000000e+00</span><span class="p">,</span> <span class="mf">6.60000000e+01</span><span class="p">,</span> <span class="mf">3.60000000e+02</span><span class="p">,</span>
+        <span class="mf">1.00000000e+00</span><span class="p">],</span>
+       <span class="o">...</span><span class="p">,</span>
+       <span class="p">[</span><span class="mf">8.07200000e+03</span><span class="p">,</span> <span class="mf">2.40000000e+02</span><span class="p">,</span> <span class="mf">2.53000000e+02</span><span class="p">,</span> <span class="mf">3.60000000e+02</span><span class="p">,</span>
+        <span class="mf">1.00000000e+00</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">7.58300000e+03</span><span class="p">,</span> <span class="mf">0.00000000e+00</span><span class="p">,</span> <span class="mf">1.87000000e+02</span><span class="p">,</span> <span class="mf">3.60000000e+02</span><span class="p">,</span>
+        <span class="mf">1.00000000e+00</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">4.58300000e+03</span><span class="p">,</span> <span class="mf">0.00000000e+00</span><span class="p">,</span> <span class="mf">1.33000000e+02</span><span class="p">,</span> <span class="mf">3.60000000e+02</span><span class="p">,</span>
+        <span class="mf">0.00000000e+00</span><span class="p">]])</span>
+</pre></div>
 <h4 id="All-NaN-data-fill-as-a-Array-=%3E-Convert-it-into-dataFrame">All NaN data fill as a Array =&gt; Convert it into dataFrame<a class="anchor-link" href="#All-NaN-data-fill-as-a-Array-=%3E-Convert-it-into-dataFrame">¶</a></h4>
 </div>
 </div>
@@ -11001,8 +11026,8 @@ memory usage: 62.5+ KB
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">si</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s2">"mean"</span><span class="p">)</span>
-<span class="n">ar</span> <span class="o">=</span> <span class="n">si</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data_set_02</span><span class="p">[[</span><span class="s1">'CoapplicantIncome'</span><span class="p">,</span> <span class="s1">'LoanAmount'</span><span class="p">,</span> <span class="s1">'Loan_Amount_Term'</span><span class="p">,</span>
-       <span class="s1">'Credit_History'</span><span class="p">]])</span>
+<span class="n">ar</span> <span class="o">=</span> <span class="n">si</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">numerical_columns</span><span class="p">[[</span><span class="s1">'ApplicantIncome'</span><span class="p">,</span> <span class="s1">'CoapplicantIncome'</span><span class="p">,</span> <span class="s1">'LoanAmount'</span><span class="p">,</span>
+       <span class="s1">'Loan_Amount_Term'</span><span class="p">,</span> <span class="s1">'Credit_History'</span><span class="p">]])</span>
 </pre></div>
 </div>
 </div>
@@ -11027,7 +11052,8 @@ memory usage: 62.5+ KB
 <div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">data_set_02</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s2">"float64"</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># data_set_02.select_dtypes(include="float64").head(3)</span>
+<span class="n">numerical_columns</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">'int64'</span><span class="p">,</span> <span class="s1">'float64'</span><span class="p">])</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -11058,6 +11084,7 @@ memory usage: 62.5+ KB
 <thead>
 <tr style="text-align: right;">
 <th></th>
+<th>ApplicantIncome</th>
 <th>CoapplicantIncome</th>
 <th>LoanAmount</th>
 <th>Loan_Amount_Term</th>
@@ -11067,6 +11094,7 @@ memory usage: 62.5+ KB
 <tbody>
 <tr>
 <th>0</th>
+<td>5849</td>
 <td>0.0</td>
 <td>NaN</td>
 <td>360.0</td>
@@ -11074,6 +11102,7 @@ memory usage: 62.5+ KB
 </tr>
 <tr>
 <th>1</th>
+<td>4583</td>
 <td>1508.0</td>
 <td>128.0</td>
 <td>360.0</td>
@@ -11081,6 +11110,7 @@ memory usage: 62.5+ KB
 </tr>
 <tr>
 <th>2</th>
+<td>3000</td>
 <td>0.0</td>
 <td>66.0</td>
 <td>360.0</td>
@@ -11100,7 +11130,7 @@ memory usage: 62.5+ KB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="New-%E2%9C%85">New ✅<a class="anchor-link" href="#New-%E2%9C%85">¶</a></h1>
+<h1 id="New-%E2%9C%85-146.41...-Avg.">New ✅ 146.41... Avg.<a class="anchor-link" href="#New-%E2%9C%85-146.41...-Avg.">¶</a></h1>
 </div>
 </div>
 </div>
@@ -11113,7 +11143,7 @@ memory usage: 62.5+ KB
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># pd.DataFrame(ar,columns=[ColumnsName])</span>
-<span class="n">data_set_03</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="n">data_set_02</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s2">"float64"</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">data_set_03</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">ar</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="n">numerical_columns</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">'int64'</span><span class="p">,</span> <span class="s1">'float64'</span><span class="p">])</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
 <span class="n">data_set_03</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -11145,6 +11175,7 @@ memory usage: 62.5+ KB
 <thead>
 <tr style="text-align: right;">
 <th></th>
+<th>ApplicantIncome</th>
 <th>CoapplicantIncome</th>
 <th>LoanAmount</th>
 <th>Loan_Amount_Term</th>
@@ -11154,6 +11185,7 @@ memory usage: 62.5+ KB
 <tbody>
 <tr>
 <th>0</th>
+<td>5849.0</td>
 <td>0.0</td>
 <td>146.412162</td>
 <td>360.0</td>
@@ -11161,6 +11193,7 @@ memory usage: 62.5+ KB
 </tr>
 <tr>
 <th>1</th>
+<td>4583.0</td>
 <td>1508.0</td>
 <td>128.000000</td>
 <td>360.0</td>
@@ -11168,6 +11201,7 @@ memory usage: 62.5+ KB
 </tr>
 <tr>
 <th>2</th>
+<td>3000.0</td>
 <td>0.0</td>
 <td>66.000000</td>
 <td>360.0</td>
@@ -11238,7 +11272,8 @@ memory usage: 62.5+ KB
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[44]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>CoapplicantIncome    0
+<pre>ApplicantIncome      0
+CoapplicantIncome    0
 LoanAmount           0
 Loan_Amount_Term     0
 Credit_History       0
@@ -11441,25 +11476,25 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="find-NaN-values-(Categorical-data)">find NaN values (Categorical data)<a class="anchor-link" href="#find-NaN-values-(Categorical-data)">¶</a></h4><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<h4 id="%E2%9C%88%EF%B8%8F-find-missing-(NaN)-values-(Categorical-data)">✈️ find missing (NaN) values (Categorical data)<a class="anchor-link" href="#%E2%9C%88%EF%B8%8F-find-missing-(NaN)-values-(Categorical-data)">¶</a></h4><div class="highlight"><pre><span></span><span class="n">dataset</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="c1"># Or use, =&gt; data_set_04.isnull().sum() ---&gt; After using =&gt; data_set_04 = dataset.copy()</span>
 <span class="c1"># give same result</span>
 </pre></div>
-<div class="highlight"><pre><span></span><span class="nx">Loan_ID</span><span class="w">               </span><span class="mi">0</span>
+<h4 id="%E2%9C%88%EF%B8%8F-output:">✈️ output:<a class="anchor-link" href="#%E2%9C%88%EF%B8%8F-output:">¶</a></h4><div class="highlight"><pre><span></span><span class="nx">Loan_ID</span><span class="w">               </span><span class="mi">0</span>
 
-<span class="nx">Gender</span><span class="w">               </span><span class="mi">13</span><span class="w"> </span><span class="o">==</span><span class="p">=&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
-<span class="nx">Married</span><span class="w">               </span><span class="mi">3</span><span class="w"> </span><span class="o">==</span><span class="p">=&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
+<span class="nx">Gender</span><span class="w">               </span><span class="mi">13</span><span class="w"> </span><span class="o">==</span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">ABC</span><span class="w"> </span><span class="o">-</span><span class="p">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
+<span class="nx">Married</span><span class="w">               </span><span class="mi">3</span><span class="w"> </span><span class="o">==</span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">ABC</span><span class="w"> </span><span class="o">-</span><span class="p">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
 
 <span class="nx">Dependents</span><span class="w">           </span><span class="mi">15</span>
-<span class="nx">Education</span><span class="w">             </span><span class="mi">0</span>
-<span class="nx">Self_Employed</span><span class="w">        </span><span class="mi">32</span>
+<span class="nx">Education</span><span class="w">             </span><span class="mi">0</span><span class="w"> </span><span class="o">==</span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">ABC</span>
+<span class="nx">Self_Employed</span><span class="w">        </span><span class="mi">32</span><span class="w"> </span><span class="o">==</span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">ABC</span>
 <span class="nx">ApplicantIncome</span><span class="w">       </span><span class="mi">0</span>
 <span class="nx">CoapplicantIncome</span><span class="w">     </span><span class="mi">0</span>
 <span class="nx">LoanAmount</span><span class="w">           </span><span class="mi">22</span>
 <span class="nx">Loan_Amount_Term</span><span class="w">     </span><span class="mi">14</span>
-<span class="nx">Credit_History</span><span class="w">       </span><span class="mi">50</span>
-<span class="nx">Property_Area</span><span class="w">         </span><span class="mi">0</span>
-<span class="nx">Loan_Status</span><span class="w">           </span><span class="mi">0</span>
+<span class="nx">Credit_History</span><span class="w">       </span><span class="mi">50</span><span class="w"> </span><span class="o">---</span><span class="p">&gt;</span><span class="w"> </span><span class="nx">its</span><span class="w"> </span><span class="nx">already</span><span class="w"> </span><span class="nx">in</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span>
+<span class="nx">Property_Area</span><span class="w">         </span><span class="mi">0</span><span class="w"> </span><span class="o">---</span><span class="p">&gt;</span><span class="w"> </span><span class="err">❓</span>
+<span class="nx">Loan_Status</span><span class="w">           </span><span class="mi">0</span><span class="w"> </span><span class="o">---</span><span class="p">&gt;</span><span class="w"> </span><span class="nx">Y</span><span class="o">-</span><span class="nx">N</span><span class="err">❓</span>
 </pre></div>
 </div>
 </div>
@@ -11475,7 +11510,7 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -11485,7 +11520,33 @@ dtype: int64</pre>
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create a copy of the original dataset</span>
 <span class="n">data_set_04</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">data_set_04</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="c1"># all missing columns</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Loan_ID               0
+Gender               13
+Married               3
+Dependents           15
+Education             0
+Self_Employed        32
+ApplicantIncome       0
+CoapplicantIncome     0
+LoanAmount           22
+Loan_Amount_Term     14
+Credit_History       50
+Property_Area         0
+Loan_Status           0
+dtype: int64</pre>
 </div>
 </div>
 </div>
@@ -11512,14 +11573,14 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\akash\AppData\Local\Temp\ipykernel_4164\3812312211.py:1: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+<pre>C:\Users\akash\AppData\Local\Temp\ipykernel_4000\3812312211.py:1: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
   data_set_04["Gender"].fillna(data_set_04["Gender"].mode()[0],inplace=True) #----&gt; fill mode in Gender column
-C:\Users\akash\AppData\Local\Temp\ipykernel_4164\3812312211.py:2: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+C:\Users\akash\AppData\Local\Temp\ipykernel_4000\3812312211.py:2: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
@@ -11611,7 +11672,7 @@ dtype: int64</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -11619,24 +11680,9 @@ dtype: int64</pre>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create a copy of the original dataset</span>
-<span class="n">data_set_05</span> <span class="o">=</span> <span class="n">data_set_04</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Filter out Gender + Married in new Variable\</span>
-<span class="n">data_set_06</span> <span class="o">=</span> <span class="n">data_set_05</span><span class="p">[[</span><span class="s2">"Gender"</span><span class="p">,</span><span class="s2">"Married"</span><span class="p">]]</span>
-<span class="n">data_set_06</span>
+<span class="n">data_set_05</span> <span class="o">=</span> <span class="n">data_set_04</span><span class="p">[[</span><span class="s2">"Gender"</span><span class="p">,</span><span class="s2">"Married"</span><span class="p">]]</span>
+<span class="n">data_set_05</span>
 </pre></div>
 </div>
 </div>
@@ -11647,7 +11693,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -11740,10 +11786,10 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">data_set_06</span><span class="p">)</span> <span class="c1"># Encoding ---&gt; True False ⬇️</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">data_set_05</span><span class="p">)</span> <span class="c1"># Encoding ---&gt; True False ⬇️</span>
 <span class="c1"># pd.get_dummies(data_set_06).info() ----&gt; 0, 1 =&gt; boolean ⬇️</span>
 </pre></div>
 </div>
@@ -11755,7 +11801,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -11872,11 +11918,11 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Assuming 'dataset' is your DataFrame</span>
-<span class="n">encoded_dataset</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">data_set_06</span><span class="p">)</span>
+<span class="n">encoded_dataset</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">data_set_05</span><span class="p">)</span>
 
 <span class="c1"># Display the first few rows to show 1s and 0s</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"First few rows with binary indicators:"</span><span class="p">)</span>
@@ -11884,6 +11930,7 @@ dtype: int64</pre>
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1"># Display the summary information of the DataFrame</span>
+<span class="c1"># pd.get_dummies(data_set_05).info()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Summary information:"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">encoded_dataset</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
 </pre></div>
@@ -11942,7 +11989,7 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
@@ -11956,11 +12003,11 @@ None
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">obj</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
-<span class="n">obj</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">encoded_dataset</span><span class="p">)</span>  <span class="c1"># --&gt; encoded_dataset take it from Top ⬆️</span>
+<span class="n">obj</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data_set_05</span><span class="p">)</span>  <span class="c1"># --&gt; encoded_dataset take it from Top ⬆️</span>
 
 <span class="c1"># it create me a sparse-matrix used in Deep-Learning   </span>
 </pre></div>
@@ -11973,10 +12020,47 @@ None
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>&lt;Compressed Sparse Row sparse matrix of dtype 'float64'
-	with 2456 stored elements and shape (614, 8)&gt;</pre>
+	with 1228 stored elements and shape (614, 4)&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Convert into Array</span>
+<span class="c1"># Assuming array_01 is your transformed array</span>
+<span class="c1"># Example array_01 with 8 columns</span>
+
+<span class="n">array_01</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data_set_05</span><span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+<span class="n">array_01</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[0., 1., 1., 0.],
+       [0., 1., 0., 1.],
+       [0., 1., 0., 1.],
+       ...,
+       [0., 1., 0., 1.],
+       [0., 1., 0., 1.],
+       [1., 0., 1., 0.]])</pre>
 </div>
 </div>
 </div>
@@ -11989,53 +12073,14 @@ None
 <div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Convert into Array</span>
-<span class="c1"># Assuming array_01 is your transformed array</span>
-<span class="c1"># Example array_01 with 8 columns</span>
-
-<span class="n">array_01</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">encoded_dataset</span><span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
-<span class="n">array_01</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>array([[1., 0., 0., ..., 1., 1., 0.],
-       [1., 0., 0., ..., 0., 0., 1.],
-       [1., 0., 0., ..., 0., 0., 1.],
-       ...,
-       [1., 0., 0., ..., 0., 0., 1.],
-       [1., 0., 0., ..., 0., 0., 1.],
-       [0., 1., 1., ..., 1., 1., 0.]])</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Specify the correct column names (assuming array_01 has 8 columns)</span>
-<span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Gender_Female"</span><span class="p">,</span> <span class="s2">"Gender_Male"</span><span class="p">,</span> <span class="s2">"Married_No"</span><span class="p">,</span> <span class="s2">"Married_Yes"</span><span class="p">,</span> 
-                <span class="s2">"Education_Graduate"</span><span class="p">,</span> <span class="s2">"Education_Not Graduate"</span><span class="p">,</span> 
-                <span class="s2">"Self_Employed_No"</span><span class="p">,</span> <span class="s2">"Self_Employed_Yes"</span><span class="p">]</span>
-
+<span class="n">column_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Gender_Female"</span><span class="p">,</span> <span class="s2">"Gender_Male"</span><span class="p">,</span> <span class="s2">"Married_No"</span><span class="p">,</span> <span class="s2">"Married_Yes"</span><span class="p">]</span>
 <span class="c1"># Create DataFrame with correct column names</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">array_01</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">column_names</span><span class="p">)</span>
-
 <span class="c1"># Display the DataFrame</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>  <span class="c1"># Displaying first few rows for example</span>
+
+<span class="c1"># ✅✅✅ Or directly u can wright =&gt; pd.DataFrame(array_01,columns=["Gender_Female", "Gender_Male", "Married_No", "Married_Yes"])</span>
 </pre></div>
 </div>
 </div>
@@ -12048,20 +12093,380 @@ None
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>   Gender_Female  Gender_Male  Married_No  Married_Yes  Education_Graduate  \
-0            1.0          0.0         0.0          1.0                 0.0   
-1            1.0          0.0         0.0          1.0                 1.0   
-2            1.0          0.0         0.0          1.0                 1.0   
-3            1.0          0.0         0.0          1.0                 1.0   
-4            1.0          0.0         0.0          1.0                 0.0   
-
-   Education_Not Graduate  Self_Employed_No  Self_Employed_Yes  
-0                     1.0               1.0                0.0  
-1                     0.0               0.0                1.0  
-2                     0.0               0.0                1.0  
-3                     0.0               0.0                1.0  
-4                     1.0               1.0                0.0  
+<pre>   Gender_Female  Gender_Male  Married_No  Married_Yes
+0            0.0          1.0         1.0          0.0
+1            0.0          1.0         0.0          1.0
+2            0.0          1.0         0.0          1.0
+3            0.0          1.0         0.0          1.0
+4            0.0          1.0         1.0          0.0
 </pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="%E2%AC%86%EF%B8%8F-This-Data-is-very-Big-=%3E-Remove-some-columns">⬆️ This Data is very Big =&gt; Remove some columns<a class="anchor-link" href="#%E2%AC%86%EF%B8%8F-This-Data-is-very-Big-=%3E-Remove-some-columns">¶</a></h4>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">obj_01</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="s2">"first"</span><span class="p">)</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">obj_01</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data_set_05</span><span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+<span class="n">c</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>array([[1., 0.],
+       [1., 1.],
+       [1., 1.],
+       ...,
+       [1., 1.],
+       [1., 1.],
+       [0., 0.]])</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span> <span class="p">[</span><span class="s2">"Gender_Male"</span><span class="p">,</span> <span class="s2">"Married_Yes"</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Gender_Male</th>
+<th>Married_Yes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>1.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>1</th>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr>
+<th>2</th>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr>
+<th>3</th>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr>
+<th>4</th>
+<td>1.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>609</th>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>610</th>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr>
+<th>611</th>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr>
+<th>612</th>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr>
+<th>613</th>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+</tbody>
+</table>
+<p>614 rows × 2 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="%E2%9C%85-LABEL-ENCODING">✅ LABEL ENCODING<a class="anchor-link" href="#%E2%9C%85-LABEL-ENCODING">¶</a></h1><br/>
+<hr/>
+<div class="highlight"><pre><span></span><span class="nx">MACHINE</span><span class="w"> </span><span class="nx">LEARNING</span>
+<span class="w">                                       </span><span class="o">|</span>
+<span class="w">                    </span><span class="o">-------------------------------------------------</span>
+<span class="w">                    </span><span class="o">|</span><span class="w">                                               </span><span class="o">|</span>
+<span class="w">         </span><span class="nx">SUPERVISED</span><span class="w"> </span><span class="nx">LEARNING</span><span class="w">                            </span><span class="nx">UN</span><span class="o">-</span><span class="nx">SUPERVISED</span><span class="w"> </span><span class="nx">LEARNING</span>
+<span class="w">                </span><span class="o">|</span><span class="w">                                               </span><span class="o">|</span>
+<span class="w">        </span><span class="o">---------------------</span><span class="w">                           </span><span class="o">---------------------</span>
+<span class="w">        </span><span class="o">|</span><span class="w">                   </span><span class="o">|</span><span class="w">                           </span><span class="o">|</span><span class="w">                   </span><span class="o">|</span>
+<span class="s">`CLASSIFICATION`</span><span class="w">       </span><span class="s">`REGRESSION`</span><span class="w">               </span><span class="s">`CLUSTERING`</span><span class="w">        </span><span class="s">`ASSOCIATION`</span>
+</pre></div>
+<br/>
+<hr/>
+<br/>
+<div class="highlight"><pre><span></span><span class="o">|-------</span><span class="w"> </span><span class="s">`NOMINAL`</span><span class="w">  </span><span class="o">----</span><span class="p">&gt;</span><span class="w">  </span><span class="nx">Cow</span><span class="p">,</span><span class="w"> </span><span class="nx">Dog</span><span class="p">,</span><span class="w"> </span><span class="nx">ox</span><span class="p">,</span><span class="w"> </span><span class="nx">parrot</span>
+<span class="w">                                </span><span class="o">|</span>
+<span class="w">        </span><span class="nx">CATEGORICAL</span><span class="w"> </span><span class="nx">DATA</span><span class="w"> </span><span class="o">-------|</span>
+<span class="w">                                </span><span class="o">|</span>
+<span class="w">                                </span><span class="o">|-------</span><span class="w"> </span><span class="s">`ORDINAL`</span><span class="w">  </span><span class="o">-----</span><span class="p">&gt;</span><span class="w"> </span><span class="nx">XL</span><span class="p">,</span><span class="w"> </span><span class="nx">XXL</span><span class="p">,</span><span class="w"> </span><span class="nx">XXXL</span>
+</pre></div>
+<br/>
+<hr/>
+<p>use for UnSequence data ⬇️ 
+give all Name =&gt; a uniq no.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#import pandas as pd</span>
+<span class="n">dF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"name"</span><span class="p">:[</span><span class="s2">"Dog"</span><span class="p">,</span> <span class="s2">"Cat"</span><span class="p">,</span> <span class="s2">"Cow"</span><span class="p">,</span> <span class="s2">"Lion"</span><span class="p">,</span> <span class="s2">"Ox"</span><span class="p">]})</span>
+<span class="n">dF</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Dog</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Cat</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Cow</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Lion</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Ox</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">le</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span> 
+<span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">dF</span><span class="p">[</span><span class="s2">"name"</span><span class="p">])</span> <span class="c1"># fit =&gt; Trined my model</span>
+                            <span class="c1"># transform -&gt; to convert</span>
+</pre></div>
+<h5 id="output:">output:<a class="anchor-link" href="#output:">¶</a></h5><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">le</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
+<span class="n">dF</span><span class="p">[</span><span class="s2">"en_name"</span><span class="p">]</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">dF</span><span class="p">[</span><span class="s2">"name"</span><span class="p">])</span>
+<span class="n">dF</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[63]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>name</th>
+<th>en_name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Dog</td>
+<td>2</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Cat</td>
+<td>0</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Cow</td>
+<td>1</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Lion</td>
+<td>3</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Ox</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
