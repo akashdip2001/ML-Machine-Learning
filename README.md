@@ -13,6 +13,10 @@
 
 ---
 
+![ml](ML/img/ml_roadmap01.jpg)
+
+![ml](ML/img/ml_roadmap02.jpg)
+
 # Jupyter Notebook // JupyterLab // .ipynb
 
 ### Command Mode Shortcuts (press Esc to activate)
