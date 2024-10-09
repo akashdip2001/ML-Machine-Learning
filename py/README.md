@@ -279,6 +279,7 @@ print(text.replace("World", "Python"))  # Replace substring
    - [Tuples](#tuples)
    - [Dictionaries](#dictionaries)
    - [Sets](#sets)
+   - [DSA](https://github.com/campusx-official/dsa-using-python)
 3. [Functions](#3-functions)
 4. [Object-Oriented Programming (OOP)](4-object-oriented-programming-oop)
    - [Classes & Objects](#classes--objects)
