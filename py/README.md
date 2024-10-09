@@ -2,7 +2,7 @@
 
 <img align="right" alt="python_logo" width="300" src="https://github.com/akashdip2001/Python-Course-10h/raw/main/img/py_akashdip2001.png"> 
 
-### [ Source code ](https://github.com/akashdip2001/Python-Course-10h)
+
 
 
 # Python Study Guide
@@ -27,7 +27,9 @@
    - [Built-in Functions](#built-in-functions)
    - [User-defined Functions](#user-defined-functions)
 9. [Strings](#strings)
-10. [**Part 2 (Job Preparation)**](#part-2-job-preparation)
+10. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
+11. [*more*](https://www.codewithharry.com/tutorial/python/)
+12. [**Part 2 (Job Preparation)**](#part-2-job-preparation)
 
 ---
 
