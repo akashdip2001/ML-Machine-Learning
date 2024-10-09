@@ -27,7 +27,7 @@
    - [Built-in Functions](#built-in-functions)
    - [User-defined Functions](#user-defined-functions)
 9. [Strings](#strings)
-10. ## [**Part 2 (Job Preparation)**](#part-2-job-preparation)
+10. [**Part 2 (Job Preparation)**](#part-2-job-preparation)
 
 ---
 
@@ -269,7 +269,7 @@ print(text.replace("World", "Python"))  # Replace substring
 ```
 ![](https://github.com/akashdip2001/college-final-year-project/raw/main/img/colour_line.png)
 
-# Part 2 (Job Preparation)
+## Part 2 (Job Preparation)
 # Python Study Guide for Job Exam
 
 ## Table of Contents:
