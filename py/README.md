@@ -471,7 +471,7 @@ print(emp1.display_info())
 
 ---
 
-#### **Inheritance**
+## **Inheritance**
 - **Description**: Inheritance allows a class to inherit properties and methods from another class.
 - **Syntax**: 
 ```python
@@ -498,7 +498,7 @@ print(mgr1.department)  # Outputs: Sales
 
 ---
 
-#### **Encapsulation**
+## **Encapsulation**
 - **Description**: Encapsulation hides private data and only allows access through public methods.
 - **Syntax**: Use double underscore `__` to denote private variables.
 
@@ -523,7 +523,7 @@ print(emp.get_salary())  # Correct way to access private data
 
 ---
 
-#### **Polymorphism**
+## **Polymorphism**
 - **Description**: Polymorphism allows methods to be defined differently based on the object.
 - **Syntax**: Define methods with the same name in different classes.
 
