@@ -1,4 +1,4 @@
-# Python Practice Problems [Download all Questions](QA_Python_Practice_Problems.docx)
+# Python Practice Problems [Download all Questions](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fakashdip2001%2FML-Machine-Learning%2Frefs%2Fheads%2Fmain%2Fpy%2FQA%2520Python%2520Practice%2520Problems.docx&wdOrigin=BROWSELINK)
 
 1. [User will input (3 ages). Find the oldest one](#problem-1)
 2. [Write a program that will convert Celsius value to Fahrenheit](#problem-2)
