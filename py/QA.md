@@ -1,39 +1,39 @@
 # Python Practice Problems
 
-1.	[User will input (3 ages). Find the oldest one](#problem-1)
-2.	Write a program that will convert celsius value to fahrenheit
-3.	User will input (2numbers).Write a program to swap the numbers
-4.	Write a program that will give you the sum of 3 digits
-5.	Write a program that will reverse a four digit number.Also it checks whether the reverse is true.
-6.	Write a program that will tell whether the number entered by the user is odd or even.
-7.	Write a program that will tell whether the given year is a leap year or not.
-8.	Write a program to find the euclidean distance between two coordinates.
-9.	Write a program that take a user inputr of three angles and will find out whether it can form a triangle or not.
-10.	Write a program that will take user input of cost price and selling price and determines whether its a loss or a profit
-11.	Write a program to find the simple interest when the value of principle,rate of interest and time period is given.
-12.	Write a program to find the volume of the cylinder. Also find the cost when ,when the cost of 1litre milk is 40Rs.
-13.	Write  a program that will tell whether the given number is divisible by 3 & 6.
-14.	Calculate the angle between the hour hand and minute hand.
-15.	Write a program that will determine weather when the value of temperature and humidity is provided by the user.
+1. [User will input (3 ages). Find the oldest one](#problem-1)
+2. [Write a program that will convert Celsius value to Fahrenheit](#problem-2)
+3. [User will input (2 numbers). Write a program to swap the numbers](#problem-3)
+4. [Write a program that will give you the sum of 3 digits](#problem-4)
+5. [Write a program that will reverse a four-digit number. Also, it checks whether the reverse is true](#problem-5)
+6. [Write a program that will tell whether the number entered by the user is odd or even](#problem-6)
+7. [Write a program that will tell whether the given year is a leap year or not](#problem-7)
+8. [Write a program to find the Euclidean distance between two coordinates](#problem-8)
+9. [Write a program that takes a user input of three angles and will find out whether it can form a triangle or not](#problem-9)
+10. [Write a program that will take user input of cost price and selling price and determines whether it's a loss or a profit](#problem-10)
+11. [Write a program to find the simple interest when the value of principal, rate of interest, and time period is given](#problem-11)
+12. [Write a program to find the volume of the cylinder. Also find the cost when the cost of 1 litre of milk is 40 Rs](#problem-12)
+13. [Write a program that will tell whether the given number is divisible by 3 & 6](#problem-13)
+14. [Calculate the angle between the hour hand and minute hand](#problem-14)
+15. [Write a program that will determine the weather when the value of temperature and humidity is provided by the user](#problem-15)
 TEMPERATURE(C)      HUMIDITY(%)      WEATHER
 
       >= 30                             >=90                Hot and Humid
       >= 30                             < 90                 Hot
       <30                                >= 90               Cool and Humid
       <30                                 <90                 Cool
-16.	Write a program that will take three digits from the user and add the square of each digit.
-17.	Write a program that will check whether the number is armstrong number or not.
-18.	Write a program that will take user input of (4 digits number) and check whether the number is narcissist number or not.
-19.	Write a program that will give you the in hand salary after deduction of HRA(10%),DA(5%),PF(3%), and tax(if salary is between 5-10 lakh–10%),(11-20lakh–20%),(20< _   – 30%)(0-1lakh print k).
-20.	Write a menu driven program - 1.cm to ft  2.kl to miles  3.usd to inr  4.exit
-21.	Write a program that will tell the number of dogs and chicken are there when the user will provide the value of total heads and legs.
-22.	Write a program that will swap numbers
-23.	Write a program to find the sum of first n numbers, where n will be provided by the user. Eg if the user provides n=10 the output should be 55.
-24.	Write a program that can multiply 2 numbers provided by the user without using the * operator
-25.	Write a program that can find the factorial of a given number provided by the user.
-26.	Write a program to print the first 25 odd numbers
-27.	Write a program to print whether a given number is prime number or not
-28.	Print all the armstrong numbers in the range of 100 to 1000
+16. [Write a program that will take three digits from the user and add the square of each digit](#problem-16)
+17. [Write a program that will check whether the number is an Armstrong number or not](#problem-17)
+18. [Write a program that will take user input of a (4 digits number) and check whether the number is a narcissist number or not](#problem-18)
+19. [Write a program that will give you the in-hand salary after deduction of HRA(10%), DA(5%), PF(3%), and tax](#problem-19)
+20. [Write a menu-driven program - 1.cm to ft  2.kl to miles  3.usd to inr  4.exit](#problem-20)
+21. [Write a program that will tell the number of dogs and chickens are there when the user provides the value of total heads and legs](#problem-21)
+22. [Write a program that will swap numbers](#problem-22)
+23. [Write a program to find the sum of first n numbers, where n will be provided by the user](#problem-23)
+24. [Write a program that can multiply 2 numbers provided by the user without using the * operator](#problem-24)
+25. [Write a program that can find the factorial of a given number provided by the user](#problem-25)
+26. [Write a program to print the first 25 odd numbers](#problem-26)
+27. [Write a program to print whether a given number is prime number or not](#problem-27)
+28. [Print all the Armstrong numbers in the range of 100 to 1000](#problem-28)
 29.	The current population of a town is 10000. The population of the town is increasing at the rate of 10% per year. You have to write a program to find out the population at the end of each of the last 10 years. For eg current population is 10000 so the output should be like this:
 10th year - 10000
 9th year - 9000
@@ -148,8 +148,8 @@ https://en.wikipedia.org/wiki/Bag-of-words_model
 
 ---
 
-### Problem 1
-### Problem 1: Find the Oldest Age
+### Problem 1: 
+### Find the Oldest Age
 **Question:** User will input three ages. Find the oldest one.
 
 **Answer:**
@@ -180,7 +180,8 @@ The oldest age is: 35
 
 ---
 
-### Problem 2: Celsius to Fahrenheit Conversion
+### Problem 2:
+### Celsius to Fahrenheit Conversion
 **Question:** Write a program that will convert a Celsius value to Fahrenheit.
 
 **Answer:**
@@ -208,7 +209,8 @@ If the user inputs `25`, the output will be:
 
 ---
 
-### Problem 3: Swap Two Numbers
+### Problem 3:
+### Swap Two Numbers
 **Question:** User will input two numbers. Write a program to swap the numbers.
 
 **Answer:**
@@ -239,7 +241,8 @@ After swapping: First number = 10.0 , Second number = 5.0
 
 ---
 
-### Problem 4: Sum of Three Digits
+### Problem 4:
+### Sum of Three Digits
 **Question:** Write a program that will give you the sum of three digits.
 
 **Answer:**
@@ -268,7 +271,8 @@ The sum of the three digits is: 15
 
 ---
 
-### Problem 5: Reverse a Four-Digit Number
+### Problem 5:
+### Reverse a Four-Digit Number
 **Question:** Write a program that will reverse a four-digit number and check whether the reverse is the same as the original.
 
 **Answer:**
@@ -304,7 +308,8 @@ The number is a palindrome.
 
 ---
 
-### Problem 6: Odd or Even
+### Problem 6:
+### Odd or Even
 **Question:** Write a program that will tell whether the number entered by the user is odd or even.
 
 **Answer:**
@@ -332,7 +337,8 @@ The number is even.
 
 ---
 
-### Problem 7: Leap Year Check
+### Problem 7:
+### Leap Year Check
 **Question:** Write a program that will tell whether the given year is a leap year or not.
 
 **Answer:**
@@ -359,7 +365,8 @@ If the user inputs `2020`, the output will be:
 
 ---
 
-### Problem 8: Euclidean Distance
+### Problem 8:
+### Euclidean Distance
 **Question:** Write a program to find the Euclidean distance between two coordinates.
 
 **Answer:**
@@ -390,7 +397,8 @@ The Euclidean distance is: 5.0
 
 ---
 
-### Problem 9: Triangle Formation Check
+### Problem 9:
+### Triangle Formation Check
 **Question:** Write a program that takes user input of three angles and finds out whether it can form a triangle.
 
 **Answer:**
@@ -418,7 +426,8 @@ The angles can form a triangle.
 
 ---
 
-### Problem 10: Profit or Loss
+### Problem 10:
+### Profit or Loss
 **Question:** Write a program that takes user input of cost price and selling price to determine whether it's a loss or a profit.
 
 **Answer:**
@@ -451,7 +460,8 @@ You made a profit of: 20.0
 
 ---
 
-### Problem 11: Simple Interest Calculation
+### Problem 11:
+### Simple Interest Calculation
 **Question:** Write a program to find the simple interest when the values of principal, rate of interest, and time period are given.
 
 **Answer:**
@@ -481,7 +491,8 @@ The simple interest is: 1500.0
 
 ---
 
-### Problem 12: Volume of Cylinder and Cost of Milk
+### Problem 12:
+### Volume of Cylinder and Cost of Milk
 **Question:** Write a program to find the volume of the cylinder and calculate the cost when the cost of 1 litre of milk is Rs. 40.
 
 **Answer:**
@@ -518,7 +529,8 @@ The cost of the milk is: Rs. 6157.50
 
 ---
 
-### Problem 13: Divisibility Check
+### Problem 13:
+### Divisibility Check
 **Question:** Write a program that will tell whether the given number is divisible by 3 and 6.
 
 **Answer:**
@@ -545,7 +557,8 @@ The number 12 is divisible by both 3 and 6.
 
 ---
 
-### Problem 14: Angle Between Hour and Minute Hand
+### Problem 14:
+### Angle Between Hour and Minute Hand
 **Question:** Calculate the angle between the hour hand and minute hand.
 
 **Answer:**
@@ -579,7 +592,8 @@ The angle between the hour hand and minute hand is: 15.0 degrees.
 
 ---
 
-### Problem 15: Weather Based on Temperature and Humidity
+### Problem 15:
+### Weather Based on Temperature and Humidity
 **Question:** Write a program that will determine weather conditions based on temperature and humidity.
 
 **Answer:**
@@ -614,7 +628,8 @@ The weather condition is: Hot and Humid
 
 ---
 
-### Problem 16: Sum of Squares of Three Digits
+### Problem 16:
+### Sum of Squares of Three Digits
 **Question:** Write a program that will take three digits from the user and add the square of each digit.
 
 **Answer:**
@@ -641,7 +656,8 @@ The sum of the squares of the digits is: 14
 
 ---
 
-### Problem 17: Armstrong Number Check
+### Problem 17:
+### Armstrong Number Check
 **Question:** Write a program that will check whether the number is an Armstrong number or not.
 
 **Answer:**
@@ -675,7 +691,8 @@ If the user inputs `153`, the output will be:
 
 ---
 
-### Problem 18: Narcissist Number Check
+### Problem 18:
+### Narcissist Number Check
 **Question:** Write a program that will take user input of a four-digit number and check whether the number is a narcissist number or not.
 
 **Answer:**
@@ -705,7 +722,8 @@ If the user inputs `1634`, the output will be:
 
 ---
 
-### Problem 19: In-Hand Salary Calculation
+### Problem 19:
+### In-Hand Salary Calculation
 **Question:** Write a program that will give you the in-hand salary after deductions (HRA, DA, PF, and tax based on salary brackets).
 
 **Answer:**
@@ -757,7 +775,8 @@ In-hand salary after deductions: 617500.0
 
 ---
 
-### Problem 20: Unit Conversion Menu
+### Problem 20:
+### Unit Conversion Menu
 **Question:** Write a menu-driven program to convert between different units:
 1. cm to ft
 2. kl to miles
@@ -818,7 +837,8 @@ Enter centimeters: 100
 
 ---
 
-### Problem 21: Counting Dogs and Chickens
+### Problem 21:
+### Counting Dogs and Chickens
 **Question:** Write a program that will tell the number of dogs and chickens when the user provides the total number of heads and legs.
 
 **Answer:**
@@ -855,7 +875,8 @@ Number of dogs: 6, Number of chickens: 4
 
 ---
 
-### Problem 22: Swap Numbers
+### Problem 22:
+### Swap Numbers
 **Question:** Write a program that will swap two numbers.
 
 **Answer:**
@@ -889,7 +910,8 @@ Second number: 5.0
 
 ---
 
-### Problem 23: Sum of First n Numbers
+### Problem 23:
+### Sum of First n Numbers
 **Question:** Write a program to find the sum of the first n numbers, where n will be provided by the user.
 
 **Answer:**
@@ -916,7 +938,8 @@ The sum of the first 10 numbers is: 55
 
 ---
 
-### Problem 24: Multiplication Without `*` Operator
+### Problem 24:
+### Multiplication Without `*` Operator
 **Question:** Write a program that can multiply two numbers provided by the user without using the `*` operator.
 
 **Answer:**
@@ -950,7 +973,8 @@ The product of 5 and 3 is: 15
 
 ---
 
-### Problem 25: Factorial Calculation
+### Problem 25:
+### Factorial Calculation
 **Question:** Write a program that can find the factorial of a given number provided by the user.
 
 **Answer:**
@@ -979,7 +1003,8 @@ The factorial of 5 is: 120
 
 ---
 
-### Problem 26: Print First 25 Odd Numbers
+### Problem 26:
+### Print First 25 Odd Numbers
 **Question:** Write a program to print the first 25 odd numbers.
 
 **Answer:**
@@ -1002,7 +1027,8 @@ The first 25 odd numbers are:
 
 ---
 
-### Problem 27: Prime Number Check
+### Problem 27:
+### Prime Number Check
 **Question:** Write a program to print whether a given number is a prime number or not.
 
 **Answer:**
@@ -1034,7 +1060,8 @@ If the user inputs `11`, the output will be:
 
 ---
 
-### Problem 28: Armstrong Numbers in Range
+### Problem 28:
+### Armstrong Numbers in Range
 **Question:** Print all the Armstrong numbers in the range of 100 to 1000.
 
 **Answer:**
@@ -1062,7 +1089,8 @@ Armstrong numbers between 100 and 1000 are:
 
 ---
 
-### Problem 29: Population Growth Calculation
+### Problem 29:
+### Population Growth Calculation
 **Question:** Calculate the population of a town over the last 10 years given the current population and growth rate.
 
 **Answer:**
@@ -1092,7 +1120,8 @@ for year in range(10, 0, -1):
 
 ---
 
-### Problem 30: Unique Combinations of Numbers
+### Problem 30:
+### Unique Combinations of Numbers
 **Question:** Print all the unique combinations of 1, 2, 3, and 4.
 
 **Answer:**
@@ -1134,7 +1163,8 @@ Unique combinations of 1, 2, 3, and 4:
 
 ---
 
-### Problem 31: Find HCF (Highest Common Factor)
+### Problem 31:
+### Find HCF (Highest Common Factor)
 **Question:** User will provide two numbers, and you have to find the HCF of those two numbers.
 
 **Answer:**
@@ -1164,7 +1194,8 @@ The HCF of 48 and 18 is: 6
 
 ---
 
-### Problem 32: Find LCM (Lowest Common Multiple)
+### Problem 32:
+### Find LCM (Lowest Common Multiple)
 **Question:** User will provide two numbers, and you have to find the LCM of those two numbers.
 
 **Answer:**
@@ -1194,7 +1225,8 @@ The LCM of 4 and 5 is: 20
 
 ---
 
-### Problem 33: Print First 25 Prime Numbers
+### Problem 33:
+### Print First 25 Prime Numbers
 **Question:** Print the first 25 prime numbers.
 
 **Answer:**
@@ -1231,7 +1263,8 @@ The first 25 prime numbers are:
 
 ---
 
-### Problem 34: Print First 20 Fibonacci Numbers
+### Problem 34:
+### Print First 20 Fibonacci Numbers
 **Question:** Print the first 20 numbers of a Fibonacci series.
 
 **Answer:**
@@ -1256,7 +1289,8 @@ The first 20 Fibonacci numbers are:
 
 ---
 
-### Problem 35: Calculate Compound Interest
+### Problem 35:
+### Calculate Compound Interest
 **Question:** Write a program to find the compound interest.
 
 **Answer:**
@@ -1286,7 +1320,8 @@ The compound interest is: 1025.00
 
 ---
 
-### Problem 36: Compute n + nn + nnn
+### Problem 36:
+### Compute n + nn + nnn
 **Question:** Write a Python program that accepts an integer \( n \) and computes the value of \( n + nn + nnn \).
 
 **Answer:**
@@ -1315,7 +1350,8 @@ The result of 5 + 55 + 555 is: 615
 
 ---
 
-### Problem 37: Count Digits in a Number
+### Problem 37:
+### Count Digits in a Number
 **Question:** Take a number from the user and find the number of digits in it.
 
 **Answer:**
@@ -1342,7 +1378,8 @@ The number of digits in 12345 is: 5
 
 ---
 
-### Problem 38: Print All Factors of a Given Number
+### Problem 38:
+### Print All Factors of a Given Number
 **Question:** Print all factors of a given number provided by the user.
 
 **Answer:**
@@ -1369,7 +1406,8 @@ The factors of 12 are:
 
 ---
 
-### Problem 39: Find the Reverse of a Number
+### Problem 39:
+### Find the Reverse of a Number
 **Question:** Find the reverse of a number provided by the user (any number of digits).
 
 **Answer:**
@@ -1395,7 +1433,8 @@ The reverse of 12345 is: 54321
 
 ---
 
-### Problem 40: Print a Pattern
+### Problem 40:
+### Print a Pattern
 **Question:** Write a program to print the following pattern:
 ```go
 *
@@ -1426,7 +1465,8 @@ for i in range(1, 6):
 
 ---
 
-### Problem 41: Print a Diamond Pattern
+### Problem 41:
+### Print a Diamond Pattern
 **Question:** Write a program to print the following pattern:
 ```go
 *
@@ -1462,7 +1502,8 @@ for i in range(2, 0, -1):
 
 ---
 
-### Problem 42: Print a Pyramid Pattern
+### Problem 42:
+### Print a Pyramid Pattern
 **Question:** Write a program to print the following pattern:
 ```go
         *
@@ -1500,7 +1541,8 @@ for i in range(rows):
 
 ---
 
-### Problem 43: Print a Numeric Pyramid Pattern
+### Problem 43:
+### Print a Numeric Pyramid Pattern
 **Question:** Write a program to print the following pattern:
 ```go
 1
@@ -1542,7 +1584,8 @@ for i in range(1, rows + 1):
 
 ---
 
-### Problem 44: Print an Incremental Number Pattern
+### Problem 44:
+### Print an Incremental Number Pattern
 **Question:** Write a program to print the following pattern:
 ```go
 1
@@ -1581,7 +1624,8 @@ for i in range(1, rows + 1):
 
 ---
 
-### Problem 45: Calculate the Sum of a Series
+### Problem 45:
+### Calculate the Sum of a Series
 **Question:** Write a program to calculate the sum of the following series till the nth term:
 ```
 1/1! + 2/2! + 3/3! + 4/4! + ... + n/n!
@@ -1616,7 +1660,8 @@ The sum of the series till 4 terms is: 2.708333
 
 ---
 
-### Problem 46: Calculate the Sum of Another Series
+### Problem 46:
+### Calculate the Sum of Another Series
 **Question:** Write a Python Program to Find the Sum of the Series till the nth term:
 ```
 1 + x^2/2 + x^3/3 + … + x^n/n
