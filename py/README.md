@@ -402,7 +402,7 @@ def function_name(parameters):
 **Example: 1**
 ```python
 def calSum(a, b):
-    x = (a * b) + (a / b)  # Calculate the expression
+    x = (a*b)+(a/b)        # Calculate the expression
     print(x)               # Print the result
 
 c = 9                     # Assign value to c
@@ -439,7 +439,7 @@ print(greet())  # Outputs: Hello, Stranger!
 
 OOP is a programming paradigm where you model real-world things as objects with attributes (data) and behaviors (methods).
 
-#### **Classes & Objects**
+## **Classes & Objects**
 - **Description**: A class defines a blueprint for creating objects.
 - **Syntax**: 
 ```python
@@ -448,7 +448,7 @@ class ClassName:
         # Constructor
 ```
 
-**Example:**
+**Example:** [video](https://youtu.be/6soT3DMBJGQ)
 ```python
 class Employee:
     def __init__(self, name, id, salary):
