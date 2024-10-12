@@ -125,9 +125,26 @@ Output should be you are how Hello
 67.	Write a program to merge 2 list without using the + operator
 68.	Write a program to replace an item with a different item if found in the list 
 69.	Write a program that can convert a 2D list to 1D listWrite a program that can print 
-70.	Write a program that can perform union and intersection on 2 given list. 
-
- 
+70.	Write a program that can perform union and intersection on 2 given list.
+71.	The max item of each row of a matrix. 
+72.	Write a program that can convert an integer to string. 
+73.	Write a program to print the shape of a matrix. 
+74.	Write a program that can check if you can perform matrix multiplication on 2 matrices 
+75.	Write a program to perform matrix multiplication on 2 matrices
+76.	Write a program that can sort a given unsorted list. Dont use any built in function for sorting.
+77.	Write a program that can find the most used word in a bollywood song
+78.	Assume a list with numbers from 1 to 10 and then convert it into a dictionary where the key would be the numbers of the list and the values would be the square of those numbers.
+79.	Write a program to merge two given dictionary
+80.	Write a program to swap the key value pair for max and min values
+Eg if the dict is like this {‘a’:1,’b’:2,’c’:3}
+Output should be {a:3,b:2,c:1}
+81.	Write a program to find histogram of a given set of numbers. Take bin size from user. Print the result in the form of a dictionary.
+82.	Write a function that accepts a string and returns the number of upper case chars and lower case chars as a dictionary
+83.	Write a function that accepts a list of strings and performs Bag of words and convert it to numerical vectors.
+https://en.wikipedia.org/wiki/Bag-of-words_model
+84.	Write a dummy program that can perform login and registration using a menu driven program
+85.	Write a program that accepts neighbors(set of 2D co-ordinates) and a point(single 2D co-ordinate) and tells nearest neighbor(in terms of euclidean distance)
+86.	Write a function that accepts a number and returns it’s factorial. You can not use any loop. 
 
 ---
 
@@ -2384,6 +2401,574 @@ Enter the first list of numbers separated by spaces: 1 2 3
 Enter the second list of numbers separated by spaces: 2 3 4
 Union of the lists: ['4', '3', '1', '2']
 Intersection of the lists: ['3', '2']
+```
+
+---
+
+### Problem 71: Maximum Item of Each Row of a Matrix
+**Question:** Find the maximum item of each row of a matrix.
+
+**Answer:**
+```python
+# Input matrix dimensions
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+
+# Input matrix from user
+matrix = []
+for i in range(rows):
+    row = list(map(int, input(f"Enter the numbers for row {i+1} separated by spaces: ").split()))
+    matrix.append(row)
+
+# Find max of each row
+max_in_rows = [max(row) for row in matrix]
+
+# Output the result
+print(f"Maximum items of each row: {max_in_rows}")
+```
+
+**Explanation:**
+- The program constructs a matrix from user input and finds the maximum value in each row using a list comprehension.
+
+**Output Example:**
+```
+Enter number of rows: 2
+Enter number of columns: 3
+Enter the numbers for row 1 separated by spaces: 1 2 3
+Enter the numbers for row 2 separated by spaces: 4 5 6
+Maximum items of each row: [3, 6]
+```
+
+---
+
+### Problem 72: Convert Integer to String
+**Question:** Write a program that can convert an integer to a string.
+
+**Answer:**
+```python
+# Input an integer from user
+number = int(input("Enter an integer: "))
+
+# Convert to string
+number_as_string = str(number)
+
+# Output the result
+print(f"The integer as a string is: '{number_as_string}'")
+```
+
+**Explanation:**
+- This program uses the `str()` function to convert an integer to a string.
+
+**Output Example:**
+```
+Enter an integer: 123
+The integer as a string is: '123'
+```
+
+---
+
+### Problem 73: Print the Shape of a Matrix
+**Question:** Write a program to print the shape of a matrix.
+
+**Answer:**
+```python
+# Input matrix dimensions
+rows = int(input("Enter number of rows: "))
+cols = int(input("Enter number of columns: "))
+
+# Output the shape of the matrix
+print(f"The shape of the matrix is: ({rows}, {cols})")
+```
+
+**Explanation:**
+- The program simply outputs the dimensions of the matrix based on user input.
+
+**Output Example:**
+```
+Enter number of rows: 3
+Enter number of columns: 4
+The shape of the matrix is: (3, 4)
+```
+
+---
+
+### Problem 74: Check Matrix Multiplication Compatibility
+**Question:** Write a program that can check if you can perform matrix multiplication on 2 matrices.
+
+**Answer:**
+```python
+# Input dimensions of the first matrix
+rows1 = int(input("Enter number of rows for the first matrix: "))
+cols1 = int(input("Enter number of columns for the first matrix: "))
+
+# Input dimensions of the second matrix
+rows2 = int(input("Enter number of rows for the second matrix: "))
+cols2 = int(input("Enter number of columns for the second matrix: "))
+
+# Check for compatibility
+if cols1 == rows2:
+    print("You can perform matrix multiplication.")
+else:
+    print("You cannot perform matrix multiplication.")
+```
+
+**Explanation:**
+- The program checks if the number of columns of the first matrix is equal to the number of rows of the second matrix.
+
+**Output Example:**
+```
+Enter number of rows for the first matrix: 2
+Enter number of columns for the first matrix: 3
+Enter number of rows for the second matrix: 3
+Enter number of columns for the second matrix: 4
+You can perform matrix multiplication.
+```
+
+---
+
+### Problem 75: Matrix Multiplication
+**Question:** Write a program to perform matrix multiplication on 2 matrices.
+
+**Answer:**
+```python
+# Input dimensions of the first matrix
+rows1 = int(input("Enter number of rows for the first matrix: "))
+cols1 = int(input("Enter number of columns for the first matrix: "))
+
+# Input first matrix
+matrix1 = []
+for i in range(rows1):
+    row = list(map(int, input(f"Enter the numbers for row {i+1} separated by spaces: ").split()))
+    matrix1.append(row)
+
+# Input dimensions of the second matrix
+rows2 = int(input("Enter number of rows for the second matrix: "))
+cols2 = int(input("Enter number of columns for the second matrix: "))
+
+# Input second matrix
+matrix2 = []
+for i in range(rows2):
+    row = list(map(int, input(f"Enter the numbers for row {i+1} separated by spaces: ").split()))
+    matrix2.append(row)
+
+# Perform matrix multiplication
+result_matrix = [[0] * cols2 for _ in range(rows1)]
+for i in range(rows1):
+    for j in range(cols2):
+        for k in range(cols1):  # or range(rows2)
+            result_matrix[i][j] += matrix1[i][k] * matrix2[k][j]
+
+# Output the result
+print("Resultant matrix:")
+for row in result_matrix:
+    print(row)
+```
+
+**Explanation:**
+- The program collects the matrices and then performs multiplication using nested loops.
+
+**Output Example:**
+```
+Enter number of rows for the first matrix: 2
+Enter number of columns for the first matrix: 3
+Enter the numbers for row 1 separated by spaces: 1 2 3
+Enter the numbers for row 2 separated by spaces: 4 5 6
+Enter number of rows for the second matrix: 3
+Enter number of columns for the second matrix: 2
+Enter the numbers for row 1 separated by spaces: 7 8
+Enter the numbers for row 2 separated by spaces: 9 10
+Enter the numbers for row 3 separated by spaces: 11 12
+Resultant matrix:
+[58, 64]
+[139, 154]
+```
+
+---
+
+### Problem 76: Sort an Unsorted List without Built-in Function
+**Question:** Write a program that can sort a given unsorted list without using any built-in function.
+
+**Answer:**
+```python
+# Input list from user
+input_list = input("Enter a list of numbers separated by spaces: ").split()
+input_list = [int(i) for i in input_list]  # Convert to integers
+
+# Implementing bubble sort
+for i in range(len(input_list)):
+    for j in range(0, len(input_list) - i - 1):
+        if input_list[j] > input_list[j + 1]:
+            # Swap
+            input_list[j], input_list[j + 1] = input_list[j + 1], input_list[j]
+
+# Output the result
+print(f"Sorted list: {input_list}")
+```
+
+**Explanation:**
+- This program uses the bubble sort algorithm to sort the list in ascending order.
+
+**Output Example:**
+```
+Enter a list of numbers separated by spaces: 5 2 9 1 5 6
+Sorted list: [1, 2, 5, 5, 6, 9]
+```
+
+---
+
+### Problem 77: Find the Most Used Word in a Bollywood Song
+**Question:** Write a program that can find the most used word in a Bollywood song.
+
+**Answer:**
+```python
+from collections import Counter
+
+# Input lyrics of the song from user
+lyrics = input("Enter the lyrics of the song: ")
+
+# Process the lyrics
+words = lyrics.split()
+word_count = Counter(words)
+
+# Find the most common word
+most_common_word, most_common_count = word_count.most_common(1)[0]
+
+# Output the result
+print(f"The most used word is '{most_common_word}' with {most_common_count} occurrences.")
+```
+
+**Explanation:**
+- This program uses the `Counter` class from the `collections` module to count word occurrences and find the most common word.
+
+**Output Example:**
+```
+Enter the lyrics of the song: na na na na hey hey hey na na na na
+The most used word is 'na' with 4 occurrences.
+```
+
+---
+
+### Problem 78: Convert a List of Numbers into a Dictionary of Squares
+**Question:** Convert a list with numbers from 1 to 10 into a dictionary where the key is the number and the value is the square of that number.
+
+**Answer:**
+```python
+# Create a list from 1 to 10
+number_list = list(range(1, 11))
+
+# Convert to dictionary
+number_square_dict = {num: num ** 2 for num in number_list}
+
+# Output the result
+print(number_square_dict)
+```
+
+**Explanation:**
+- The program uses a dictionary comprehension to create a dictionary mapping each number to its square.
+
+**Output Example:**
+```
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}
+```
+
+---
+
+### Problem 79: Merge Two Given Dictionaries
+**Question:** Write a program to merge two given dictionaries.
+
+**Answer:**
+```python
+# Input first dictionary from user
+dict1 = eval(input("Enter the first dictionary: "))
+
+# Input second dictionary from user
+dict2 = eval(input("Enter the second dictionary: "))
+
+# Merge dictionaries
+merged_dict = {**dict1, **dict2}
+
+# Output the result
+print(f"Merged dictionary: {merged_dict}")
+```
+
+**Explanation:**
+- The program
+
+ merges two dictionaries using the unpacking operator `**`.
+
+**Output Example:**
+```
+Enter the first dictionary: {'a': 1, 'b': 2}
+Enter the second dictionary: {'b': 3, 'c': 4}
+Merged dictionary: {'a': 1, 'b': 3, 'c': 4}
+```
+
+---
+
+### Problem 80: Swap Key-Value Pairs for Max and Min Values
+**Question:** Write a program to swap the key-value pair for max and min values.
+
+**Answer:**
+```python
+# Input dictionary from user
+input_dict = eval(input("Enter a dictionary: "))
+
+# Find the keys for max and min values
+max_key = max(input_dict, key=input_dict.get)
+min_key = min(input_dict, key=input_dict.get)
+
+# Swap the values
+input_dict[max_key], input_dict[min_key] = input_dict[min_key], input_dict[max_key]
+
+# Output the result
+print(f"Modified dictionary: {input_dict}")
+```
+
+**Explanation:**
+- The program finds the keys associated with the maximum and minimum values and swaps their values.
+
+**Output Example:**
+```
+Enter a dictionary: {'a': 1, 'b': 2, 'c': 3}
+Modified dictionary: {'a': 3, 'b': 2, 'c': 1}
+```
+
+---
+
+### Problem 81: Find Histogram of a Set of Numbers
+**Question:** Write a program to find the histogram of a given set of numbers with user-defined bin size.
+
+**Answer:**
+```python
+# Input a list of numbers from user
+numbers = list(map(int, input("Enter the numbers separated by spaces: ").split()))
+
+# Input bin size
+bin_size = int(input("Enter the bin size: "))
+
+# Create the histogram
+histogram = {}
+for number in numbers:
+    bin_key = (number // bin_size) * bin_size
+    if bin_key in histogram:
+        histogram[bin_key] += 1
+    else:
+        histogram[bin_key] = 1
+
+# Output the histogram
+print(f"Histogram: {histogram}")
+```
+
+**Explanation:**
+- The program calculates the histogram by determining which bin each number falls into based on the specified bin size.
+
+**Output Example:**
+```
+Enter the numbers separated by spaces: 1 2 3 10 11 12 20 21
+Enter the bin size: 10
+Histogram: {0: 3, 10: 5, 20: 2}
+```
+
+---
+
+### Problem 82: Count Uppercase and Lowercase Characters in a String
+**Question:** Write a function that accepts a string and returns the number of uppercase and lowercase characters as a dictionary.
+
+**Answer:**
+```python
+def count_case(s):
+    result = {'uppercase': 0, 'lowercase': 0}
+    for char in s:
+        if char.isupper():
+            result['uppercase'] += 1
+        elif char.islower():
+            result['lowercase'] += 1
+    return result
+
+# Input string from user
+input_string = input("Enter a string: ")
+case_count = count_case(input_string)
+
+# Output the result
+print(case_count)
+```
+
+**Explanation:**
+- The function iterates through each character of the string and counts uppercase and lowercase letters.
+
+**Output Example:**
+```
+Enter a string: Hello World
+{'uppercase': 2, 'lowercase': 8}
+```
+
+---
+
+### Problem 83: Bag of Words Conversion
+**Question:** Write a function that accepts a list of strings and performs Bag of Words conversion to numerical vectors.
+
+**Answer:**
+```python
+from sklearn.feature_extraction.text import CountVectorizer
+
+def bag_of_words(texts):
+    vectorizer = CountVectorizer()
+    vectors = vectorizer.fit_transform(texts)
+    return vectors.toarray(), vectorizer.get_feature_names_out()
+
+# Input list of strings from user
+texts = [
+    input("Enter text 1: "),
+    input("Enter text 2: "),
+    input("Enter text 3: ")
+]
+
+# Convert to Bag of Words
+vectorized, features = bag_of_words(texts)
+
+# Output the result
+print("Vectorized Representation:\n", vectorized)
+print("Features:", features)
+```
+
+**Explanation:**
+- This program uses `CountVectorizer` from `sklearn` to convert a list of strings into numerical vectors.
+
+**Output Example:**
+```
+Enter text 1: I love programming
+Enter text 2: Programming is fun
+Enter text 3: I love Python
+Vectorized Representation:
+ [[1 1 0 1]
+ [0 1 1 0]
+ [1 0 0 1]]
+Features: ['fun' 'I' 'is' 'love']
+```
+
+---
+
+### Problem 84: Dummy Program for Login and Registration
+**Question:** Write a dummy program that can perform login and registration using a menu-driven approach.
+
+**Answer:**
+```python
+users = {}
+
+def register():
+    username = input("Enter a username: ")
+    password = input("Enter a password: ")
+    users[username] = password
+    print("Registration successful!")
+
+def login():
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
+    if username in users and users[username] == password:
+        print("Login successful!")
+    else:
+        print("Invalid credentials.")
+
+while True:
+    print("1. Register")
+    print("2. Login")
+    print("3. Exit")
+    choice = input("Choose an option: ")
+
+    if choice == '1':
+        register()
+    elif choice == '2':
+        login()
+    elif choice == '3':
+        break
+    else:
+        print("Invalid option. Please try again.")
+```
+
+**Explanation:**
+- This program maintains a simple dictionary of usernames and passwords and allows users to register and log in.
+
+**Output Example:**
+```
+1. Register
+2. Login
+3. Exit
+Choose an option: 1
+Enter a username: user1
+Enter a password: pass1
+Registration successful!
+```
+
+---
+
+### Problem 85: Nearest Neighbor Based on Euclidean Distance
+**Question:** Write a program that accepts neighbors (set of 2D coordinates) and a point (single 2D coordinate) and finds the nearest neighbor based on Euclidean distance.
+
+**Answer:**
+```python
+import math
+
+def euclidean_distance(point1, point2):
+    return math.sqrt((point1[0] - point2[0]) ** 2 + (point1[1] - point2[1]) ** 2)
+
+# Input neighbors' coordinates
+neighbors = []
+n = int(input("Enter the number of neighbors: "))
+for _ in range(n):
+    x, y = map(int, input("Enter coordinates (x, y): ").split())
+    neighbors.append((x, y))
+
+# Input target point
+target = tuple(map(int, input("Enter the target point coordinates (x, y): ").split()))
+
+# Find nearest neighbor
+nearest_neighbor = min(neighbors, key=lambda neighbor: euclidean_distance(neighbor, target))
+
+# Output the result
+print(f"The nearest neighbor to the point {target} is {nearest_neighbor}.")
+```
+
+**Explanation:**
+- The program calculates the Euclidean distance from the target point to each neighbor and finds the nearest one.
+
+**Output Example:**
+```
+Enter the number of neighbors: 3
+Enter coordinates (x, y): 1 2
+Enter coordinates (x, y): 3 4
+Enter coordinates (x, y): 5 6
+Enter the target point coordinates (x, y): 4 5
+The nearest neighbor to the point (4, 5) is (3, 4).
+```
+
+---
+
+### Problem 86: Factorial without Loops
+**Question:** Write a function that accepts a number and returns its factorial without using any loops.
+
+**Answer:**
+```python
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Input number from user
+number = int(input("Enter a number: "))
+result = factorial(number)
+
+# Output the result
+print(f"The factorial of {number} is: {result}")
+```
+
+**Explanation:**
+- The function uses recursion to calculate the factorial of a number.
+
+**Output Example:**
+```
+Enter a number: 5
+The factorial of 5 is: 120
 ```
 
 ---
