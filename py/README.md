@@ -401,6 +401,18 @@ def function_name(parameters):
 
 **Example: 1**
 ```python
+def calSum(a, b):
+    x = (a * b) + (a / b)  # Calculate the expression
+    print(x)               # Print the result
+
+c = 9                     # Assign value to c
+d = 8                     # Assign value to d
+calSum(c, d)             # Call the function with c and d
+
+```
+
+**Example: 2**
+```python
 def greet(name):
     return f"Hello, {name}!"
 
@@ -420,17 +432,6 @@ print(greet())  # Outputs: Hello, Stranger!
 | Define function   | Create a function                 | `def function_name():`      |
 | Call function     | Execute the function              | `function_name(arguments)`   |
 
-**Example: 2**
-```python
-def calSum(a, b):
-    x = (a * b) + (a / b)  # Calculate the expression
-    print(x)               # Print the result
-
-c = 9                     # Assign value to c
-d = 8                     # Assign value to d
-calSum(c, d)             # Call the function with c and d
-
-```
 
 ---
 
