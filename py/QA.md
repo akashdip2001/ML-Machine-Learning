@@ -80,24 +80,54 @@ TEMPERATURE(C)      HUMIDITY(%)      WEATHER
 1 2 3 4 3 2 1
 1 2 3 4 5 4 3 2 1
 ```   	
-45.	Write a program to print the following pattern
+44.	Write a program to print the following pattern
 ```go
 1
 2 3
 4 5 6
 7 8 9 10
 ```  	
-47.	Write a program to calculate the sum of the following series till the nth term
+45.	Write a program to calculate the sum of the following series till the nth term
 1/1! + 2/2! + 3/3! + 4/4! +…….+ n/n!
 n will be provided by the user
 
-49.	Write a Python Program to Find the Sum of the Series till the nth term: 
+46.	Write a Python Program to Find the Sum of the Series till the nth term: 
 1 + x^2/2 + x^3/3 + … x^n/n
 n will be provided by the user
+47.	The natural logarithm can be approximated by the following series.
+    ![Screenshot 2024-10-13 022819](https://github.com/user-attachments/assets/7a8ce36f-4bda-4930-9d35-224efe3274c0)
+    <br>If x is input through the keyboard, write a program to calculate the sum of the first seven terms of this series.
 
+48.	 Write a program that keeps on accepting a number from the user until the user enters Zero. Display the sum and average of all the numbers.
+49.	Write a program that accepts 2 numbers from the user a numerator and a denominator and then simplifies it
+Eg if the num = 5, den = 15 the answer should be ⅓
+Eg if the num = 6, den = 9 the answer should be ⅔
+50.	Find the length of a given string without using the len() function. 
+51.	Extract username from a given email. 
+Eg if the email is nitish24singh@gmail.com then the username should be nitish24singh
+52.	Count the frequency of a particular character in a provided string. Eg 'hello how are you' is the string, the frequency of h in this string is 2.
+53.	Find the index position of a particular character in another string. 
+54.	Count the number of vowels in a string provided by the user.
+55.	Write a program which can remove a particular character from a string. 
+56.	Write a program that can check whether a given string is palindrome or not.
+57.	Write a python program to remove all the duplicates from a list
+58.	Write a python program to convert a string to title case without using the title()
+59.	Write a python program to find the max item from a list without using the max function
+60.	Write a python program to reverse a list.
+61.	Write a python program to search a given number from a list.
+62.	Write a program that can create a new list from a given list where each item in the new list is square of the item of the old list
+63.	Write a program that can reverse words of a given string.
+Eg if the input is Hello how are you
+Output should be you are how Hello
+64.	Write a program that can count the number of words in a given string
+65.	Write a program to check if a list is in ascending order or not
+66.	Create 2 lists from a given list where 1st list will contain all the odd numbers from the original list and the 2nd one will contain all the even numbers 
+67.	Write a program to merge 2 list without using the + operator
+68.	Write a program to replace an item with a different item if found in the list 
+69.	Write a program that can convert a 2D list to 1D listWrite a program that can print 
+70.	Write a program that can perform union and intersection on 2 given list. 
 
-
-
+ 
 
 ---
 
@@ -1601,6 +1631,766 @@ The sum of the series till 4 terms for x = 2.0 is: 4.500000
 ```
 
 ---
+
+### Problem 47: 
+#### The expression in the image represents a series for approximating the natural logarithm, specifically for the expression (x - 1) / x The series can be expressed as:
+
+![Screenshot 2024-10-13 022819](https://github.com/user-attachments/assets/7a8ce36f-4bda-4930-9d35-224efe3274c0)
+
+To write a program that calculates the sum of the first seven terms of this series, we will implement it in Python. Here's how you can do it:
+
+### Python Program to Calculate the Approximation of Natural Logarithm
+
+```python
+# Function to calculate the approximation of the natural logarithm
+def natural_log_approximation(x):
+    # Calculate the value of (x - 1) / x
+    term = (x - 1) / x
+    sum_terms = 0
+
+    # Calculate the sum of the first seven terms
+    for n in range(1, 8):  # from n=1 to n=7
+        sum_terms += (term ** n) / n
+
+    return sum_terms
+
+# Input from the user
+x = float(input("Enter a value for x (x > 0): "))
+
+# Calculate and display the result
+if x > 0:
+    result = natural_log_approximation(x)
+    print(f"The approximation of the natural logarithm for x = {x} is: {result:.6f}")
+else:
+    print("Please enter a positive value for x.")
+```
+
+### Explanation of the Program:
+
+1. **Function Definition**: The function `natural_log_approximation(x)` calculates the sum of the first seven terms of the series.
+   
+2. **Term Calculation**: Inside the function, we first compute the term \( \frac{x-1}{x} \).
+
+3. **Summation Loop**: We loop from \( n = 1 \) to \( n = 7 \) and calculate each term of the series using the formula \( \frac{(term)^n}{n} \). The result is accumulated in `sum_terms`.
+
+4. **User Input**: The program prompts the user to enter a positive value for \( x \).
+
+5. **Output**: Finally, the result is printed with six decimal places.
+
+### How to Use the Program:
+1. Copy the code into a Python environment (like Jupyter Notebook or any Python IDE).
+2. Run the program and enter a positive number for \( x \).
+3. The program will output the approximation of the natural logarithm based on the first seven terms of the series.
+
+### Example Output
+If the user inputs `2`, the output will be similar to:
+```
+The approximation of the natural logarithm for x = 2 is: 0.693147
+```
+
+This value closely approximates \( \ln(2) \), which is approximately \( 0.693147 \). 
+
+---
+
+### Problem 48: Sum and Average Until Zero
+**Question:** Write a program that keeps on accepting a number from the user until the user enters Zero. Display the sum and average of all the numbers.
+
+**Answer:**
+```python
+# Initialize sum and count
+total_sum = 0
+count = 0
+
+# Continuously accept numbers until 0 is entered
+while True:
+    num = float(input("Enter a number (0 to stop): "))
+    if num == 0:
+        break
+    total_sum += num
+    count += 1
+
+# Calculate average if count is not zero
+if count > 0:
+    average = total_sum / count
+    print(f"Sum: {total_sum}, Average: {average:.2f}")
+else:
+    print("No numbers were entered.")
+```
+
+**Explanation:**
+- The program uses a `while` loop to continuously accept numbers from the user.
+- It checks if the input is `0`, and if so, it breaks the loop.
+- It calculates the sum and the average based on the number of valid inputs.
+
+**Output Example:**
+```
+Enter a number (0 to stop): 10
+Enter a number (0 to stop): 20
+Enter a number (0 to stop): 30
+Enter a number (0 to stop): 0
+Sum: 60.0, Average: 20.00
+```
+
+---
+
+### Problem 49: Simplifying a Fraction
+**Question:** Write a program that accepts two numbers from the user (a numerator and a denominator) and simplifies it.
+
+**Answer:**
+```python
+import math
+
+# Input numerator and denominator
+num = int(input("Enter numerator: "))
+den = int(input("Enter denominator: "))
+
+# Find GCD
+gcd = math.gcd(num, den)
+
+# Simplify the fraction
+simplified_num = num // gcd
+simplified_den = den // gcd
+
+# Output the result
+print(f"The simplified fraction is: {simplified_num}/{simplified_den}")
+```
+
+**Explanation:**
+- The program uses the `math.gcd()` function to find the greatest common divisor (GCD) of the numerator and denominator.
+- It divides both the numerator and denominator by the GCD to simplify the fraction.
+
+**Output Example:**
+```
+Enter numerator: 6
+Enter denominator: 9
+The simplified fraction is: 2/3
+```
+
+---
+
+### Problem 50: Find Length of a String
+**Question:** Find the length of a given string without using the `len()` function.
+
+**Answer:**
+```python
+# Input string from user
+input_string = input("Enter a string: ")
+
+# Initialize length counter
+length = 0
+
+# Count characters
+for char in input_string:
+    length += 1
+
+# Output the length
+print(f"The length of the string is: {length}")
+```
+
+**Explanation:**
+- The program iterates through each character in the string and increments a counter to find the length.
+
+**Output Example:**
+```
+Enter a string: Hello World
+The length of the string is: 11
+```
+
+---
+
+### Problem 51: Extract Username from Email
+**Question:** Extract the username from a given email.
+
+**Answer:**
+```python
+# Input email from user
+email = input("Enter your email: ")
+
+# Extract username by splitting at '@'
+username = email.split('@')[0]
+
+# Output the username
+print(f"The username is: {username}")
+```
+
+**Explanation:**
+- The program uses the `split()` method to separate the email into username and domain parts using `@` as the delimiter.
+
+**Output Example:**
+```
+Enter your email: nitish24singh@gmail.com
+The username is: nitish24singh
+```
+
+---
+
+### Problem 52: Count Frequency of a Character
+**Question:** Count the frequency of a particular character in a provided string.
+
+**Answer:**
+```python
+# Input string from user
+string = input("Enter a string: ")
+char_to_count = input("Enter a character to count: ")
+
+# Count frequency
+frequency = string.count(char_to_count)
+
+# Output the frequency
+print(f"The frequency of '{char_to_count}' in the string is: {frequency}")
+```
+
+**Explanation:**
+- The program uses the `count()` method to count occurrences of the specified character in the string.
+
+**Output Example:**
+```
+Enter a string: hello how are you
+Enter a character to count: h
+The frequency of 'h' in the string is: 2
+```
+
+---
+
+### Problem 53: Find Index Position of a Character
+**Question:** Find the index position of a particular character in another string.
+
+**Answer:**
+```python
+# Input string from user
+string = input("Enter a string: ")
+char_to_find = input("Enter a character to find: ")
+
+# Find index position
+index_position = string.find(char_to_find)
+
+# Output the result
+if index_position != -1:
+    print(f"The character '{char_to_find}' is found at index: {index_position}")
+else:
+    print(f"The character '{char_to_find}' is not found in the string.")
+```
+
+**Explanation:**
+- The program uses the `find()` method to get the index of the specified character. It returns `-1` if the character is not found.
+
+**Output Example:**
+```
+Enter a string: hello how are you
+Enter a character to find: h
+The character 'h' is found at index: 0
+```
+
+---
+
+### Problem 54: Count Vowels in a String
+**Question:** Count the number of vowels in a string provided by the user.
+
+**Answer:**
+```python
+# Input string from user
+string = input("Enter a string: ")
+
+# Define vowels
+vowels = "aeiouAEIOU"
+count = 0
+
+# Count vowels
+for char in string:
+    if char in vowels:
+        count += 1
+
+# Output the count
+print(f"The number of vowels in the string is: {count}")
+```
+
+**Explanation:**
+- The program checks each character in the string to see if it is a vowel and increments the count accordingly.
+
+**Output Example:**
+```
+Enter a string: Hello World
+The number of vowels in the string is: 3
+```
+
+---
+
+### Problem 55: Remove a Character from a String
+**Question:** Write a program that can remove a particular character from a string.
+
+**Answer:**
+```python
+# Input string and character to remove
+string = input("Enter a string: ")
+char_to_remove = input("Enter a character to remove: ")
+
+# Remove character
+modified_string = string.replace(char_to_remove, '')
+
+# Output the result
+print(f"The modified string is: {modified_string}")
+```
+
+**Explanation:**
+- The program uses the `replace()` method to remove all occurrences of the specified character from the string.
+
+**Output Example:**
+```
+Enter a string: Hello World
+Enter a character to remove: l
+The modified string is: Heo Word
+```
+
+---
+
+### Problem 56: Check for Palindrome
+**Question:** Write a program that can check whether a given string is a palindrome or not.
+
+**Answer:**
+```python
+# Input string from user
+string = input("Enter a string: ")
+
+# Check for palindrome
+if string == string[::-1]:
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
+```
+
+**Explanation:**
+- The program compares the string with its reverse (using slicing) to determine if it is a palindrome.
+
+**Output Example:**
+```
+Enter a string: radar
+The string is a palindrome.
+```
+
+---
+
+### Problem 57: Remove Duplicates from a List
+**Question:** Write a python program to remove all the duplicates from a list.
+
+**Answer:**
+```python
+# Input list from user
+input_list = input("Enter a list of numbers separated by spaces: ").split()
+input_list = [int(i) for i in input_list]  # Convert to integers
+
+# Remove duplicates
+unique_list = list(set(input_list))
+
+# Output the result
+print(f"The list without duplicates is: {unique_list}")
+```
+
+**Explanation:**
+- The program converts the list to a set (which automatically removes duplicates) and then back to a list.
+
+**Output Example:**
+```
+Enter a list of numbers separated by spaces: 1 2 2 3 4 4 5
+The list without duplicates is: [1, 2, 3, 4, 5]
+```
+
+---
+
+### Problem 58: Convert String to Title Case
+**Question:** Write a python program to convert a string to title case without using the `title()` function.
+
+**Answer:**
+```python
+# Input string from user
+input_string = input("Enter a string: ")
+
+# Convert to title case
+title_case_string = ' '.join(word.capitalize() for word in input_string.split())
+
+# Output the result
+print(f"The title case string is: {title_case_string}")
+```
+
+**Explanation:**
+- The program splits the string into words, capitalizes the first letter of each word, and joins them back together.
+
+**Output Example:**
+```
+Enter a string: hello world, this is python
+The title case string is: Hello World, This Is Python
+```
+
+---
+
+### Problem 59: Find Max Item from a List
+**Question:** Write a python program to find the max item from a list without using the `max()` function.
+
+**Answer:**
+```python
+# Input list from user
+input_list = input("Enter a list of numbers separated by spaces: ").split
+
+()
+input_list = [int(i) for i in input_list]  # Convert to integers
+
+# Find max item
+max_item = input_list[0]
+for num in input_list:
+    if num > max_item:
+        max_item = num
+
+# Output the result
+print(f"The maximum item in the list is: {max_item}")
+```
+
+**Explanation:**
+- The program iterates through the list to find the maximum value without using the built-in `max()` function.
+
+**Output Example:**
+```
+Enter a list of numbers separated by spaces: 3 5 1 9 2
+The maximum item in the list is: 9
+```
+
+---
+
+### Problem 60: Reverse a List
+**Question:** Write a python program to reverse a list.
+
+**Answer:**
+```python
+# Input list from user
+input_list = input("Enter a list of numbers separated by spaces: ").split()
+input_list = [int(i) for i in input_list]  # Convert to integers
+
+# Reverse the list
+reversed_list = input_list[::-1]
+
+# Output the result
+print(f"The reversed list is: {reversed_list}")
+```
+
+**Explanation:**
+- The program uses slicing to reverse the list efficiently.
+
+**Output Example:**
+```
+Enter a list of numbers separated by spaces: 1 2 3 4 5
+The reversed list is: [5, 4, 3, 2, 1]
+```
+
+---
+
+### Problem 61: Search a Given Number from a List
+**Question:** Write a Python program to search for a given number from a list.
+
+**Answer:**
+```python
+# Input list from user
+input_list = input("Enter a list of numbers separated by spaces: ").split()
+input_list = [int(i) for i in input_list]  # Convert to integers
+
+# Input number to search
+number_to_search = int(input("Enter the number to search: "))
+
+# Search for the number
+if number_to_search in input_list:
+    print(f"{number_to_search} is found in the list.")
+else:
+    print(f"{number_to_search} is not found in the list.")
+```
+
+**Explanation:**
+- The program takes a list of numbers from the user and checks if the specified number exists in that list using the `in` keyword.
+
+**Output Example:**
+```
+Enter a list of numbers separated by spaces: 1 2 3 4 5
+Enter the number to search: 3
+3 is found in the list.
+```
+
+---
+
+### Problem 62: Create a New List with Squares of Old List Items
+**Question:** Write a program that can create a new list from a given list where each item in the new list is the square of the item of the old list.
+
+**Answer:**
+```python
+# Input list from user
+input_list = input("Enter a list of numbers separated by spaces: ").split()
+input_list = [int(i) for i in input_list]  # Convert to integers
+
+# Create new list with squares
+squared_list = [num ** 2 for num in input_list]
+
+# Output the result
+print(f"The squared list is: {squared_list}")
+```
+
+**Explanation:**
+- The program uses a list comprehension to create a new list by squaring each number from the original list.
+
+**Output Example:**
+```
+Enter a list of numbers separated by spaces: 1 2 3 4
+The squared list is: [1, 4, 9, 16]
+```
+
+---
+
+### Problem 63: Reverse Words of a Given String
+**Question:** Write a program that can reverse the words of a given string.
+
+**Answer:**
+```python
+# Input string from user
+input_string = input("Enter a string: ")
+
+# Reverse the words
+reversed_string = ' '.join(input_string.split()[::-1])
+
+# Output the result
+print(f"The reversed string is: {reversed_string}")
+```
+
+**Explanation:**
+- The program splits the input string into words, reverses the order of the words, and joins them back into a single string.
+
+**Output Example:**
+```
+Enter a string: Hello how are you
+The reversed string is: you are how Hello
+```
+
+---
+
+### Problem 64: Count the Number of Words in a Given String
+**Question:** Write a program that can count the number of words in a given string.
+
+**Answer:**
+```python
+# Input string from user
+input_string = input("Enter a string: ")
+
+# Count words
+word_count = len(input_string.split())
+
+# Output the result
+print(f"The number of words in the string is: {word_count}")
+```
+
+**Explanation:**
+- The program splits the string into words and counts them using the `len()` function.
+
+**Output Example:**
+```
+Enter a string: Hello how are you
+The number of words in the string is: 4
+```
+
+---
+
+### Problem 65: Check if a List is in Ascending Order
+**Question:** Write a program to check if a list is in ascending order or not.
+
+**Answer:**
+```python
+# Input list from user
+input_list = input("Enter a list of numbers separated by spaces: ").split()
+input_list = [int(i) for i in input_list]  # Convert to integers
+
+# Check for ascending order
+is_ascending = all(input_list[i] <= input_list[i + 1] for i in range(len(input_list) - 1))
+
+# Output the result
+if is_ascending:
+    print("The list is in ascending order.")
+else:
+    print("The list is not in ascending order.")
+```
+
+**Explanation:**
+- The program uses the `all()` function combined with a generator expression to check if each element is less than or equal to the next.
+
+**Output Example:**
+```
+Enter a list of numbers separated by spaces: 1 2 3 4
+The list is in ascending order.
+```
+
+---
+
+### Problem 66: Create Odd and Even Lists
+**Question:** Create 2 lists from a given list where the 1st list will contain all the odd numbers and the 2nd one will contain all the even numbers.
+
+**Answer:**
+```python
+# Input list from user
+input_list = input("Enter a list of numbers separated by spaces: ").split()
+input_list = [int(i) for i in input_list]  # Convert to integers
+
+# Create odd and even lists
+odd_list = [num for num in input_list if num % 2 != 0]
+even_list = [num for num in input_list if num % 2 == 0]
+
+# Output the results
+print(f"Odd numbers: {odd_list}")
+print(f"Even numbers: {even_list}")
+```
+
+**Explanation:**
+- The program uses list comprehensions to create separate lists for odd and even numbers based on the modulus operation.
+
+**Output Example:**
+```
+Enter a list of numbers separated by spaces: 1 2 3 4 5 6
+Odd numbers: [1, 3, 5]
+Even numbers: [2, 4, 6]
+```
+
+---
+
+### Problem 67: Merge Two Lists without Using the + Operator
+**Question:** Write a program to merge 2 lists without using the + operator.
+
+**Answer:**
+```python
+# Input two lists from user
+list1 = input("Enter the first list of numbers separated by spaces: ").split()
+list2 = input("Enter the second list of numbers separated by spaces: ").split()
+
+# Merge lists
+merged_list = []
+for item in list1:
+    merged_list.append(item)
+for item in list2:
+    merged_list.append(item)
+
+# Output the result
+print(f"Merged list: {merged_list}")
+```
+
+**Explanation:**
+- The program uses two `for` loops to append items from both lists into a new merged list.
+
+**Output Example:**
+```
+Enter the first list of numbers separated by spaces: 1 2 3
+Enter the second list of numbers separated by spaces: 4 5 6
+Merged list: ['1', '2', '3', '4', '5', '6']
+```
+
+---
+
+### Problem 68: Replace an Item in a List
+**Question:** Write a program to replace an item with a different item if found in the list.
+
+**Answer:**
+```python
+# Input list from user
+input_list = input("Enter a list of numbers separated by spaces: ").split()
+input_list = [int(i) for i in input_list]  # Convert to integers
+
+# Input item to replace and new item
+item_to_replace = int(input("Enter the item to replace: "))
+new_item = int(input("Enter the new item: "))
+
+# Replace item if found
+for i in range(len(input_list)):
+    if input_list[i] == item_to_replace:
+        input_list[i] = new_item
+
+# Output the result
+print(f"Updated list: {input_list}")
+```
+
+**Explanation:**
+- The program iterates through the list and replaces the specified item with a new item if it is found.
+
+**Output Example:**
+```
+Enter a list of numbers separated by spaces: 1 2 3 4 2
+Enter the item to replace: 2
+Enter the new item: 5
+Updated list: [1, 5, 3, 4, 5]
+```
+
+---
+
+### Problem 69: Convert 2D List to 1D List
+**Question:** Write a program that can convert a 2D list to a 1D list.
+
+**Answer:**
+```python
+# Input 2D list from user
+rows = int(input("Enter the number of rows in 2D list: "))
+input_2d_list = []
+
+for i in range(rows):
+    row = input(f"Enter the numbers for row {i+1} separated by spaces: ").split()
+    input_2d_list.append([int(num) for num in row])  # Convert to integers
+
+# Convert to 1D list
+flattened_list = [num for sublist in input_2d_list for num in sublist]
+
+# Output the result
+print(f"The 1D list is: {flattened_list}")
+```
+
+**Explanation:**
+- The program uses nested list comprehensions to flatten the 2D list into a 1D list.
+
+**Output Example:**
+```
+Enter the number of rows in 2D list: 2
+Enter the numbers for row 1 separated by spaces: 1 2 3
+Enter the numbers for row 2 separated by spaces: 4 5 6
+The 1D list is: [1, 2, 3, 4, 5, 6]
+```
+
+---
+
+### Problem 70: Perform Union and Intersection on Two Lists
+**Question:** Write a program that can perform union and intersection on 2 given lists.
+
+**Answer:**
+```python
+# Input two lists from user
+list1 = input("Enter the first list of numbers separated by spaces:
+
+ ").split()
+list2 = input("Enter the second list of numbers separated by spaces: ").split()
+
+# Convert to sets for union and intersection
+set1 = set(list1)
+set2 = set(list2)
+
+# Calculate union and intersection
+union_list = list(set1.union(set2))
+intersection_list = list(set1.intersection(set2))
+
+# Output the results
+print(f"Union of the lists: {union_list}")
+print(f"Intersection of the lists: {intersection_list}")
+```
+
+**Explanation:**
+- The program converts the lists into sets and then calculates the union and intersection using the `union()` and `intersection()` methods.
+
+**Output Example:**
+```
+Enter the first list of numbers separated by spaces: 1 2 3
+Enter the second list of numbers separated by spaces: 2 3 4
+Union of the lists: ['4', '3', '1', '2']
+Intersection of the lists: ['3', '2']
+```
+
+---
+
+
+
+
 
 
 
