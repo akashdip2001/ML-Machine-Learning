@@ -34,21 +34,21 @@ TEMPERATURE(C)      HUMIDITY(%)      WEATHER
 26. [Write a program to print the first 25 odd numbers](#problem-26)
 27. [Write a program to print whether a given number is prime number or not](#problem-27)
 28. [Print all the Armstrong numbers in the range of 100 to 1000](#problem-28)
-29.	The current population of a town is 10000. The population of the town is increasing at the rate of 10% per year. You have to write a program to find out the population at the end of each of the last 10 years. For eg current population is 10000 so the output should be like this:
-10th year - 10000
-9th year - 9000
-8th year - 8100 and so on
-30.	Write a program to print all the unique combinations of 1,2,3 and 4.
-31.	User will provide 2 numbers you have to find the HCF of those 2 numbers
-32.	User will provide 2 numbers you have to find the by LCM of those 2 numbers
-33.	Print first 25 prime numbers
-34.	Print the first 20 numbers of a Fibonacci series
-35.	Write a program to find the compound interest 
-36.	Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
-37.	Take a number from the user and find the number of digits in it. 
-38.	Print all factors of a given number provided by the user.
-39.	Find the reverse of a number provided by the user(any number of digit) 
-40.	Write a program to print the following pattern
+29. [The current population of a town is 10000. Write a program to find out the population at the end of each of the last 10 years](#problem-29). For eg current population is 10000 so the output should be like this:
+     - 10th year - 10000
+     - 9th year - 9000
+     - 8th year - 8100 and so on
+[Write a program to print all the unique combinations of 1, 2, 3, and 4](#problem-30)
+31. [User will provide 2 numbers you have to find the HCF of those 2 numbers](#problem-31)
+32. [User will provide 2 numbers you have to find the LCM of those 2 numbers](#problem-32)
+33. [Print first 25 prime numbers](#problem-33)
+34. [Print the first 20 numbers of a Fibonacci series](#problem-34)
+35. [Write a program to find the compound interest](#problem-35)
+36. [Write a Python program that accepts an integer (n) and computes the value of n + nn + nnn](#problem-36)
+37. [Take a number from the user and find the number of digits in it](#problem-37)
+38. [Print all factors of a given number provided by the user](#problem-38)
+39. [Find the reverse of a number provided by the user](#problem-39)
+40. [Write a program to print the following pattern](#problem-40)
 ```go
 *
 **
@@ -56,7 +56,7 @@ TEMPERATURE(C)      HUMIDITY(%)      WEATHER
 ****
 *****
 ```
-41.	Write a program to print the following pattern
+41. [Write a program to print the following pattern](#problem-41)
 ```go
 *
 **
@@ -64,7 +64,7 @@ TEMPERATURE(C)      HUMIDITY(%)      WEATHER
 **
 *
 ```
-42.	Write  a program to print the following pattern
+42. [Write a program to print the following pattern](#problem-42)
 ```go
         *
       * * *
@@ -72,7 +72,7 @@ TEMPERATURE(C)      HUMIDITY(%)      WEATHER
    * * * * * * *
 * * * * * * * * *
 ```
-43.	Write a program to print the following pattern
+43. [Write a program to print the following pattern](#problem-43)
 ```go
 1
 1 2 1
@@ -80,32 +80,32 @@ TEMPERATURE(C)      HUMIDITY(%)      WEATHER
 1 2 3 4 3 2 1
 1 2 3 4 5 4 3 2 1
 ```   	
-44.	Write a program to print the following pattern
+44. [Write a program to print the following pattern](#problem-44)
 ```go
 1
 2 3
 4 5 6
 7 8 9 10
 ```  	
-45.	Write a program to calculate the sum of the following series till the nth term
+45. [Write a program to calculate the sum of the following series till the nth term](#problem-45)
 1/1! + 2/2! + 3/3! + 4/4! +…….+ n/n!
 n will be provided by the user
 
-46.	Write a Python Program to Find the Sum of the Series till the nth term: 
+46. [Write a Python Program to Find the Sum of the Series till the nth term](#problem-46): 
 1 + x^2/2 + x^3/3 + … x^n/n
 n will be provided by the user
-47.	The natural logarithm can be approximated by the following series.
+47. [The natural logarithm can be approximated by the following series](#problem-47)
     ![Screenshot 2024-10-13 022819](https://github.com/user-attachments/assets/7a8ce36f-4bda-4930-9d35-224efe3274c0)
     <br>If x is input through the keyboard, write a program to calculate the sum of the first seven terms of this series.
 
-48.	 Write a program that keeps on accepting a number from the user until the user enters Zero. Display the sum and average of all the numbers.
-49.	Write a program that accepts 2 numbers from the user a numerator and a denominator and then simplifies it
-Eg if the num = 5, den = 15 the answer should be ⅓
-Eg if the num = 6, den = 9 the answer should be ⅔
-50.	Find the length of a given string without using the len() function. 
-51.	Extract username from a given email. 
-Eg if the email is nitish24singh@gmail.com then the username should be nitish24singh
-52.	Count the frequency of a particular character in a provided string. Eg 'hello how are you' is the string, the frequency of h in this string is 2.
+48. [Write a program that keeps on accepting a number from the user until the user enters Zero](#problem-48) Display the sum and average of all the numbers
+49. [Write a program that accepts 2 numbers from the user a numerator and a denominator and then simplifies it](#problem-49)
+      - Eg if the num = 5, den = 15 the answer should be ⅓
+      - Eg if the num = 6, den = 9 the answer should be ⅔
+50. [Find the length of a given string without using the len() function](#problem-50)
+51. [Extract username from a given email](#problem-51). 
+      - Eg if the email is nitish24singh@gmail.com then the username should be nitish24singh
+52. [Count the frequency of a particular character in a provided string](#problem-52). Eg 'hello how are you' is the string, the frequency of h in this string is 2.
 53.	Find the index position of a particular character in another string. 
 54.	Count the number of vowels in a string provided by the user.
 55.	Write a program which can remove a particular character from a string. 
