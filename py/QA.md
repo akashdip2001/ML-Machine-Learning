@@ -1,6 +1,6 @@
 # Python Practice Problems
 
-1.	User will input (3ages).Find the oldest one
+1.	[User will input (3 ages). Find the oldest one](#problem-1)
 2.	Write a program that will convert celsius value to fahrenheit
 3.	User will input (2numbers).Write a program to swap the numbers
 4.	Write a program that will give you the sum of 3 digits
