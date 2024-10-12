@@ -316,7 +316,7 @@ print(f"My name is {name} and I am {age} years old.")
 ### 2. Data Structures
 Data structures in Python help store and organize data efficiently.
 
-#### **Lists**
+## **Lists**
 - **Description**: Lists are ordered, mutable sequences.
 - **Syntax**: `list_name = [item1, item2, ...]`
 
@@ -336,7 +336,7 @@ print(fruits[1])         # Accessing item
 
 ---
 
-#### **Tuples**
+## **Tuples**
 - **Description**: Tuples are ordered, immutable sequences.
 - **Syntax**: `tuple_name = (item1, item2, ...)`
 
@@ -353,7 +353,7 @@ print(coordinates[0])  # Accessing tuple item
 
 ---
 
-#### **Dictionaries**
+## **Dictionaries**
 - **Description**: Dictionaries store data as key-value pairs.
 - **Syntax**: `dict_name = {key1: value1, key2: value2, ...}`
 
@@ -372,7 +372,7 @@ print(person['name'])  # Accessing value by key
 
 ---
 
-#### **Sets**
+## **Sets**
 - **Description**: Sets are unordered collections with no duplicate elements.
 - **Syntax**: `set_name = {item1, item2, ...}`
 
@@ -399,7 +399,7 @@ def function_name(parameters):
     # Function body
 ```
 
-**Example:**
+**Example: 1**
 ```python
 def greet(name):
     return f"Hello, {name}!"
@@ -419,6 +419,18 @@ print(greet())  # Outputs: Hello, Stranger!
 |------------------|-----------------------------------|-----------------------------|
 | Define function   | Create a function                 | `def function_name():`      |
 | Call function     | Execute the function              | `function_name(arguments)`   |
+
+**Example: 2**
+```python
+def calSum(a, b):
+    x = (a * b) + (a / b)  # Calculate the expression
+    print(x)               # Print the result
+
+c = 9                     # Assign value to c
+d = 8                     # Assign value to d
+calSum(c, d)             # Call the function with c and d
+
+```
 
 ---
 
