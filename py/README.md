@@ -5,6 +5,8 @@
 
 # Python Study Guide
 
+100 Python Practice Problems. [Link](https://github.com/akashdip2001/ML-Machine-Learning/blob/main/py/QA.md)
+
 ---
 
 ## Table of Contents
