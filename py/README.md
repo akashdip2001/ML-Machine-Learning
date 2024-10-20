@@ -165,12 +165,26 @@ print("not(x < 5):", not(x < 5))                # True
 ---
 
 ## Data Types
+
+![datatypes in python](https://github.com/user-attachments/assets/a7fcfc92-6b4e-4e21-b849-c62de0fb96b5)
+
 Python has various built-in data types, including:
 
 - **Integers**: Whole numbers, e.g., `5`, `-3`
 - **Floats**: Decimal numbers, e.g., `3.14`, `-2.5`
 - **Strings**: Sequences of characters, e.g., `"Hello"`
 - **Booleans**: `True` or `False`
+
+```python
+a = 10
+b = "python"
+
+type(a)
+#int #output
+
+type(b)
+#str
+```
 
 ### Constants
 Constants are immutable values that do not change during program execution. Python uses naming conventions to indicate constants, typically uppercase letters.
