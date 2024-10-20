@@ -164,7 +164,7 @@ print("not(x < 5):", not(x < 5))                # True
 
 ---
 
-## Data Types
+## Data Types [PDF notes](https://github.com/akashdip2001/ML-Machine-Learning/raw/main/py/sources/Data%20Types%20in%20Python.pdf)
 
 ![datatypes in python](https://github.com/user-attachments/assets/a7fcfc92-6b4e-4e21-b849-c62de0fb96b5)
 
