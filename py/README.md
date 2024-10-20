@@ -283,7 +283,7 @@ print(text.replace("World", "Python"))  # Replace substring
    - [Sets](#sets)
    - [DSA](https://github.com/akashdip2001/dsa-using-python)
 3. [Functions](#3-functions)
-4. [Object-Oriented Programming (OOP)](4-object-oriented-programming-oop)
+4. [Object-Oriented Programming (OOP)](#classes--objects)
    - [Classes & Objects](#classes--objects)
    - [Inheritance](#inheritance)
    - [Encapsulation](#encapsulation)
