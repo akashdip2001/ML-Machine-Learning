@@ -720,8 +720,14 @@ This study guide provides you with a strong foundation in Python for your upcomi
 | --- |
 
 <img src="sources/pdf/img/python_roadmap.jpg">
-<img src="sources/pdf/img/python_projects.jpg">
-<img src="sources/pdf/img/python_projects_01.jpg">
-<img src="sources/pdf/img/python_projects_02.jpg">
-<img src="sources/pdf/img/python_projects_03.jpg">
-<img src="sources/pdf/img/python_H@cking_projects.jpg">
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="sources/pdf/img/python_projects.jpg" alt="python projects" style="width: 45%; height: auto;"/>
+  <img src="sources/pdf/img/python_H@cking_projects.jpg" alt="pythonprojects" style="width: 45%; height: auto;"/>
+</div>
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="sources/pdf/img/python_projects_01.jpg" alt="python project" style="width: 32%; height: auto;"/>
+  <img src="sources/pdf/img/python_projects_02.jpg" alt="python project" style="width: 31%; height: auto;"/>
+  <img src="sources/pdf/img/python_projects_03.jpg" alt="python project" style="width: 30%; height: auto;"/>
+</div>
