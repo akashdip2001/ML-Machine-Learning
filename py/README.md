@@ -719,9 +719,9 @@ This study guide provides you with a strong foundation in Python for your upcomi
 | [**Projects**](https://github.com/akashdip2001/Python-Projects) |
 | --- |
 
-<img src="sources/img/python_roadmap.jpg">
-<img src="sources/img/python_projects.jpg">
-<img src="sources/img/python_projects_01.jpg">
-<img src="sources/img/python_projects_02.jpg">
-<img src="sources/img/python_projects_03.jpg">
-<img src="sources/img/python_H@cking_projects.jpg">
+<img src="sources/pdf/img/python_roadmap.jpg">
+<img src="sources/pdf/img/python_projects.jpg">
+<img src="sources/pdf/img/python_projects_01.jpg">
+<img src="sources/pdf/img/python_projects_02.jpg">
+<img src="sources/pdf/img/python_projects_03.jpg">
+<img src="sources/pdf/img/python_H@cking_projects.jpg">
