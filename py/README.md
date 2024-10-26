@@ -30,6 +30,7 @@
 10. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
 11. [*more*](https://www.codewithharry.com/tutorial/python/)
 12. [**Part 2 (Job Preparation)**](#part-2-job-preparation)
+13. [Projects](https://github.com/akashdip2001/Python-Projects)
 
 ---
 
@@ -308,6 +309,7 @@ print(text.replace("World", "Python"))  # Replace substring
 7. [Exception Handling](#7-exception-handling)
 8. [Common Interview Questions](#8-common-interview-questions)
 9. [Best Documentation Resources](#9-best-documentation-resources)
+10. [**Projects**](https://github.com/akashdip2001/Python-Projects)
 
 ---
 
