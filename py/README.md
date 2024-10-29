@@ -929,4 +929,14 @@ class UserMainCode(object):
 - **Time Complexity**: \(O(N)\) for iterating through the blocks.
 - **Space Complexity**: \(O(P)\) for storing votes per party, where \(P\) is the number of unique parties.
 
+### Tasting the Code
+```python
+# Example usage:
+# For input1 = 5, input2 = ["B", "A", "A", "A", "B"], input3 = [30, 20, 20, 30, 20]
+print(UserMainCode.electionResult(5, ["B", "A", "A", "A", "B"], [30, 20, 20, 30, 20]))  # Expected output: "B 60"
+
+# For input1 = 10, input2 = ["A", "B", "D", "C", "A", "B", "D", "A", "A", "C"], input3 = [49, 20, 40, 30, 15, 60, 22, 10, 12, 29]
+print(UserMainCode.electionResult(10, ["A", "B", "D", "C", "A", "B", "D", "A", "A", "C"], [49, 20, 40, 30, 15, 60, 22, 10, 12, 29]))  # Expected output: "A 86"
+```
+
 ---
