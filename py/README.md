@@ -31,6 +31,7 @@
 11. [*more*](https://www.codewithharry.com/tutorial/python/)
 12. [**Part 2 (Job Preparation)**](#part-2-job-preparation)
 13. [Projects](#Projects)
+14. [**EXAM**](#EXAM)
 
 ---
 
@@ -310,6 +311,7 @@ print(text.replace("World", "Python"))  # Replace substring
 8. [Common Interview Questions](#8-common-interview-questions)
 9. [Best Documentation Resources](#9-best-documentation-resources)
 10. [**Projects**](#Projects)
+11. [**EXAM**](#EXAM)
 
 ---
 
@@ -730,3 +732,91 @@ This study guide provides you with a strong foundation in Python for your upcomi
   <img src="sources/pdf/img/python_projects_02.jpg" alt="python project" style="width: 31%; height: auto;"/>
   <img src="sources/pdf/img/python_projects_03.jpg" alt="python project" style="width: 30%; height: auto;"/>
 </div>
+
+<img src="https://github.com/akashdip2001/college-final-year-project/blob/main/img/colour_line.png">
+
+# EXAM
+
+# 1) Problem 01
+
+This programming task requires finding the first moment when all traffic lights are green at various intersections.
+
+### Problem Breakdown
+- You are given a grid (2D array) where each row represents a traffic light's status at different time moments.
+- Each column in the grid represents a specific moment in time, with traffic lights either:
+  - `0` (Red)
+  - `1` (Green)
+- You need to find the first time moment where all lights are green (i.e., all elements in a column are `1`). If no such moment exists, return `-1`.
+
+### Input and Output
+- **Input**:
+  - `input1`: Number of traffic lights, `N` (number of rows in the grid).
+  - `input2`: Number of time moments, `T` (number of columns in the grid).
+  - `input3`: 2D array `A` of size `N x T` where each element is either `0` or `1`.
+- **Output**:
+  - An integer representing the first moment (index) when all lights are green, or `-1` if there is no such moment.
+
+### Example Walkthrough
+1. **Example 1**:
+   - **Input**:
+     ```
+     input1 = 3
+     input2 = 5
+     input3 = [
+       [1, 0, 1, 0, 1],
+       [0, 1, 1, 1, 0],
+       [1, 1, 1, 0, 0]
+     ]
+     ```
+   - At moment 2 (index `2`), all lights are green (i.e., all elements in the third column are `1`).
+   - **Output**: `2`
+
+2. **Example 2**:
+   - **Input**:
+     ```
+     input1 = 3
+     input2 = 4
+     input3 = [
+       [0, 1, 0, 1],
+       [1, 0, 1, 1],
+       [0, 1, 1, 1]
+     ]
+     ```
+   - There is no time moment where all lights are green.
+   - **Output**: `-1`
+
+### Solution ✅
+1. Loop over each time moment (column) in the array.
+2. Check if all elements in the current column are `1`.
+3. Return the index of the first such column. If none are found, return `-1`.
+
+Here’s the Python code implementing this logic:
+
+```python
+class UserMainCode(object):
+    @classmethod
+    def temperatureFluctuation(cls, input1, input2, input3):
+        # Loop through each time moment (column)
+        for t in range(input2):
+            all_green = True
+            # Check if all traffic lights are green at this time moment
+            for light in range(input1):
+                if input3[light][t] == 0:
+                    all_green = False
+                    break
+            # If all are green, return the time moment
+            if all_green:
+                return t
+        # If no moment was found where all are green, return -1
+        return -1
+```
+
+### Explanation of Code
+1. **Loop through each time moment**: We go column by column (using `t` as the index) to check each moment in time.
+2. **Check for green lights**: For each column, we check if all rows (lights) are `1`. If any light is `0`, we skip to the next time moment.
+3. **Return first all-green moment**: If a column with all `1`s is found, we return the index of this column.
+4. **Return `-1` if no such column is found**: If the loop finishes without finding any all-green column, we return `-1`.
+
+### Complexity
+- **Time Complexity**: \(O(N \times T)\), where \(N\) is the number of lights, and \(T\) is the number of time moments, as we check each cell in the grid once.
+- **Space Complexity**: \(O(1)\), as we only use a few additional variables.
