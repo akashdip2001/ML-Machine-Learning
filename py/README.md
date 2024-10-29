@@ -739,6 +739,8 @@ This study guide provides you with a strong foundation in Python for your upcomi
 
 # 1) Problem 01
 
+<img align="right" alt="python_logo" width="300" src="https://github.com/user-attachments/assets/9bdddbd5-70c8-4aea-9a61-91a4acaafb55"> 
+
 This programming task requires finding the first moment when all traffic lights are green at various intersections.
 
 ### Problem Breakdown
