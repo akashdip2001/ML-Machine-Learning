@@ -822,3 +822,111 @@ class UserMainCode(object):
 ### Complexity
 - **Time Complexity**: \(O(N \times T)\), where \(N\) is the number of lights, and \(T\) is the number of time moments, as we check each cell in the grid once.
 - **Space Complexity**: \(O(1)\), as we only use a few additional variables.
+
+---
+
+# 2) Problem 02
+
+<img align="right" alt="python_logo" width="300" src="https://github.com/user-attachments/assets/05e3c8f8-754e-413c-bebd-9ea0f646993b"> 
+
+The problem is about determining the party with the highest total votes across multiple blocks. If two or more parties have the same total votes, the party that appears earlier in the given list of party names should be declared the winner.
+
+### Problem Breakdown
+1. **Input Specifications**:
+   - `input1`: An integer, `N`, representing the number of blocks.
+   - `input2`: A string representing party names.
+   - `input3`: An integer array where each row contains the votes each party received in a block.
+
+2. **Output**:
+   - A string in the format: `"PartyName TotalVotes"` for the party with the highest total votes.
+   - If there's a tie, the party that appears earlier in `input2` wins.
+
+3. **Example**:
+   - **Example 1**:
+     - Input:
+       ```
+       input1 = 5
+       input2 = "B,A,A,A,B"
+       input3 = [30, 20, 30, 20, 30]
+       ```
+     - Party `B` and `A` both have a total of 60 votes, but since `B` appears first, `B` is declared the winner.
+   - **Example 2**:
+     - Input:
+       ```
+       input1 = 10
+       input2 = "A,B,D,C,A,B,D,A,A,C"
+       input3 = [49, 40, 20, 30, 15, 6, 22, 10, 12, 29]
+       ```
+     - Party `A` has the highest total of 86 votes, so the output is `"A 86"`.
+
+### Solution Approach
+1. Parse the `input2` string to get the list of winning parties in each block.
+2. Initialize a dictionary to store the total votes for each party.
+3. Loop through the list of blocks and add the corresponding votes from `input3` to each party’s total.
+4. Determine the party with the highest votes. In case of a tie, select the one that appears first in `input2`.
+
+### Python Code
+
+```python
+class UserMainCode(object):
+    @classmethod
+    def electionResult(cls, input1, input2, input3):
+        # Split input2 to get the parties in each block
+        parties = input2.split(',')
+        
+        # Dictionary to store total votes for each party
+        vote_counts = {}
+        
+        # Loop over each block and add votes to the respective party
+        for i in range(input1):
+            party = parties[i]
+            votes = input3[i]
+            if party in vote_counts:
+                vote_counts[party] += votes
+            else:
+                vote_counts[party] = votes
+
+        # Find the party with the highest votes
+        max_votes = -1
+        winner_party = ""
+        
+        for party in parties:
+            if party in vote_counts:
+                if vote_counts[party] > max_votes:
+                    max_votes = vote_counts[party]
+                    winner_party = party
+                elif vote_counts[party] == max_votes:
+                    # If there is a tie, prioritize the first occurrence in `parties` list
+                    if winner_party == "":
+                        winner_party = party
+                    elif parties.index(party) < parties.index(winner_party):
+                        winner_party = party
+
+        # Return the result in the specified format
+        return f"{winner_party} {max_votes}"
+```
+
+### Explanation of Code
+
+1. **Parse Input**:
+   - `parties` holds the list of party names for each block.
+2. **Vote Aggregation**:
+   - `vote_counts` dictionary accumulates votes for each party.
+3. **Determine Winner**:
+   - `max_votes` keeps track of the highest vote count.
+   - `winner_party` stores the name of the current winning party.
+   - If two parties have the same vote count, the one appearing first in `parties` is chosen.
+4. **Output Format**:
+   - Returns the name and total votes of the winning party in the specified format.
+
+### Example Execution
+
+- For **Example 1** with `input2 = "B,A,A,A,B"` and `input3 = [30, 20, 30, 20, 30]`:
+  - `vote_counts` becomes `{'B': 60, 'A': 60}`.
+  - `B` wins as it appears first, so output is `"B 60"`.
+
+### Complexity
+- **Time Complexity**: \(O(N)\) for iterating through the blocks.
+- **Space Complexity**: \(O(P)\) for storing votes per party, where \(P\) is the number of unique parties.
+
+---
