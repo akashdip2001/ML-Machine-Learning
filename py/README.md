@@ -5,6 +5,15 @@
 
 # Python Study Guide
 
+```yaml
+Taste of Pyrhon
+   │
+   │── Jpython
+   │── PyPy
+   │── Anaconda Python
+   └── Cpython: Core Python
+```
+
 100 Python Practice Problems. [Link](https://github.com/akashdip2001/ML-Machine-Learning/blob/main/py/QA.md)
 
 ---
