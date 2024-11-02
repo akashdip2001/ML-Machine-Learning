@@ -129,7 +129,9 @@ Output
 ---
 
 ## Variables
-Variables are used to store data values. In Python, you do not need to declare a variable type explicitly; the interpreter infers the type based on the value assigned.
+
+- Variable is the name of `memory location`.
+- Variables are used to store data values. In Python, you do not need to declare a variable type explicitly; the interpreter infers the type based on the value assigned.
 
 **Example:**
 ```python
