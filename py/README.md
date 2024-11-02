@@ -20,7 +20,11 @@ Taste of Pyrhon
 
 ## Table of Contents
 1. [History of Python](#history-of-python)
-2. [Input Output](#input-output)
+2. Introduction
+   - [Input Output](#input-output)
+   - [Print](#print)
+        - custom separator
+        - custom ending
 3. [Variables](#variables)
 4. [Operators](#operators)
    - [Arithmetic Operators](#arithmetic-operators)
@@ -51,7 +55,7 @@ Python was created by `Guido van Rossum` and first released in `1991` at CWI in 
 Today, Python is widely used in various fields, including web development, data science, artificial intelligence, automation, and more. Its large community and rich ecosystem of libraries and frameworks make it a versatile choice for many programming tasks.
 
 ---
-## Input Output <a name="input-output"></a>
+## ✅ Input Output <a name="input-output"></a>
 
 - **In python , always take input as a String.**
 - 1st we take an input and store in a variable.
@@ -75,6 +79,36 @@ print(type(variable))
 # 12
 # 'int'
 ```
+```yaml
+DataType
+│
+│── int
+│── float
+│── bool
+│── complex
+│── ...
+└── eval: int + float + bool + ...
+```
+
+✅ Print <a name="print"></a>
+
+```python
+print("Hello","Akash","dip")
+# Output: Hellow Akash dip
+
+print("Hello","Akash","dip",sep="-") # custom separator
+# Output: Hellow-Akash-dip
+
+print("Hello")
+print("Akash")
+# Output: Hellow
+          Akash
+
+print("Hello"end=" ") # end with a space, \n for new line
+print("Akash")
+# Output: Hellow Akash
+```
+
 ---
 
 ## Variables
