@@ -25,6 +25,7 @@ Taste of Pyrhon
    - [Print](#print)
         - custom separator
         - custom ending
+   - [Keywords](#keywords)
 3. [Variables](#variables)
 4. [Operators](#operators)
    - [Arithmetic Operators](#arithmetic-operators)
@@ -90,7 +91,7 @@ DataType
 └── eval: int + float + bool + ...
 ```
 
-✅ Print <a name="print"></a>
+## ✅ Print <a name="print"></a>
 
 ```python
 print("Hello","Akash","dip")
@@ -108,7 +109,23 @@ print("Hello"end=" ") # end with a space, \n for new line
 print("Akash")
 # Output: Hellow Akash
 ```
+## ✅ Keywords <a name="keywords"></a>
 
+**case sensitive**
+
+```python
+import keyword
+var = keyword.kwlist
+print(var)
+```
+Output
+
+```go
+'False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break',
+ 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for',
+ 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or',
+ 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'
+```
 ---
 
 ## Variables
