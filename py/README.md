@@ -20,27 +20,28 @@ Taste of Pyrhon
 
 ## Table of Contents
 1. [History of Python](#history-of-python)
-2. [Variables](#variables)
-3. [Operators](#operators)
+2. [Input Output](#input-output)
+3. [Variables](#variables)
+4. [Operators](#operators)
    - [Arithmetic Operators](#arithmetic-operators)
    - [Assignment Operators](#assignment-operators)
    - [Comparison Operators](#comparison-operators)
    - [Incrementing and Decrementing Operators](#incrementing-and-decrementing-operators)
    - [Logical Operators](#logical-operators)
-4. [Data Types](#data-types)
+5. [Data Types](#data-types)
    - [Constants](#constants)
-5. [Conditional Statements](#conditional-statements)
-6. [Arrays](#arrays)
-7. [Loops](#loops)
-8. [Functions](#functions)
+6. [Conditional Statements](#conditional-statements)
+7. [Arrays](#arrays)
+8. [Loops](#loops)
+9. [Functions](#functions)
    - [Built-in Functions](#built-in-functions)
    - [User-defined Functions](#user-defined-functions)
-9. [Strings](#strings)
-10. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
-11. [*more*](https://www.codewithharry.com/tutorial/python/)
-12. [**Part 2 (Job Preparation)**](#part-2-job-preparation)
-13. [Projects](#Projects)
-14. [**EXAM**](#EXAM)
+10. [Strings](#strings)
+11. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
+12. [*more*](https://www.codewithharry.com/tutorial/python/)
+13. [**Part 2 (Job Preparation)**](#part-2-job-preparation)
+14. [Projects](#Projects)
+15. [**EXAM**](#EXAM)
 
 ---
 
@@ -49,6 +50,31 @@ Python was created by `Guido van Rossum` and first released in `1991` at CWI in 
 
 Today, Python is widely used in various fields, including web development, data science, artificial intelligence, automation, and more. Its large community and rich ecosystem of libraries and frameworks make it a versatile choice for many programming tasks.
 
+---
+## Input Output <a name="input-output"></a>
+
+- **In python , always take input as a String.**
+- 1st we take an input and store in a variable.
+
+```python
+variable = input("Enter number: ")
+print(variable)
+print(type(variable))
+
+# Output
+# Enter number: 12
+# 12
+# 'str' ---> String
+
+variable = int(input("Enter number: "))
+print(variable)
+print(type(variable))
+
+# Output
+# Enter number: 12
+# 12
+# 'int'
+```
 ---
 
 ## Variables
