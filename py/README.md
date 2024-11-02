@@ -36,7 +36,7 @@
 ---
 
 ## History of Python
-Python was created by Guido van Rossum and first released in 1991. The language was designed to be easy to read and write, making it suitable for beginners as well as experienced programmers. Its development was influenced by ABC, a programming language that Guido worked on before Python. Over the years, Python has evolved significantly, with major versions like Python 2 and Python 3 introducing many features and enhancements. 
+Python was created by `Guido van Rossum` and first released in `1991`. It's a `general purpose dynamically typr high level language`. Its development was influenced by `ABC`, a programming language that Guido worked on before Python. Over the years, Python has evolved significantly, with major versions like Python 2 and Python 3 introducing many features and enhancements. 
 
 Today, Python is widely used in various fields, including web development, data science, artificial intelligence, automation, and more. Its large community and rich ecosystem of libraries and frameworks make it a versatile choice for many programming tasks.
 
