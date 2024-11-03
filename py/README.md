@@ -277,19 +277,19 @@ set = {10,"Akashdip",45.2}
 - Mutable in nature ✅
 
 ```python
-│── # creating a emply set
-│   var={}
-│   print(type(var)) #output: Dist ✅, not ❌ set
-│
-│── var=set()
-│   print(type(var)) #output: set ✅
-│
-│── var={10, "Akashdip", 56.7, True}
-    print(type(var)) #output: set
-    # Not Dist, because in Dist you must have a key value --> dictionary = {'age': 10}
+# creating a emply set
+var={}
+print(type(var)) #output: Dist ✅, not ❌ set
+
+var=set()
+print(type(var)) #output: set ✅
+
+var={10, "Akashdip", 56.7, True}
+print(type(var)) #output: set
+# Not Dist, because in Dist you must have a key value --> dictionary = {'age': 10}
 ```
 ```python
-│── print(var) #output: 56.7, True, 10, 'Akashdip' ❌ input order not work
+print(var) #output: 56.7, True, 10, 'Akashdip' ❌ input order not work
 
 # indexing ❌
 # slicing ❌
@@ -316,8 +316,20 @@ print(var)
 │   └── print=(var.clear()) #Delete allin set.
 ```
 #### Mathematical operations
-```yaml
+```python
+print(var.union(var2)) #add two sets & print all values in one time.
+print(var | var2) #union using or operator
+
+print(var.intersection(var2)) #only print unique values of two set.
+print(var & var2) #intersection using operator.
+
+print(var.difference(var2)) #only preset those values which not exist in two set.
+print(var - var2)
+
+print(var.symmetric_difference(var2)) #only print unique values from two sets.
 ```
+
+---
 
 ---
 
