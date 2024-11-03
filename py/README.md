@@ -639,16 +639,16 @@ Flow Control Statements
                         continue
                         break
 ```
-##### ✅ Pass
+#### ✅ Pass
 ```python
 if "a" in "akashdip":
     #print("a is present in akashdip")
     pass
 ```
-Output:
+###### Output:
 ```python
 ```
-##### ✅ continue
+#### ✅ continue
 ```python
 for num in range(1,11):
     if num % 2 == 0:
@@ -656,7 +656,7 @@ for num in range(1,11):
     else:
         print(num)
 ```
-Output:
+###### Output:
 ```python
 1
 3
@@ -664,7 +664,7 @@ Output:
 7
 9
 ```
-##### ✅ break
+#### ✅ break
 ```python
 for num in range(1,11):
     if num % 5 == 0: #break the loop if number is divisible by 5
@@ -672,7 +672,7 @@ for num in range(1,11):
     else:
         print(num)
 ```
-Output:
+###### Output:
 ```python
 1
 2
