@@ -332,7 +332,7 @@ print(var.symmetric_difference(var2)) #only print unique values from two sets.
 
 ---
 
-## ☀️ Dictionary <a name=dictionary"></a>
+## ☀️ Dictionary <a name="dictionary"></a>
 ```python
 dictionary = {'age': 21} #key value)
 ```
