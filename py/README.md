@@ -53,6 +53,9 @@ Taste of Pyrhon
 10. [Functions](#functions)
    - [Built-in Functions](#built-in-functions)
    - [User-defined Functions](#user-defined-functions)
+        -[positional parameters](#parameters)
+        -[keyword argument]()
+        -[default argument]()
 11. [Strings](#strings)
 12. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
 13. [*more*](https://www.codewithharry.com/tutorial/python/)
@@ -805,6 +808,7 @@ def greet(name):
 # print(greet("Alice"))  # Output: Hello, Alice!
 print(greet(input("Enter your name: ")))  # Output: Hello, [User Input Name]!
 ```
+#### arguments <a name="parameters"></a>
 ```yaml
 argument
 │
