@@ -1173,7 +1173,7 @@ File handling is essential for reading and writing files in Python.
 
 #### **Opening a File**
 ```python
-file = open("test.txt", "r")
+file = open("C:\\Users\\...\\test.txt", "r") # If file not in there, Automatically created
 content = file.read()
 print(content)
 file.close()
