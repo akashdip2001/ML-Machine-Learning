@@ -179,7 +179,7 @@ List is a Data structure which is also called collection of items, in which we c
 - Dublicates are `allowed`.
 - Mutable in nature (edite, modefi, update, delete)
 
-```yeml
+```yaml
 List
 │
 │── Create emply list: list1=[]
