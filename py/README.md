@@ -27,6 +27,9 @@ Taste of Pyrhon
         - custom ending
    - [Keywords](#keywords)
 3. [Variables](#variables)
+   - [Data Types](#data-types)
+        - String, int, float, bool
+        - [List, Tuple, set, dictionary](#list-tuple-set-dict)
 4. [Operators](#operators)
    - [Arithmetic Operators](#arithmetic-operators)
    - [Assignment Operators](#assignment-operators)
@@ -133,11 +136,13 @@ Output
 - Variable is the name of `memory location`.
 - Variables are used to store data values. In Python, you do not need to declare a variable type explicitly; the interpreter infers the type based on the value assigned.
 
-**Example:**
+**Example:** <a name="data-types"></a>
 ```python
 name = "Alice"  # String variable
 age = 30        # Integer variable
 height = 5.6    # Float variable
+mathEq = 12+5j  # Complex
+ans = True      # Bool
 ```
 - ✅ Python auto detect the DataType.
 - ✅ But for user input py always take String
@@ -151,6 +156,19 @@ print(type(age))
 print(type(height))
 # float
 ```
+
+### 🛩️ List, Tuple, set, dictionary <a name="list-tuple-set-dict"></a>
+
+```python
+list = [10,"Akashdip", 45.2, 10]
+tuple = (10,"Akashdip",45.2)
+set = {10,"Akashdip",45.2}
+dictionary = {'age': 21} # get value --> `print(dictonary.get('age'))
+```
+
+- List & Tuple : list & Tuple allow duplicate value [10, 10, "akash", 15, 8.5], diff is [] & ()
+- set : Ignore duplicate values , Just print one time.
+- Dictionary : Not use duplicate key , Ex: 'age'
 
 ---
 
