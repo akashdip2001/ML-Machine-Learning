@@ -721,33 +721,139 @@ print(calendar.month(2021, 1))
 # 25 26 27 28 29 30 31
 ```
 🚀 User defined module
+
 ![module](https://github.com/user-attachments/assets/00e4a621-deaf-473b-93f8-639c46a0c1af)
 
 ---
 
 ## Functions
-Functions are reusable blocks of code that perform a specific task.
+- Functions are reusable blocks of code that perform a specific task.
+- It's increse code reusability.
+- we can pass value to the function called parameters.
+
+```yaml
+Type
+│
+│── Pre defined: Built-in Functions
+│    │
+│    │── len()
+│    │── print()
+│    └── type()
+│
+└── User defined: def
+     │
+     │── greet()
+     │── fun()
+     └── akashdip()
+```
 
 ### Built-in Functions
 Python provides many built-in functions like `len()`, `print()`, and `type()`.
 
 **Example:**
 ```python
-names = ["Alice", "Bob", "Charlie"]
+names = ["Alice", "Bob", "akashdip"]
 print("Number of names:", len(names))  # Output: 3
 ```
 
 ### User-defined Functions
 You can create your own functions using the `def` keyword.
+```python
+def function(parameter):
+   body
 
+function() #call the function
+```
 **Example:**
+```python
+def calculator(a,b):
+   print("add :",a+b)
+   print("sub :",a-b)
+
+calculator(8,4)
+calculator(2,6)
+calculator(10,54)
+calculator(254,23)
+```
+```python
+def greet():
+   print("Good morning")
+
+greet() #output: Good morning
+print(greet())  # Output: None because greet() function does not return anything
+```
+**BUT :**
+```python
+def greet():
+   print("Good morning")
+
+msg = greet()
+print(msg) #output: None
+```
+```python
+def greet():
+   return"Good morning"
+
+msg = greet()
+print(msg) #output: Good morning
+```
+**Positional parameters** : (name)
 ```python
 def greet(name):
     return f"Hello, {name}!"
 
-print(greet("Alice"))  # Output: Hello, Alice!
+# print(greet("Alice"))  # Output: Hello, Alice!
+print(greet(input("Enter your name: ")))  # Output: Hello, [User Input Name]!
 ```
+```yaml
+argument
+│
+│── positional parameters: You have to maintain the input orders.
+│                          no of parameters = no of arguments.
+│── keyword argument: You may not follow parameter's orders.
+│                     keyword argument should follow positional argument.
+│                     no of parameters = no of arguments.
+└── default argument: You have to follow order.
+                      no of parameters != no of arguments
+```
+```python
+# positional argument
+def greet(name,msg):
+   print("Hello",name + ', ' + msg)
+greet("Akash","Good Morning")
+# output: Hello Akash, Good Morning
+```
+```python
+# keyword argument
+def greet(name,msg):
+   print("Hello",name + ', ' + msg)
 
+greet(msg="Good Morning",name="Akash") #You may not follow parameter's orders.
+# output: Hello Akash, Good Morning
+```
+#### keyword argument should follow positional argument
+```python
+# keyword argument should follow positional argument
+def greet(name,msg):
+   print("Hello",name + ', ' + msg)
+greet("Akash",msg="Good Morning")
+# output: Hello Akash, Good Morning
+```
+```python
+# default argument
+def greet(name,msg="Good Morning"):
+   print("Hello",name + ', ' + msg)
+greet("Akash")
+# output: Hello Akash, Good Morning
+```
+#### no of parameters = no of arguments
+```python
+# no of parameters = no of arguments
+def greet(name,msg):
+   print("Hello",name + ', ' + msg)
+greet("Akash","Good Morning","How are you?")
+# output: TypeError: greet() takes 2 positional arguments but 3 were given
+```
 ---
 
 # Strings
