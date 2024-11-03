@@ -33,6 +33,7 @@ Taste of Pyrhon
              - [List](#list)
              - [Tuple](#tuple)
              - [Set](#set)
+             - [Dictionary](#dictionary)
 4. [Operators](#operators)
    - [Arithmetic Operators](#arithmetic-operators)
    - [Assignment Operators](#assignment-operators)
@@ -166,7 +167,7 @@ print(type(height))
 list = [10,"Akashdip", 45.2, 10]
 tuple = (10,"Akashdip",45.2)
 set = {10,"Akashdip",45.2}
-dictionary = {'age': 21} # get value --> `print(dictonary.get('age'))
+dictionary = {'age': 21} # get value --> print(dictonary.get('age'))
 ```
 
 - List & Tuple : list & Tuple allow duplicate value [10, 10, "akash", 15, 8.5], diff is [] & ()
@@ -330,6 +331,37 @@ print(var.symmetric_difference(var2)) #only print unique values from two sets.
 ```
 
 ---
+
+## ☀️ Dictionary <a name=dictionaryset"></a>
+```python
+dictionary = {'age': 21} #key value)
+```
+- Indexing & slicing not work.
+- Insertion (input) ored is preserved.
+- Hetrogenout element are allowed.
+- Mutable in nature ✅
+- `key` must be unique.
+
+```python
+var=dict()
+var={}
+
+var={"Name":"Akashdip","age":"21","place":"Haldia"}
+
+print(var["age"])
+print(var.pop("Name"))
+print(var.get("Place"))
+print(var.get("XYZ","Not available message"))
+print(var.keys())  #output: All keys.
+print(var.values())  #output: All values.
+print(var.items())  #output: All keys,values
+
+for key, values in var.items()
+   print(key,values,sap=" - ") #sap is opsonal.
+
+var.clear()
+print(var) #output: enmty Dict.
+```
 
 ---
 
