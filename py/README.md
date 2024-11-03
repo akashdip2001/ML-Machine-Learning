@@ -550,14 +550,40 @@ Loops are used to execute a block of code repeatedly.
 
 ### For Loop
 ```python
+var_name in range(start,end)
+   statement
+```      
+```python
+user_input = int(input("Enter a number: "))
 # For loop
-for i in range(5
+for i in range(1,11): #1 to 10
+    print(user_input * i)
+#output:
+# Enter a number: 2
+# 2
+# ...
+# 18
+# 20
 
-):
-    print(i)
+user_input = int(input("Enter a number: "))
+# For loop
+for i in range(1,11):
+    print(user_input,"X",i," = ", user_input * i)
+#output:
+# Enter a number: 5
+# 5 X 1  =  5
+# 5 X 2  =  10
+# ...
+# 5 X 9  =  45
+# 5 X 10  =  50
+
 ```
 
 ### While Loop
+```python
+while condition:
+   statement
+```
 ```python
 # While loop
 count = 0
