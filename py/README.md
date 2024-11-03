@@ -27,21 +27,19 @@ Taste of Pyrhon
         - [custom ending]()
    - [Keywords](#keywords)
 3. [Variables](#variables)
-   - [Data Types](#data-types)
-        - [String, int, float, bool]()
-        - [Data Structure](#list-tuple-set-dict) ☀️
-             - [List](#list)
-             - [Tuple](#tuple)
-             - [Set](#set)
-             - [Dictionary](#dictionary)
-4. [Operators](#operators)
+4. [Data Types](#data-types)
+   - [String, int, float, bool]()
+   - [Data Structure](#list-tuple-set-dict) ☀️
+      - [List](#list)
+      - [Tuple](#tuple)
+      - [Set](#set)
+      - [Dictionary](#dictionary)
+5. [Operators](#operators)
    - [Arithmetic Operators](#arithmetic-operators)
    - [Assignment Operators](#assignment-operators)
    - [Comparison Operators](#comparison-operators)
    - [Incrementing and Decrementing Operators](#incrementing-and-decrementing-operators)
    - [Logical Operators](#logical-operators)
-5. [Data Types](#data-types)
-   - [Constants](#constants)
 6. [Conditional Statements](#conditional-statements)
 7. [Arrays](#arrays)
 8. [Loops](#loops)
@@ -139,8 +137,41 @@ Output
 
 - Variable is the name of `memory location`.
 - Variables are used to store data values. In Python, you do not need to declare a variable type explicitly; the interpreter infers the type based on the value assigned.
+- Data values Can hold different types of data depending on the `Data-type`.
 
-**Example:** <a name="data-types"></a>
+## ➡️ Data Types 
+#### [PDF notes](https://github.com/akashdip2001/ML-Machine-Learning/blob/main/py/sources/pdf/Data%20Types%20in%20Python.pdf)
+
+![datatypes in python](https://github.com/user-attachments/assets/a7fcfc92-6b4e-4e21-b849-c62de0fb96b5)
+
+Python has various built-in data types, including:
+
+- **Integers**: Whole numbers, e.g., `5`, `-3`
+- **Floats**: Decimal numbers, e.g., `3.14`, `-2.5`
+- **Strings**: Sequences of characters, e.g., `"Hello"`
+- **Booleans**: `True` or `False`
+
+```python
+a = 10
+b = "python"
+
+type(a)
+#int #output
+
+type(b)
+#str
+```
+
+### Constants
+Constants are immutable values that do not change during program execution. Python uses naming conventions to indicate constants, typically uppercase letters.
+
+```python
+PI = 3.14159  # Example of a constant
+```
+
+---
+
+**Example of ✅ Variables with ➡️ Data-Types:** <a name="data-types"></a>
 ```python
 name = "Alice"  # String variable
 age = 30        # Integer variable
@@ -474,39 +505,6 @@ print("x > 5 and y < 10:", x > 5 and y < 10)  # True
 print("x > 5 or y < 3:", x > 5 or y < 3)      # True
 print("not(x < 5):", not(x < 5))                # True
 ```
-
----
-
-## Data Types 
-#### [PDF notes](https://github.com/akashdip2001/ML-Machine-Learning/blob/main/py/sources/pdf/Data%20Types%20in%20Python.pdf)
-
-![datatypes in python](https://github.com/user-attachments/assets/a7fcfc92-6b4e-4e21-b849-c62de0fb96b5)
-
-Python has various built-in data types, including:
-
-- **Integers**: Whole numbers, e.g., `5`, `-3`
-- **Floats**: Decimal numbers, e.g., `3.14`, `-2.5`
-- **Strings**: Sequences of characters, e.g., `"Hello"`
-- **Booleans**: `True` or `False`
-
-```python
-a = 10
-b = "python"
-
-type(a)
-#int #output
-
-type(b)
-#str
-```
-
-### Constants
-Constants are immutable values that do not change during program execution. Python uses naming conventions to indicate constants, typically uppercase letters.
-
-```python
-PI = 3.14159  # Example of a constant
-```
-
 ---
 
 ## Conditional Statements
