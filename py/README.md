@@ -40,7 +40,13 @@ Taste of Pyrhon
    - [Comparison Operators](#comparison-operators)
    - [Incrementing and Decrementing Operators](#incrementing-and-decrementing-operators)
    - [Logical Operators](#logical-operators)
-6. [Conditional Statements](#statement)
+6. [Flow Control Statement](#Flow-Control-statement)
+   - [Conditional Statements - **If-Else**](#Conditional-Statements)
+   - [Iterative Statements - **Loop**]()
+   - [Trandfer Statement](#Trandfer-Statement)
+      - [break]()
+      - [continue]()
+      - [pass]()
 7. [Arrays](#arrays)
 8. [Loops](#loops)
 9. [Functions](#functions)
@@ -507,16 +513,19 @@ print("not(x < 5):", not(x < 5))                # True
 ```
 ---
 
-# Statements <a name="statement"></a>
+# Flow Control Statements <a name="Flow-Control-statement"></a>
 
 ```yaml
-Python Statements
+Flow Control Statements
 │
 │── Conditional Statements: If else
-└── Iterative Statements: Loop
+│── Iterative Statements: Loop
+└── Trandfer Statement: break
+                        continue
+                        pass
 ```
 
-# Conditional Statements
+# Conditional Statements <a name="Conditional-Statements"></a>
 Conditional statements allow you to execute code based on specific conditions.
 
 **Example:**
@@ -590,6 +599,35 @@ count = 0
 while count < 5:
     print(count)
     count += 1
+#output:
+# 0
+# 1 
+# 2
+# 3
+# 4
+
+
+password = "123XYZ"
+user_password = input("Enter the pass: ")
+
+while password != user_password:  # Loop until the password matches
+    user_password = input("Enter the pass: ")  # Prompt user again
+
+print("Unlocked !!")
+
+```
+---
+
+# Trandfer Statement <a name="Trandfer-Statement"></a>
+
+```yaml
+Flow Control Statements
+│
+│── Conditional Statements - If else
+│── Iterative Statements - Loop
+└── Trandfer Statement: break
+                        continue
+                        pass
 ```
 
 ---
