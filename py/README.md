@@ -72,6 +72,7 @@ Today, Python is widely used in various fields, including web development, data 
 - **In python , always take input as a String.**
 - 1st we take an input and store in a variable.
 
+python always take user input as a `String`
 ```python
 variable = input("Enter number: ")
 print(variable)
@@ -81,7 +82,9 @@ print(type(variable))
 # Enter number: 12
 # 12
 # 'str' ---> String
-
+```
+But we Manually change it
+```python
 variable = int(input("Enter number: "))
 print(variable)
 print(type(variable))
@@ -91,6 +94,7 @@ print(type(variable))
 # 12
 # 'int'
 ```
+All in one : Automatically detect `int`, `float`, `String`, ...
 ```yaml
 DataType
 │
@@ -107,15 +111,18 @@ DataType
 ```python
 print("Hello","Akash","dip")
 # Output: Hellow Akash dip
-
+```
+```python
 print("Hello","Akash","dip",sep="-") # custom separator
 # Output: Hellow-Akash-dip
-
+```
+```python
 print("Hello")
 print("Akash")
 # Output: Hellow
           Akash
-
+```
+```python
 print("Hello"end=" ") # end with a space, \n for new line
 print("Akash")
 # Output: Hellow Akash
@@ -573,7 +580,8 @@ for i in range(1,11): #1 to 10
 # ...
 # 18
 # 20
-
+```
+```python
 user_input = int(input("Enter a number: "))
 # For loop
 for i in range(1,11):
@@ -605,8 +613,8 @@ while count < 5:
 # 2
 # 3
 # 4
-
-
+```
+```python
 password = "123XYZ"
 user_password = input("Enter the pass: ")
 
