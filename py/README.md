@@ -59,7 +59,7 @@ Taste of Pyrhon
 11. [Strings](#strings)
 12. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
 13. [*more*](https://www.codewithharry.com/tutorial/python/)
-14. [**Part 2 (Job Preparation)**](#part-2-job-preparation)
+14. [**Part 2 (Job Preparation - in One Short)**](#part-2-job-preparation)
 15. [Projects](#Projects)
 16. [**EXAM**](#EXAM)
 
