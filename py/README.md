@@ -139,6 +139,18 @@ name = "Alice"  # String variable
 age = 30        # Integer variable
 height = 5.6    # Float variable
 ```
+- ✅ Python auto detect the DataType.
+- ✅ But for user input py always take String
+
+Output
+```python
+print(type(name))
+# Srting
+print(type(age))
+# int
+print(type(height))
+# float
+```
 
 ---
 
