@@ -44,9 +44,9 @@ Taste of Pyrhon
    - [Conditional Statements - If-Else](#conditional-statements)
    - [Iterative Statements - Loop](#loops)
    - [Trandfer Statement](#trandfer-statement)
-      - [break]()
-      - [continue]()
       - [pass]()
+      - [continue]()
+      - [break]()
 7. [Arrays](#arrays)
 8. [Loops](#loops)
 9. [Functions](#functions)
@@ -72,8 +72,8 @@ Today, Python is widely used in various fields, including web development, data 
 - **In python , always take input as a String.**
 - 1st we take an input and store in a variable.
 
-python always take user input as a `String`
 ```python
+# python always take user input as a String
 variable = input("Enter number: ")
 print(variable)
 print(type(variable))
@@ -83,8 +83,9 @@ print(type(variable))
 # 12
 # 'str' ---> String
 ```
-But we Manually change it
+
 ```python
+# But we Manually change it
 variable = int(input("Enter number: "))
 print(variable)
 print(type(variable))
@@ -615,6 +616,7 @@ while count < 5:
 # 4
 ```
 ```python
+# Mobile passward Unlock
 password = "123XYZ"
 user_password = input("Enter the pass: ")
 
@@ -633,9 +635,31 @@ Flow Control Statements
 │
 │── Conditional Statements - If else
 │── Iterative Statements - Loop
-└── Trandfer Statement: break
+└── Trandfer Statement: pass
                         continue
-                        pass
+                        break
+```
+##### ✅ Pass
+```python
+if "a" in "akashdip":
+    #print("a is present in akashdip")
+    pass
+```
+##### ✅ continue
+```python
+for num in range(1,11):
+    if num % 2 == 0:
+        continue #skip if number is even
+    else:
+        print(num)
+```
+##### ✅ break
+```python
+for num in range(1,11):
+    if num % 5 == 0: #break the loop if number is divisible by 5
+        break
+    else:
+        print(num)
 ```
 
 ---
