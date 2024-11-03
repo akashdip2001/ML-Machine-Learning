@@ -40,7 +40,7 @@ Taste of Pyrhon
    - [Comparison Operators](#comparison-operators)
    - [Incrementing and Decrementing Operators](#incrementing-and-decrementing-operators)
    - [Logical Operators](#logical-operators)
-6. [Conditional Statements](#conditional-statements)
+6. [Conditional Statements](#Statement)
 7. [Arrays](#arrays)
 8. [Loops](#loops)
 9. [Functions](#functions)
@@ -506,6 +506,15 @@ print("x > 5 or y < 3:", x > 5 or y < 3)      # True
 print("not(x < 5):", not(x < 5))                # True
 ```
 ---
+
+# Statements <a name="Statement"></a>
+
+```yaml
+Python Statements
+│
+│── Conditional Statements: If else
+└── Iterative Statements: Loop
+```
 
 # Conditional Statements
 Conditional statements allow you to execute code based on specific conditions.
