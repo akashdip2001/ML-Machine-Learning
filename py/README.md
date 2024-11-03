@@ -28,7 +28,7 @@ Taste of Pyrhon
    - [Keywords](#keywords)
 3. [Variables](#variables)
 4. [Data Types](#data-types)
-   - [String, int, float, bool]()
+   - [String, int, float, bool](#Examples)
    - [Data Structure](#list-tuple-set-dict) ☀️
       - [List](#list)
       - [Tuple](#tuple)
@@ -139,7 +139,7 @@ Output
 - Variables are used to store data values. In Python, you do not need to declare a variable type explicitly; the interpreter infers the type based on the value assigned.
 - Data values Can hold different types of data depending on the `Data-type`.
 
-## ➡️ Data Types 
+## ➡️ Data Types <a name="data-types"></a> 
 #### [PDF notes](https://github.com/akashdip2001/ML-Machine-Learning/blob/main/py/sources/pdf/Data%20Types%20in%20Python.pdf)
 
 ![datatypes in python](https://github.com/user-attachments/assets/a7fcfc92-6b4e-4e21-b849-c62de0fb96b5)
@@ -171,7 +171,7 @@ PI = 3.14159  # Example of a constant
 
 ---
 
-**Example of ✅ Variables with ➡️ Data-Types:** <a name="data-types"></a>
+**Example of ✅ Variables with ➡️ Data-Types:** <a name="Examples"></a>
 ```python
 name = "Alice"  # String variable
 age = 30        # Integer variable
