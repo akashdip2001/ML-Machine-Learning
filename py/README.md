@@ -40,7 +40,7 @@ Taste of Pyrhon
    - [Comparison Operators](#comparison-operators)
    - [Incrementing and Decrementing Operators](#incrementing-and-decrementing-operators)
    - [Logical Operators](#logical-operators)
-6. [Conditional Statements](#Statement)
+6. [Conditional Statements](#statement)
 7. [Arrays](#arrays)
 8. [Loops](#loops)
 9. [Functions](#functions)
@@ -507,7 +507,7 @@ print("not(x < 5):", not(x < 5))                # True
 ```
 ---
 
-# Statements <a name="Statement"></a>
+# Statements <a name="statement"></a>
 
 ```yaml
 Python Statements
