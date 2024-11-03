@@ -20,15 +20,15 @@ Taste of Pyrhon
 
 ## Table of Contents
 1. [History of Python](#history-of-python)
-2. Introduction
+2. [Introduction]()
    - [Input Output](#input-output)
    - [Print](#print)
-        - custom separator
-        - custom ending
+        - [custom separator]()
+        - [custom ending]()
    - [Keywords](#keywords)
 3. [Variables](#variables)
    - [Data Types](#data-types)
-        - String, int, float, bool
+        - [String, int, float, bool]()
         - [List, Tuple, set, dictionary](#list-tuple-set-dict)
              - [List](#list)
 4. [Operators](#operators)
