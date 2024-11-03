@@ -700,10 +700,12 @@ Type
 │    └── keyword
 │
 └── User defined
+     │
      │── old
      │── first
      └── akashdip
 ```
+🚀 Pre defined module
 ```python
 import calendar
 print(calendar.month(2021, 1))
@@ -718,6 +720,7 @@ print(calendar.month(2021, 1))
 # 18 19 20 21 22 23 24
 # 25 26 27 28 29 30 31
 ```
+🚀 User defined module
 ![module](https://github.com/user-attachments/assets/00e4a621-deaf-473b-93f8-639c46a0c1af)
 
 ---
