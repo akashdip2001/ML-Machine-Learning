@@ -1214,15 +1214,23 @@ with open("test.txt", "r") as file:
 
 | **Mode** | **Description**                          | **Syntax**                             | **Operation**                 |
 |----------|------------------------------------------|----------------------------------------|-------------------------------|
-| `'r'`    | Read mode (default)                      | `file = open("filename.txt", "r")`     | Opens file for reading. File must exist. |
-| `'w'`    | Write mode                               | `file = open("filename.txt", "w")`     | Opens file for writing. Creates a new file if it doesn't exist, or truncates it if it does. |
-| `'a'`    | Append mode                              | `file = open("filename.txt", "a")`     | Opens file for appending. Creates file if it doesn’t exist. Writes data at the end of the file. |
-| `'x'`    | Exclusive creation                       | `file = open("filename.txt", "x")`     | Creates a new file and opens it for writing. Fails if the file exists. |
-| `'r+'`   | Read and write mode                      | `file = open("filename.txt", "r+")`    | Opens file for both reading and writing. File must exist. |
-| `'w+'`   | Write and read mode                      | `file = open("filename.txt", "w+")`    | Opens file for reading and writing. Truncates the file if it exists or creates a new one. |
-| `'a+'`   | Append and read mode                     | `file = open("filename.txt", "a+")`    | Opens file for reading and appending. Creates a new file if it doesn’t exist. |
-| `'t'`    | Text mode (default)                      | `file = open("filename.txt", "rt")`    | Opens file in text mode. Can be combined with other modes like `r`, `w`, `a`. |
-| `'b'`    | Binary mode                              | `file = open("filename.txt", "rb")`    | Opens file in binary mode. Can be combined with other modes like `r`, `w`, `a`. Used for non-text files like images. |
+| `'r'`    | Read mode (default)                      | `file = open("filename.txt","r")`     | Opens file for reading. File must exist. |
+|||||
+| `'w'`    | Write mode                               | `file = open("filename.txt","w")`     | Opens file for writing. Creates a new file if it doesn't exist, or truncates it if it does. |
+|||||
+| `'a'`    | Append mode                              | `file = open("filename.txt","a")`     | Opens file for appending. Creates file if it doesn’t exist. Writes data at the end of the file. |
+|||||
+| `'x'`    | Exclusive creation                       | `file = open("filename.txt","x")`     | Creates a new file and opens it for writing. Fails if the file exists. |
+|||||
+| `'r+'`   | Read and write mode                      | `file = open("filename.txt","r+")`    | Opens file for both reading and writing. File must exist. |
+|||||
+| `'w+'`   | Write and read mode                      | `file = open("filename.txt","w+")`    | Opens file for reading and writing. Truncates the file if it exists or creates a new one. |
+|||||
+| `'a+'`   | Append and read mode                     | `file = open("filename.txt","a+")`    | Opens file for reading and appending. Creates a new file if it doesn’t exist. |
+|||||
+| `'t'`    | Text mode (default)                      | `file = open("filename.txt","rt")`    | Opens file in text mode. Can be combined with other modes like `r`, `w`, `a`. |
+|||||
+| `'b'`    | Binary mode                              | `file = open("filename.txt","rb")`    | Opens file in binary mode. Can be combined with other modes like `r`, `w`, `a`. Used for non-text files like images. |
 
 ---
 
