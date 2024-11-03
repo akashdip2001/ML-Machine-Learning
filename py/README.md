@@ -172,6 +172,57 @@ dictionary = {'age': 21} # get value --> `print(dictonary.get('age'))
 
 ---
 
+## ☀️ List
+
+List is a Data structure which is also called collection of items, in which we can store anything like - string, float, integer.
+- items inside "Square brackets" [] and each items saperated by "comma" (,). Ex: [10, 10, 2]
+- Dublicates are `allowed`.
+- Mutable in nature (edite, modefi, update, delete)
+
+```yeml
+List
+│
+│── Create emply list: list1=[]
+│                      list2=list() #create a list using list function
+│                      print(type(list1))
+│                      print(type(list2))
+│── List with some values: list3[10,'Akashdip',True, 10.5, 10]
+│                          print(list3)                         
+│── methods
+│   │
+│   │── indexing: print(list3[1]) #output: Akashdip -----> find data using index.
+│   │             print(list3.index(10.5)) #outpot: 3 ---> find index using data.
+│   │             print(list3.index(10,1)) #outpot: 4 ---> ,1 for find 10 But not 1st one.
+│   │── count list items: print(list3.count("Akashdip")) #output: 1 (one Time in the list)
+│   │── insert: list3.insert(2, "Mahapatra") #output: 10, Akashdip, Mahapatra, ...
+│   │── pop (Delete): list3.pop(2) #pop() --> if I give no index, by default Delete the last one.
+│   │── extend: list4=["sun","Moon"]
+│   │           list3.extend(list4)
+│   │           #output: 10,'Akashdip',True, 10.5, 10, sun, Moon
+│   │── Copy: list5 = list3.copy() or,
+│   │         list5 = list3.[:] #by default [0:n-1] ==> all items
+│   │── sort: list3.sort() #output: ⚠️ Type-Error
+│   │         list6[10, 130, 34, 1, 0] ---> list6.short() #output: [0, 1, 10, 34, 130]
+│   │         ----------------> list6.short(reverse=true) #output: [130, 34, 10, 1, 0]
+│   │── reverse: list3.reverse() #output: [10, 10.5, True, 'Akashdip', 10]
+│   │── Neated list: list6=[10, 130, 34, 1, 0,["Akash","True",[78.5,"Mahapatra"]]] #List inside List
+│   │── List Comprehension: list7=["Akash","Suman","Tathagata","Soumyadeep"]
+│   │                       a=[word for word in list7 if word.startswith("s")]
+│   │                       #output: ["Suman", "Soumyadeep"]
+│   └── List Unpacking: n1,n2=list7
+│                       print(n1)
+│                       print(n2)
+│                       #output: Akash
+│                       #        Suman
+│── slicing: print(list3[1:4]) #output: 'Akashdip', True, 10.5
+│── append
+└── length of list
+
+```
+
+Syntax: list_name = [item1, item2, --- , item3]
+---
+
 ## Operators
 Operators perform operations on variables and values. Python supports various types of operators, including arithmetic, assignment, comparison, increment/decrement, and logical operators.
 
