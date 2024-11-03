@@ -396,7 +396,7 @@ print(var) #output: enmty Dict.
 
 ---
 
-## Operators
+# Operators
 Operators perform operations on variables and values. Python supports various types of operators, including arithmetic, assignment, comparison, increment/decrement, and logical operators.
 
 ### Arithmetic Operators
@@ -507,7 +507,7 @@ print("not(x < 5):", not(x < 5))                # True
 ```
 ---
 
-## Conditional Statements
+# Conditional Statements
 Conditional statements allow you to execute code based on specific conditions.
 
 **Example:**
@@ -524,7 +524,7 @@ else:
 
 ---
 
-## Arrays
+# Arrays
 In Python, arrays can be implemented using lists, but for more advanced functionality, the `array` module or `numpy` library can be used.
 
 **Example using lists:**
@@ -536,7 +536,7 @@ print(numbers[0])  # Accessing the first element
 
 ---
 
-## Loops
+# Loops
 Loops are used to execute a block of code repeatedly.
 
 ### For Loop
@@ -584,7 +584,7 @@ print(greet("Alice"))  # Output: Hello, Alice!
 
 ---
 
-## Strings
+# Strings
 Strings are sequences of characters and can be manipulated in various ways.
 
 **Example:**
