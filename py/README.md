@@ -645,6 +645,9 @@ if "a" in "akashdip":
     #print("a is present in akashdip")
     pass
 ```
+Output:
+```python
+```
 ##### ✅ continue
 ```python
 for num in range(1,11):
@@ -653,6 +656,14 @@ for num in range(1,11):
     else:
         print(num)
 ```
+Output:
+```python
+1
+3
+5
+7
+9
+```
 ##### ✅ break
 ```python
 for num in range(1,11):
@@ -660,6 +671,13 @@ for num in range(1,11):
         break
     else:
         print(num)
+```
+Output:
+```python
+1
+2
+3
+4
 ```
 
 ---
