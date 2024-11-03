@@ -48,20 +48,22 @@ Taste of Pyrhon
         - [continue]()
         - [break]()
 7. [Arrays](#arrays)
-8. [Loops](#loops)
-9. [Modules](#modules)
-10. [Functions](#functions)
+8. [Strings](#strings)
+9. [Loops](#loops)
+10. [Modules](#modules)
+11. [Functions](#functions)
    - [Built-in Functions](#built-in-functions)
    - [User-defined Functions](#user-defined-functions)
         - [positional parameters](#parameters)
         - [keyword argument](#keyword-argument)
         - [default argument](#default-argument)
-11. [Strings](#strings)
-12. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
-13. [*more*](https://www.codewithharry.com/tutorial/python/)
-14. [**Part 2 (Job Preparation - in One Short)**](#part-2-job-preparation)
-15. [Projects](#Projects)
-16. [**EXAM**](#EXAM)
+12. [Exception Handling](#7-exception-handling)
+13. [File Handling](#5-file-handling)
+14. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
+15. [*more*](https://www.codewithharry.com/tutorial/python/)
+16. [**Part 2 (Job Preparation - in One Short)**](#part-2-job-preparation)
+17. [Projects](#Projects)
+18. [**EXAM**](#EXAM)
 
 ---
 
@@ -1162,6 +1164,11 @@ animal_sound(dog)   # Outputs: Bark
 ---
 
 ### 5. File Handling
+
+- File is nothing but name of `memory location` on disk that stores data permanantly.
+- Why not Variable, a=10 ❓ Because of, after code Run complete, the data auto Delete by system (pc)
+- File Handling is a mechanism through, which we can handle (read, write, create, append, etc...) the file.
+
 File handling is essential for reading and writing files in Python.
 
 #### **Opening a File**
@@ -1201,6 +1208,47 @@ with open("test.txt", "r") as file:
 |-----------------|---------------------------------|-------------------------------|
 | Use `with`      | Automatically handles file closure | `with open(...) as file:`    |
 
+### One Short ✅
+
+#### file handling modes & operations:
+
+| **Mode** | **Description**                          | **Syntax**                             | **Operation**                 |
+|----------|------------------------------------------|----------------------------------------|-------------------------------|
+| `'r'`    | Read mode (default)                      | `file = open("filename.txt", "r")`     | Opens file for reading. File must exist. |
+| `'w'`    | Write mode                               | `file = open("filename.txt", "w")`     | Opens file for writing. Creates a new file if it doesn't exist, or truncates it if it does. |
+| `'a'`    | Append mode                              | `file = open("filename.txt", "a")`     | Opens file for appending. Creates file if it doesn’t exist. Writes data at the end of the file. |
+| `'x'`    | Exclusive creation                       | `file = open("filename.txt", "x")`     | Creates a new file and opens it for writing. Fails if the file exists. |
+| `'r+'`   | Read and write mode                      | `file = open("filename.txt", "r+")`    | Opens file for both reading and writing. File must exist. |
+| `'w+'`   | Write and read mode                      | `file = open("filename.txt", "w+")`    | Opens file for reading and writing. Truncates the file if it exists or creates a new one. |
+| `'a+'`   | Append and read mode                     | `file = open("filename.txt", "a+")`    | Opens file for reading and appending. Creates a new file if it doesn’t exist. |
+| `'t'`    | Text mode (default)                      | `file = open("filename.txt", "rt")`    | Opens file in text mode. Can be combined with other modes like `r`, `w`, `a`. |
+| `'b'`    | Binary mode                              | `file = open("filename.txt", "rb")`    | Opens file in binary mode. Can be combined with other modes like `r`, `w`, `a`. Used for non-text files like images. |
+
+---
+
+### Common File Operations
+
+| **Operation**          | **Syntax**                   | **Description**                                                |
+|------------------------|------------------------------|----------------------------------------------------------------|
+| Open a file            | `file = open("filename", "mode")` | Opens the specified file in the specified mode.              |
+| Read entire file       | `content = file.read()`      | Reads the entire content of the file.                         |
+| Read one line          | `line = file.readline()`     | Reads a single line from the file.                            |
+| Read all lines         | `lines = file.readlines()`   | Reads all lines and returns them as a list.                   |
+| Write to file          | `file.write("text")`         | Writes the specified text to the file.                        |
+| Append to file         | `file.write("text")`         | Appends the specified text at the end of the file in `'a'` mode. |
+| Close file             | `file.close()`               | Closes the file and frees up system resources.                |
+| Iterate lines          | `for line in file:`          | Iterates through each line in the file.                       |
+
+### Example Code
+
+```python
+with open("example.txt", "w") as file:   # Opens the file in write mode
+    file.write("Hello, World!")          # Writes to the file
+# File automatically closes after the with block
+```
+
+The `with` statement is often used for file handling, as it ensures the file is properly closed after operations.
+
 ---
 
 ### 6. Libraries & Modules
@@ -1237,6 +1285,9 @@ print(mymodule.greet("Akashdip"))
 ---
 
 ### 7. Exception Handling
+- It's nothing but `runtime-errors`.
+- It's occurs due to incorrect implementation of logic.
+
 Exceptions allow you to handle errors gracefully.
 
 #### **Try-Except Block**
@@ -1246,6 +1297,48 @@ try:
     x = 1 / 0
 except ZeroDivisionError as e:
     print(f"Error: {e}")
+```
+```python
+a=int(input("Enter 1st no: "))
+b=int(input("Enter 2nd no: "))
+
+try:
+    x = a/b
+    print("The ans is : ",x)
+except:
+    print("can't division by zero")
+
+print("Thanks")
+
+#output:
+# Enter 1st no: 1
+# Enter 2nd no: 0
+# can't division by zero
+# Thanks ✅
+```
+```python
+a=int(input("Enter 1st no: "))
+b=int(input("Enter 2nd no: "))
+
+try:
+    x = a/b
+    print("The ans is : ",x)
+except:
+    print("can't division by zero")
+else:
+    print("Thanks")
+
+#output_01:
+# Enter 1st no: 1 
+# Enter 2nd no: 0
+# can't division by zero ⚠️
+# ❌
+
+# #output_02:
+# Enter 1st no: 9
+# Enter 2nd no: 3
+# The ans is :  3.0 ✅
+# Thanks ✅
 ```
 
 | Operation       | Description                     | Syntax                        |
