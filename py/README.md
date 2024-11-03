@@ -1171,12 +1171,28 @@ animal_sound(dog)   # Outputs: Bark
 
 File handling is essential for reading and writing files in Python.
 
+#### **Create a New file**
+```python
+f=open("C:\\Users\\...\\test.txt", "x")
+print("File created Sucessfully .... !")
+```
 #### **Opening a File**
 ```python
-file = open("C:\\Users\\...\\test.txt", "r") # If file not in there, Automatically created
+file = open("test.txt", "r")
 content = file.read()
 print(content)
 file.close()
+```
+#### ⚠️ **Exception Handling**
+```python
+try:
+   with file = open("XYZ.txt", "r")
+   print(file.readlines())
+except:
+   print("File may not exist ... create first !")
+else:
+   file.close()
+   print("File Closed ... !")
 ```
 
 | Operation       | Description                     | Syntax                        |
@@ -1190,6 +1206,11 @@ file.close()
 file = open("test.txt", "w")
 file.write("Hello, World!")
 file.close()
+```
+#### **Read a File**
+```python
+print(file.read(30)) #for displaing 30 character.
+print(file.readline()) #Display only one line.
 ```
 
 | Operation       | Description                     | Syntax                        |
