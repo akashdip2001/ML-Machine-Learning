@@ -54,8 +54,8 @@ Taste of Pyrhon
    - [Built-in Functions](#built-in-functions)
    - [User-defined Functions](#user-defined-functions)
         - [positional parameters](#parameters)
-        - [keyword argument]()
-        - [default argument]()
+        - [keyword argument](#keyword-argument)
+        - [default argument](#default-argument)
 11. [Strings](#strings)
 12. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
 13. [*more*](https://www.codewithharry.com/tutorial/python/)
@@ -820,6 +820,7 @@ argument
 └── default argument: You have to follow order.
                       no of parameters != no of arguments
 ```
+### 🌳 positional argument <a name="positional-argument"></a>
 ```python
 # positional argument
 def greet(name,msg):
@@ -827,6 +828,7 @@ def greet(name,msg):
 greet("Akash","Good Morning")
 # output: Hello Akash, Good Morning
 ```
+### 🌳 keyword argument <a name="keyword-argument"></a>
 ```python
 # keyword argument
 def greet(name,msg):
@@ -843,6 +845,7 @@ def greet(name,msg):
 greet("Akash",msg="Good Morning")
 # output: Hello Akash, Good Morning
 ```
+### 🌳 default argument <a name="default-argument"></a>
 ```python
 # default argument
 def greet(name,msg="Good Morning"):
