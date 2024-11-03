@@ -513,7 +513,7 @@ print("not(x < 5):", not(x < 5))                # True
 ```
 ---
 
-# Flow Control Statements <a name="Flow-Control-statement"></a>
+## Flow Control Statements <a name="Flow-Control-statement"></a>
 
 ```yaml
 Flow Control Statements
@@ -525,7 +525,7 @@ Flow Control Statements
                         pass
 ```
 
-# Conditional Statements <a name="Conditional-Statements"></a>
+## Conditional Statements <a name="Conditional-Statements"></a>
 Conditional statements allow you to execute code based on specific conditions.
 
 **Example:**
@@ -618,7 +618,7 @@ print("Unlocked !!")
 ```
 ---
 
-# Trandfer Statement <a name="Trandfer-Statement"></a>
+## Trandfer Statement <a name="Trandfer-Statement"></a>
 
 ```yaml
 Flow Control Statements
