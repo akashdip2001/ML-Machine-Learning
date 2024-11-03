@@ -32,6 +32,7 @@ Taste of Pyrhon
         - [List, Tuple, set, dictionary](#list-tuple-set-dict)
              - [List](#list)
              - [Tuple](#tuple)
+             - [Set](#set)
 4. [Operators](#operators)
    - [Arithmetic Operators](#arithmetic-operators)
    - [Assignment Operators](#assignment-operators)
@@ -259,6 +260,63 @@ var.index("True") #output: 5
 # insert ❌ Immutable
 # append ❌ Immutable
 # pop ❌ Immutable
+```
+---
+
+## ☀️ Set <a name="set"></a>
+
+```python
+set = {10,"Akashdip",45.2}
+```
+
+- Same as List ot Tuple
+- But, Ignore duplicate values , Just print one time.
+- Indexing & order not present.
+- Indexing & slicing not work.
+- Hetrogenout element are allowed.
+- Mutable in nature ✅
+
+```python
+│── # creating a emply set
+│   var={}
+│   print(type(var)) #output: Dist ✅, not ❌ set
+│
+│── var=set()
+│   print(type(var)) #output: set ✅
+│
+│── var={10, "Akashdip", 56.7, True}
+    print(type(var)) #output: set
+    # Not Dist, because in Dist you must have a key value --> dictionary = {'age': 10}
+```
+```python
+│── print(var) #output: 56.7, True, 10, 'Akashdip' ❌ input order not work
+
+# indexing ❌
+# slicing ❌
+```
+#### unique value
+```python
+var={10, "Akashdip", 56.7, True, "Akashdip"}
+print(var)
+#output: 10, 56.7, True, "Akashdip"
+```
+#### Immutable in nature
+```yaml
+│── var.add("Mahapatra") #onlu one argument at a time.
+│
+│── Update: 
+│   │── var.update("Mahapatra") #output: M a h a p a t r a
+│   │── var.update(["Mahapatra"]) #output: Mahapatra
+│   └── var.update(["Mahapatra","Maa"]) #output: ..., Mahapatra, ... , Maa, ...
+│       # it's use for input many at a Time, & must use [ ]
+│
+│── Delete: pop, remove, clear
+│   │── print=(var.pop()) #Rrandomly remove any one.
+│   │── print=(var.remove(10))
+│   └── print=(var.clear()) #Delete allin set.
+```
+#### Mathematical operations
+```yaml
 ```
 
 ---
