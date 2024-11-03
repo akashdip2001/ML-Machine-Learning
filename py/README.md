@@ -30,6 +30,7 @@ Taste of Pyrhon
    - [Data Types](#data-types)
         - String, int, float, bool
         - [List, Tuple, set, dictionary](#list-tuple-set-dict)
+             - [List](#list)
 4. [Operators](#operators)
    - [Arithmetic Operators](#arithmetic-operators)
    - [Assignment Operators](#assignment-operators)
@@ -172,7 +173,7 @@ dictionary = {'age': 21} # get value --> `print(dictonary.get('age'))
 
 ---
 
-## ☀️ List
+## ☀️ List <a name="list"></a>
 
 List is a Data structure which is also called collection of items, in which we can store anything like - string, float, integer.
 - items inside "Square brackets" [] and each items saperated by "comma" (,). Ex: [10, 10, 2]
