@@ -31,6 +31,7 @@ Taste of Pyrhon
         - [String, int, float, bool]()
         - [List, Tuple, set, dictionary](#list-tuple-set-dict)
              - [List](#list)
+             - [Tuple](#tuple)
 4. [Operators](#operators)
    - [Arithmetic Operators](#arithmetic-operators)
    - [Assignment Operators](#assignment-operators)
@@ -178,7 +179,8 @@ dictionary = {'age': 21} # get value --> `print(dictonary.get('age'))
 List is a Data structure which is also called collection of items, in which we can store anything like - string, float, integer.
 - items inside "Square brackets" [] and each items saperated by "comma" (,). Ex: [10, 10, 2]
 - Dublicates are `allowed`.
-- Mutable in nature (edite, modefi, update, delete)
+- Mutable in nature (✅ edite, modefi, update, delete)
+- Syntax: list_name = [item1, item2, --- , item3]
 
 ```yaml
 List
@@ -196,6 +198,7 @@ List
 │   │             print(list3.index(10,1)) #outpot: 4 ---> ,1 for find 10 But not 1st one.
 │   │── count list items: print(list3.count("Akashdip")) #output: 1 (one Time in the list)
 │   │── insert: list3.insert(2, "Mahapatra") #output: 10, Akashdip, Mahapatra, ...
+│   │── append: list3.append("car") #output: ..., True, 10.5, 10, car ---> add at the last
 │   │── pop (Delete): list3.pop(2) #pop() --> if I give no index, by default Delete the last one.
 │   │── extend: list4=["sun","Moon"]
 │   │           list3.extend(list4)
@@ -216,12 +219,48 @@ List
 │                       #output: Akash
 │                       #        Suman
 │── slicing: print(list3[1:4]) #output: 'Akashdip', True, 10.5
-│── append
 └── length of list
 
 ```
+---
+## ☀️ Tuple <a name="tuple"></a>
 
-Syntax: list_name = [item1, item2, --- , item3]
+Tuple is a Data structure which is also called collection of items, in which we can store anything like - string, float, integer.
+- items inside "parenthesis" () and each items saperated by "comma" (,). Ex: (10, 10, 2)
+- Dublicates are `allowed`.
+- Immutable in nature (❌ edite, modefi, update, delete)
+
+```python
+var=(1,2,3,4,5,True,"Akashdip")
+print(var)
+#output: (1,2,3,4,5,True,"Akashdip"),
+
+# But What If, ❌ not use ()
+var=1,2,3,4,5,True,"Akashdip"
+print(var)
+print(type(var))
+#output: (1,2,3,4,5,True,"Akashdip"),
+#        'tuple'
+
+# But What If,
+var=1  #output: 'int'
+var=1, #output: 'tuple'
+
+# length
+print(len(var)) #output: 7
+
+# Copy
+var2=var
+
+# indexing
+print(var[5])     #output: True
+var.index("True") #output: 5
+
+# insert ❌ Immutable
+# append ❌ Immutable
+# pop ❌ Immutable
+```
+
 ---
 
 ## Operators
