@@ -29,7 +29,7 @@ Taste of Pyrhon
 3. [Variables](#variables)
    - [Data Types](#data-types)
         - [String, int, float, bool]()
-        - [Data Structure](#list-tuple-set-dict)
+        - [Data Structure](#list-tuple-set-dict) ☀️
              - [List](#list)
              - [Tuple](#tuple)
              - [Set](#set)
