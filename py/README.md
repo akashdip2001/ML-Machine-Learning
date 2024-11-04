@@ -1290,7 +1290,47 @@ obj=A(10,"Akash",None)
 - **Private**: Provides the most restricted access, available only within the class where it is defined.
 
 ### Examples
+##### 🌳 use those members in only inside the class
+```python
+class A:
+    a=10   # Public member
+    _b=20  # Protected member
+    __c=30 # Private member
 
+    print("In same class:",a," ",_b," ",__c)  
+
+#output:
+# In same class: 10   20   30
+```
+```python
+class A:
+    a = 10   # Public member
+    _b = 20  # Protected member
+    __c = 30 # Private member
+    print("In same class:",a," ",_b," ",__c) 
+    # Constructor to print values inside the class
+    def show(self):
+        print("Inside the same class members:", self.a, self._b, self.__c)
+
+# Creating an object of class A
+obj = A()
+obj.show()
+
+#output:
+# In same class: 10   20   30
+# Inside the same class members: 10 20 30
+```
+##### 🌳 use those members outside the class
+```python
+class A:
+    a = 10   # Public member
+    _b = 20  # Protected member
+    __c = 30 # Private member
+
+obj = A()
+#print("Outside the class:", obj.a, obj._b) #output:10   20   30
+print("Outside the class:", obj.a, obj._b, obj.__c) #output: Error
+```
 ```python
 class Car:
     def __init__(self):
@@ -1312,7 +1352,7 @@ print(car._Car__van)  # Accessing via name mangling (discouraged)
 ---
 ---
 
-## **Inheritance**
+## 🛩️ **Inheritance**
 - **Description**: Inheritance allows a class to inherit properties and methods from another class.
 - **Syntax**: 
 ```python
