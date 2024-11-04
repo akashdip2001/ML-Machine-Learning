@@ -1276,7 +1276,7 @@ obj=A(10,"Akash",None)
 ---
 ### Access Modifires <a name="access-modifires"></a>
 
-| **Name**  | **Access Modifier** | **Description**            | **Same Class** | **Same Package** | **Derived Class** | **Other Classes** |
+| **Name**  | **Access Modifier** | **Description**            | **Same Class** | **Same Package** | **Derived Class** `🛩️Inheritance` | **Other Classes** |
 |-----------|---------------------|----------------------------|----------------|------------------|-------------------|-------------------|
 | `van`     | **Public**          | Accessible from anywhere.  | ✅             | ✅               | ✅                | ✅                |
 | `_van`    | **Protected**       | Accessible in the same class, same package, and derived (sub) classes. | ✅ | ✅               | ✅                | ❌                |
