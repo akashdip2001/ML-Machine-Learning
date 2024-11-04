@@ -65,7 +65,7 @@ Taste of Pyrhon
          1. [Constructor](#constructor) ☀️
             - [Default constructor](#default-constructor)
             - [Parameteriged constructor](#parameteriged-constructor)
-         3. [Access Modifires](#Access-Modifires) 🌳
+         3. [Access Modifires](#access-modifires) 🌳
       - [Inheritance](#inheritance)
       - [Encapsulation](#encapsulation)
       - [Polymorphism](#polymorphism)
@@ -1274,7 +1274,7 @@ obj=A(10,"Akash",None)
 #output: 10   Akash   Kolkata
 ```
 ---
-### Access Modifires <a name="Access-Modifires"></a>
+### Access Modifires <a name="access-modifires"></a>
 
 | **Name**  | **Access Modifier** | **Description**            | **Same Class** | **Same Package** | **Derived Class** | **Other Classes** |
 |-----------|---------------------|----------------------------|----------------|------------------|-------------------|-------------------|
