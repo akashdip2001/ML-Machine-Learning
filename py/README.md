@@ -1455,7 +1455,7 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
 
 ### 2. 🛩️ **Multiple Inheritance** <a name="multiple-inheritance"></a>
    - A subclass inherits from more than one superclass.
-     <img align="right" alt="python_logo" width="200" src="https://github.com/user-attachments/assets/b8942370-bc45-40b6-9c9d-f54207be4ce0">
+     <img align="right" alt="python_logo" width="550" src="https://github.com/user-attachments/assets/eae48197-63bf-4ec8-804d-5abe6aedcc66">
 
 **Example**:
 ```python
@@ -1475,7 +1475,7 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
 ### 3. 🛩️ **Multilevel Inheritance** <a name="multilevel-inheritance"></a>
    - A class inherits from a superclass, which in turn inherits from another superclass, forming a hierarchy.
 <br>
-     <img align="right" alt="python_logo" width="550" src="https://github.com/user-attachments/assets/eae48197-63bf-4ec8-804d-5abe6aedcc66">   
+     <img align="right" alt="python_logo" width="200" src="https://github.com/user-attachments/assets/b8942370-bc45-40b6-9c9d-f54207be4ce0">   
 
 **Example**:
 ```python
@@ -1546,6 +1546,11 @@ OOPS features
     - By using encapsulation acces globally by making it private at protected.
       
 - **Syntax**: Use double underscore `__` to denote private variables.
+
+  | **Name**  | **Access Modifier** | **Description**            | **Same Class** | **Same Package** | **Derived Class** `🛩️Inheritance` | **Other Classes** |
+|-----------|---------------------|----------------------------|----------------|------------------|-------------------|-------------------|
+| `_van`    | **Protected**       | Accessible in the same class, same package, and derived (sub) classes. | ✅ | ✅               | ✅                | ❌                |
+| `__van`   | **Private**         | Accessible only within the same class. | ✅ | ❌               | ❌                | ❌                |
 
 **Example:**
 ```python
