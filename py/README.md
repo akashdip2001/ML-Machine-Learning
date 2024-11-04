@@ -1538,7 +1538,7 @@ OOPS features
 │── # Class & Obj - class is a BluePrint which have no memeory, But through obj. we access the class's members(Variable & Functions).
 │── # inheritance - with this you can access a class obj. in another class.
 │── # polymorphism - create multiple obj with a same class, for many operations.
-│── encapsulation: bind Variables & Functions in a single unit. (Ex: Class)
+│── encapsulation: bind Variables(data) & Functions in a single unit. (Ex: Class)
 └── # abstraction - use for security, removing unnecessary details from an object to make it simpler and more efficient.
 ```
 - **Description**: Encapsulation hides private data and only allows access through public methods.
