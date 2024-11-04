@@ -1440,7 +1440,7 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
 
 ### 1. 🛩️ **Single Inheritance** <a name="single-inheritance"></a>
    - A subclass inherits from only one superclass.
-<img align="right" alt="python_logo" width="650" src="https://github.com/user-attachments/assets/4733b0ac-daeb-4241-b469-f0fca2a04d59">
+<img align="right" alt="python_logo" width="650" src="https://github.com/user-attachments/assets/dce45b71-bcbd-4e25-bc8e-d88baa36df14">
    
 **Example**:
    ```python
@@ -1455,7 +1455,7 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
 
 ### 2. 🛩️ **Multiple Inheritance** <a name="multiple-inheritance"></a>
    - A subclass inherits from more than one superclass.
-     <img align="right" alt="python_logo" width="200" src="https://github.com/user-attachments/assets/2e7d318e-4078-446d-b404-15564e9200be">
+     <img align="right" alt="python_logo" width="200" src="https://github.com/user-attachments/assets/b8942370-bc45-40b6-9c9d-f54207be4ce0">
 
 **Example**:
 ```python
