@@ -1215,7 +1215,7 @@ constructor
 │── default constructor: empty constructor with no parameters, add automatically by python.
 └── parameteriged constructor: 
 ```
-### ☀️ Default constructor <a name="default constructor"></a>
+### ☀️ Default constructor <a name="default-constructor"></a>
 **Syntax**:
 ```python
 # default constructor:
