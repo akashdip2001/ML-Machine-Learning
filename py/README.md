@@ -67,6 +67,11 @@ Taste of Pyrhon
             - [Parameteriged constructor](#parameteriged-constructor)
          3. [Access Modifires](#access-modifires) 🌳
       - [Inheritance](#inheritance)
+           1. [Single Inheritance](#Single-Inheritance)
+           2. [Multiple Inheritance](#Multiple-Inheritance)
+           3. [Multilevel Inheritance](#Multilevel-Inheritance)
+           4. [Hierarchical Inheritance](#Hierarchical-Inheritance)
+           5. [Hybrid Inheritance](#Hybrid-Inheritance)
       - [Encapsulation](#encapsulation)
       - [Polymorphism](#polymorphism)
 15. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
@@ -1370,8 +1375,32 @@ obj.show() #output: Inherit class: 10 20
 ---
 
 ## 🛩️ **Inheritance**
+###### If you access all properties of a class in other class called Inheritance.
 - **Description**: Inheritance allows a class to inherit properties and methods from another class.
-- **Syntax**: 
+- **Syntax**:
+```
+class Father:
+    # Properties
+
+class Son(Father):
+    # Properties
+```
+**Example 01:**
+```python
+class Father:
+    def sky(self):
+        print("sky is Blue")
+
+class Son(Father):
+    def grass(self):
+        print("grass is Green")
+
+#obj = Son()
+X = Son() # X is an object of class Son
+X.sky() # method of class Father (other class)
+X.grass() # method of class Son (own class)
+```
+**Example 02:**
 ```python
 class ChildClass(ParentClass):
     def __init__(self, parameters):
@@ -1394,6 +1423,92 @@ print(mgr1.department)  # Outputs: Sales
 | Create subclass  | Define a child class            | `class ChildClass(Parent):`   |
 | Call parent class| Access parent class attributes   | `super().__init__(...)`      |
 
+---
+
+| **Type of Inheritance**    |
+|----------------------------|
+| Single Inheritance         |
+| Multiple Inheritance       |
+| Multilevel Inheritance     |
+| Hierarchical Inheritance   |
+| Hybrid Inheritance         |
+
+In object-oriented programming, **inheritance** allows a class to acquire properties and behaviors (methods) of another class. There are several types of inheritance:
+
+### 1. 🛩️ **Single Inheritance** <a name="Single-Inheritance"></a>
+   - A subclass inherits from only one superclass.
+   - **Example**:
+     ```python
+     class Parent:
+         pass
+
+     class Child(Parent):
+         pass
+     ```
+
+### 2. 🛩️ **Multiple Inheritance** <a name="Multiple-Inheritance"></a>
+   - A subclass inherits from more than one superclass.
+   - **Example**:
+     ```python
+     class Parent1:
+         pass
+
+     class Parent2:
+         pass
+
+     class Child(Parent1, Parent2):
+         pass
+     ```
+   - In Python, multiple inheritance can lead to complexities, which are managed using the **Method Resolution Order (MRO)**.
+
+### 3. 🛩️ **Multilevel Inheritance** <a name="Multilevel-Inheritance"></a>
+   - A class inherits from a superclass, which in turn inherits from another superclass, forming a hierarchy.
+   - **Example**:
+     ```python
+     class Grandparent:
+         pass
+
+     class Parent(Grandparent):
+         pass
+
+     class Child(Parent):
+         pass
+     ```
+
+### 4. 🛩️ **Hierarchical Inheritance** <a name="Hierarchical-Inheritance"></a>
+   - Multiple subclasses inherit from the same superclass.
+   - **Example**:
+     ```python
+     class Parent:
+         pass
+
+     class Child1(Parent):
+         pass
+
+     class Child2(Parent):
+         pass
+     ```
+
+### 5. 🛩️ **Hybrid Inheritance** <a name="Hybrid-Inheritance"></a>
+   - A combination of two or more types of inheritance, often involving multiple and multilevel inheritance. 
+   - **Example**:
+     ```python
+     class Grandparent:
+         pass
+
+     class Parent1(Grandparent):
+         pass
+
+     class Parent2(Grandparent):
+         pass
+
+     class Child(Parent1, Parent2):
+         pass
+     ```
+   - Hybrid inheritance can also lead to complex hierarchies and relies on MRO to resolve method conflicts.
+
+
+---
 ---
 
 ## **Encapsulation**
