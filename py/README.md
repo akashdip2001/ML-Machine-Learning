@@ -1427,6 +1427,7 @@ print(mgr1.department)  # Outputs: Sales
 
 | **Type of Inheritance**    |
 |----------------------------|
+| |
 | Single Inheritance         |
 | Multiple Inheritance       |
 | Multilevel Inheritance     |
