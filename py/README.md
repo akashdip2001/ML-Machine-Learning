@@ -1328,7 +1328,7 @@ class A:
     __c = 30 # Private member
 
 obj = A()
-#print("Outside the class:", obj.a, obj._b) #output:10   20   30
+#print("Outside the class:", obj.a, obj._b) #output:10   20
 print("Outside the class:", obj.a, obj._b, obj.__c) #output: ⚠️ Error
 ```
 ```python
@@ -1343,6 +1343,23 @@ print(car.van)        # Accessible
 print(car._van)       # Accessible but discouraged
 print(car._Car__van)  # Accessing via name mangling (discouraged)
 ```
+##### 🌳 create a another class - B, 🛩️ Inherit class - A 
+```python
+class A: #Parent class
+    a = 10
+    _b = 20
+    __c = 30
+
+class B(A): # Child class
+    def show(self):
+        print("Inherit class:", self.a, self._b)
+
+obj=B()
+obj.show() #output: Inherit class: 10 20
+```
+- use Public in antwhere.
+- use Protected in 🛩️ Inherit class. ⬆️ 
+- use private in only ❌ Parent class 
 
 ### Key Points
 - **`van`**: No underscores. This is a public variable, accessible from anywhere.
