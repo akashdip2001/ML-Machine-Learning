@@ -1050,6 +1050,14 @@ print(text.replace("World", "Python"))  # Replace substring
 
 # 1. Object-Oriented Programming (OOP)
 
+## ❌ POP: Procedure-Oriented Programming
+- **Run Code line by line (like: jupyter notebook) using `Loops` & `Functions`.**
+- We can't combnied single functions in Large projects.
+- Can't easily manupulate codes.
+
+## ✅ OOP
+- Work with `Objects`.
+- We have `Class`, can combined `Variables` & `Functions`, and access this `classes` through `Obj`.
 OOP is a programming paradigm where you model real-world things as objects with attributes (data) and behaviors (methods).
 
 ## **Classes & Objects**
