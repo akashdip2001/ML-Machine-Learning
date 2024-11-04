@@ -67,11 +67,11 @@ Taste of Pyrhon
             - [Parameteriged constructor](#parameteriged-constructor)
          3. [Access Modifires](#access-modifires) 🌳
       - [Inheritance](#inheritance)
-           1. [Single Inheritance](#Single-Inheritance)
-           2. [Multiple Inheritance](#Multiple-Inheritance)
-           3. [Multilevel Inheritance](#Multilevel-Inheritance)
-           4. [Hierarchical Inheritance](#Hierarchical-Inheritance)
-           5. [Hybrid Inheritance](#Hybrid-Inheritance)
+           1. [Single Inheritance](#single-inheritance)
+           2. [Multiple Inheritance](#multiple-inheritance)
+           3. [Multilevel Inheritance](#multilevel-inheritance)
+           4. [Hierarchical Inheritance](#hierarchical-inheritance)
+           5. [Hybrid Inheritance](#hybrid-inheritance)
       - [Encapsulation](#encapsulation)
       - [Polymorphism](#polymorphism)
 15. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
@@ -1435,7 +1435,7 @@ print(mgr1.department)  # Outputs: Sales
 
 In object-oriented programming, **inheritance** allows a class to acquire properties and behaviors (methods) of another class. There are several types of inheritance:
 
-### 1. 🛩️ **Single Inheritance** <a name="Single-Inheritance"></a>
+### 1. 🛩️ **Single Inheritance** <a name="single-inheritance"></a>
    - A subclass inherits from only one superclass.
    - **Example**:
      ```python
@@ -1446,7 +1446,7 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
          pass
      ```
 
-### 2. 🛩️ **Multiple Inheritance** <a name="Multiple-Inheritance"></a>
+### 2. 🛩️ **Multiple Inheritance** <a name="multiple-inheritance"></a>
    - A subclass inherits from more than one superclass.
    - **Example**:
      ```python
@@ -1461,7 +1461,7 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
      ```
    - In Python, multiple inheritance can lead to complexities, which are managed using the **Method Resolution Order (MRO)**.
 
-### 3. 🛩️ **Multilevel Inheritance** <a name="Multilevel-Inheritance"></a>
+### 3. 🛩️ **Multilevel Inheritance** <a name="multilevel-inheritance"></a>
    - A class inherits from a superclass, which in turn inherits from another superclass, forming a hierarchy.
    - **Example**:
      ```python
@@ -1475,7 +1475,7 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
          pass
      ```
 
-### 4. 🛩️ **Hierarchical Inheritance** <a name="Hierarchical-Inheritance"></a>
+### 4. 🛩️ **Hierarchical Inheritance** <a name="hierarchical-inheritance"></a>
    - Multiple subclasses inherit from the same superclass.
    - **Example**:
      ```python
@@ -1489,7 +1489,7 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
          pass
      ```
 
-### 5. 🛩️ **Hybrid Inheritance** <a name="Hybrid-Inheritance"></a>
+### 5. 🛩️ **Hybrid Inheritance** <a name="hybrid-inheritance"></a>
    - A combination of two or more types of inheritance, often involving multiple and multilevel inheritance. 
    - **Example**:
      ```python
