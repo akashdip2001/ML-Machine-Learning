@@ -63,8 +63,8 @@ Taste of Pyrhon
 14. [Object-Oriented Programming (OOP)](#oop)
       - [Classes & Objects](#classes--objects)
            -[Constructor](#constructor) 🌳
-               1. [Default constructor](#default-constructor)
-               2. [Parameteriged constructor](#parameteriged-constructor)
+               1.[Default constructor](#default-constructor)
+               2.[Parameteriged constructor](#parameteriged-constructor)
       - [Inheritance](#inheritance)
       - [Encapsulation](#encapsulation)
       - [Polymorphism](#polymorphism)
