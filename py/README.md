@@ -1310,6 +1310,7 @@ print(car._Car__van)  # Accessing via name mangling (discouraged)
 - **`__van`**: Double underscore. Triggers name mangling to prevent accidental access, particularly in subclasses.
 
 ---
+---
 
 ## **Inheritance**
 - **Description**: Inheritance allows a class to inherit properties and methods from another class.
