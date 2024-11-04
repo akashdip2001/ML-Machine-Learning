@@ -60,7 +60,7 @@ Taste of Pyrhon
         - [default argument](#default-argument)
 12. [Exception Handling](#3-exception-handling)
 13. [File Handling](#2-file-handling)
-14. [Object-Oriented Programming (OOP)](#classes--objects)
+14. [Object-Oriented Programming (OOP)](#oop)
       - [Classes & Objects](#classes--objects)
       - [Inheritance](#inheritance)
       - [Encapsulation](#encapsulation)
@@ -1034,7 +1034,7 @@ print(text.replace("World", "Python"))  # Replace substring
 # Python Study Guide for Job Exam
 
 ## Contents:
-1. [Object-Oriented Programming (OOP)](#classes--objects)
+1. [Object-Oriented Programming (OOP)](#oop)
    - [Classes & Objects](#classes--objects)
    - [Inheritance](#inheritance)
    - [Encapsulation](#encapsulation)
@@ -1048,7 +1048,7 @@ print(text.replace("World", "Python"))  # Replace substring
 
 ---
 
-# 1. Object-Oriented Programming (OOP)
+# 1. Object-Oriented Programming (OOP) <a name="oop"></a>
 
 ## ❌ POP: Procedure-Oriented Programming
 - **Run Code line by line (like: jupyter notebook) using `Loops` & `Functions`.**
@@ -1058,7 +1058,18 @@ print(text.replace("World", "Python"))  # Replace substring
 ## ✅ OOP
 - Work with `Objects`.
 - We have `Class`, can combined `Variables` & `Functions`, and access this `classes` through `Obj`.
-OOP is a programming paradigm where you model real-world things as objects with attributes (data) and behaviors (methods).
+  
+- OOP is a programming paradigm where you model **real-world things** as objects with attributes (data) and behaviors (methods).
+
+```yaml
+OOPS features
+│
+│── Class & Obj: class is a BluePrint which have no memeory, But through obj. we access the class's members(Variable & Functions).
+│── inheritance: with this you can access a class obj. in another class.
+│── polymorphism: create multiple obj with a same class, for many operations.
+│── encapsulation: bind Variables & Functions in a single unit. (Ex: Class)
+└── abstraction: use for security, removing unnecessary details from an object to make it simpler and more efficient.
+```
 
 ## **Classes & Objects**
 - **Description**: A class defines a blueprint for creating objects.
