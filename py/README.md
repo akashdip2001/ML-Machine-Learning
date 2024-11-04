@@ -62,9 +62,10 @@ Taste of Pyrhon
 13. [File Handling](#2-file-handling)
 14. [Object-Oriented Programming (OOP)](#oop)
       - [Classes & Objects](#classes--objects)
-        -[Constructor](#constructor) 🌳
+        -[Constructor](#constructor) ☀️
            1. [Default constructor](#default-constructor)
            2. [Parameteriged constructor](#parameteriged-constructor)
+        -[Access Modifires](#Access-Modifires) 🌳
       - [Inheritance](#inheritance)
       - [Encapsulation](#encapsulation)
       - [Polymorphism](#polymorphism)
@@ -1272,6 +1273,42 @@ class A:
 obj=A(10,"Akash",None)
 #output: 10   Akash   Kolkata
 ```
+---
+### Access Modifires <a name="Access-Modifires"></a>
+
+| **Name**  | **Access Modifier** | **Description**            | **Same Class** | **Same Package** | **Derived Class** | **Other Classes** |
+|-----------|---------------------|----------------------------|----------------|------------------|-------------------|-------------------|
+| `van`     | **Public**          | Accessible from anywhere.  | ✅             | ✅               | ✅                | ✅                |
+| `_van`    | **Protected**       | Accessible in the same class, same package, and derived (sub) classes. | ✅ | ✅               | ✅                | ❌                |
+|| **Default (Package-Private)** | Accessible only within the same package. If no modifier is specified, this is the default. | ✅ | ✅               | ❌                | ❌                |
+| `__van`   | **Private**         | Accessible only within the same class. | ✅ | ❌               | ❌                | ❌                |
+
+### Notes:
+- **Public**: Provides the highest level of accessibility, visible everywhere.
+- **Protected**: Often used to allow derived classes to access parent class members, while still restricting access from unrelated classes outside the package.
+- **Default**: Limits accessibility to classes within the same package. There is no explicit keyword for default access; it's implied when no modifier is specified.
+- **Private**: Provides the most restricted access, available only within the class where it is defined.
+
+### Examples
+
+```python
+class Car:
+    def __init__(self):
+        self.van = "Public Variable"      # Public: accessible anywhere
+        self._van = "Protected Variable"  # Protected: meant for internal use
+        self.__van = "Private Variable"   # Private: name mangling applied
+
+car = Car()
+print(car.van)        # Accessible
+print(car._van)       # Accessible but discouraged
+print(car._Car__van)  # Accessing via name mangling (discouraged)
+```
+
+### Key Points
+- **`van`**: No underscores. This is a public variable, accessible from anywhere.
+- **`_van`**: Single underscore. Conventionally, it suggests a "protected" variable, but it can still be accessed from outside. It’s a hint to other developers.
+- **`__van`**: Double underscore. Triggers name mangling to prevent accidental access, particularly in subclasses.
+
 ---
 
 ## **Inheritance**
