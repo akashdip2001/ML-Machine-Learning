@@ -62,6 +62,9 @@ Taste of Pyrhon
 13. [File Handling](#2-file-handling)
 14. [Object-Oriented Programming (OOP)](#oop)
       - [Classes & Objects](#classes--objects)
+           -[Constructor](#constructor) 🌳
+               1. [Default constructor](#default-constructor)
+               2. [Parameteriged constructor](#parameteriged-constructor)
       - [Inheritance](#inheritance)
       - [Encapsulation](#encapsulation)
       - [Polymorphism](#polymorphism)
@@ -1163,7 +1166,7 @@ class A:
 
 obj=A(10,"Akash","Kalkata")
 ```
- [⬆️ Hard to understand](https://youtu.be/pdEA5Qkgraw)
+ ⬆️ [Hard to understand](https://youtu.be/pdEA5Qkgraw)
 ```python
 class Employee:
     def __init__(self, name, id, salary):
@@ -1183,6 +1186,73 @@ print(emp1.display_info())
 | Define class    | Create a class                   | `class ClassName:`            |
 | Initialize      | Define constructor                | `def __init__(self, ...):`   |
 | Create object   | Instantiate a class              | `obj = ClassName()`          |
+
+---
+### 🌳 Constructor ? <a name="constructor"></a>
+- Constructor is a special function that gets `automaticall called` when object of class created.
+- **purposes**: create and initialize the object.
+```python
+def __init__(self):
+   #code
+```
+```python
+#create 2 constructor
+class A:
+    def __init__(self):
+        print("Akashdip")
+
+    def __init__(self):
+        print("Megha")
+
+obj=A()
+
+#output: Megha
+# Always prefar the last one.
+```
+```yaml
+constructor
+│
+│── default constructor: empty constructor with no parameters, add automatically by python.
+└── parameteriged constructor: 
+```
+### ☀️ Default constructor <a name="default constructor"></a>
+**Syntax**:
+```python
+# default constructor:
+class A:
+    def __init__(self):
+        print("This is default constructor")
+
+obj=A()
+```
+```python
+class A:
+    name="Akashdip" #create a class variable (member)
+    def __init__(self):
+        print(self.name)
+
+obj=A()
+```
+##### ⬇️ create a normal function (methode)
+```python
+class A:
+    name="Akashdip"
+    age=20
+
+    def __init__(self):
+        address="Kolkata" #member (local variable) inside constructor
+        print(self.name)
+        print(address) #No need to use self with local variable
+
+    #normal methode
+    def show(self): 
+        print(self.age)
+
+obj=A()
+obj.show() #manually call the method.
+```
+
+### ☀️ Parameteriged constructor <a name="parameteriged-constructor"></a>
 
 ---
 
