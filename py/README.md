@@ -34,6 +34,7 @@ Taste of Pyrhon
       2. [Tuple](#tuple)
       3. [Set](#set)
       4. [Dictionary](#dictionary)
+      5. [DSA](https://github.com/akashdip2001/dsa-using-python)
 5. [Operators](#operators)
    - [Arithmetic Operators](#arithmetic-operators)
    - [Assignment Operators](#assignment-operators)
@@ -57,15 +58,34 @@ Taste of Pyrhon
         - [positional parameters](#parameters)
         - [keyword argument](#keyword-argument)
         - [default argument](#default-argument)
-12. [Exception Handling](#7-exception-handling)
-13. [File Handling](#5-file-handling)
-14. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
-15. [*more*](https://www.codewithharry.com/tutorial/python/)
-16. [**Part 2 (Job Preparation - in One Short)**](#part-2-job-preparation)
-17. [Projects](#Projects)
-18. [**EXAM**](#EXAM)
+12. [Exception Handling](#3-exception-handling)
+13. [File Handling](#2-file-handling)
+14. [Object-Oriented Programming (OOP)](#classes--objects)
+      - [Classes & Objects](#classes--objects)
+      - [Inheritance](#inheritance)
+      - [Encapsulation](#encapsulation)
+      - [Polymorphism](#polymorphism)
+15. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
+16. [*more*](https://www.codewithharry.com/tutorial/python/)
+17. [**Part 2 (Job Preparation - in One Short)**](#part-2-job-preparation)
+18. [Projects](#Projects)
+19. [**EXAM**](#EXAM)
 
 ---
+
+# Python?
+Python is a powerful and easy-to-learn language. It uses dynamic typing, meaning you don't have to declare variable types.
+**Example:**
+```python
+name = "John"
+age = 25
+print(f"My name is {name} and I am {age} years old.")
+```
+
+**Syntax Explanation:**
+- `name = "John"`: Assigns the string "John" to the variable `name`.
+- `age = 25`: Assigns the integer `25` to the variable `age`.
+- `print(...)`: Outputs the formatted string to the console.
 
 ## History of Python
 Python was created by `Guido van Rossum` and first released in `1991` at CWI in Netherland. It's a `general purpose dynamically typr high level language`. Its development was influenced by `ABC`, a programming language that Guido worked on before Python. Over the years, Python has evolved significantly, with major versions like Python 2 and Python 3 introducing many features and enhancements. 
@@ -228,12 +248,28 @@ dictionary = {'age': 21} # get value --> print(dictonary.get('age'))
 ---
 
 ## ☀️ List <a name="list"></a>
+- **Description**: Lists are ordered, mutable sequences.
 
 List is a Data structure which is also called collection of items, in which we can store anything like - string, float, integer.
 - items inside "Square brackets" [] and each items saperated by "comma" (,). Ex: [10, 10, 2]
 - Dublicates are `allowed`.
 - Mutable in nature (✅ edite, modefi, update, delete)
-- Syntax: list_name = [item1, item2, --- , item3]
+-  **Syntax**: `list_name = [item1, item2, ...]`
+
+**Example:**
+```python
+fruits = ['apple', 'banana', 'cherry']
+fruits.append('orange')  # Add item
+print(fruits[1])         # Accessing item
+```
+
+| Operation      | Description                  | Syntax                    |
+|----------------|------------------------------|---------------------------|
+| Create         | Create a new list            | `fruits = []`            |
+| Add item       | Append an item               | `fruits.append('orange')`|
+| Access item    | Get an item by index         | `fruits[1]`              |
+| Remove item    | Remove an item               | `fruits.remove('banana')`|
+
 
 ```yaml
 List
@@ -277,11 +313,25 @@ List
 ```
 ---
 ## ☀️ Tuple <a name="tuple"></a>
+- **Description**: Tuples are ordered, immutable sequences.
 
 Tuple is a Data structure which is also called collection of items, in which we can store anything like - string, float, integer.
 - items inside "parenthesis" () and each items saperated by "comma" (,). Ex: (10, 10, 2)
 - Dublicates are `allowed`.
 - Immutable in nature (❌ edite, modefi, update, delete)
+- **Syntax**: `tuple_name = (item1, item2, ...)`
+
+**Example:**
+```python
+coordinates = (10, 20)
+print(coordinates[0])  # Accessing tuple item
+```
+
+| Operation      | Description                  | Syntax                      |
+|----------------|------------------------------|-----------------------------|
+| Create         | Create a new tuple           | `coordinates = ()`         |
+| Access item    | Get an item by index         | `coordinates[0]`           |
+
 
 ```python
 var=(1,2,3,4,5,True,"Akashdip")
@@ -316,7 +366,7 @@ var.index("True") #output: 5
 ---
 
 ## ☀️ Set <a name="set"></a>
-
+- **Description**: Sets are unordered collections with no duplicate elements.
 ```python
 set = {10,"Akashdip",45.2}
 ```
@@ -327,6 +377,20 @@ set = {10,"Akashdip",45.2}
 - Indexing & slicing not work.
 - Hetrogenout element are allowed.
 - Mutable in nature ✅
+- **Syntax**: `set_name = {item1, item2, ...}`
+
+**Example:**
+```python
+unique_numbers = {1, 2, 3, 4, 5}
+unique_numbers.add(6)  # Adding element
+```
+
+| Operation      | Description                  | Syntax                      |
+|----------------|------------------------------|-----------------------------|
+| Create         | Create a new set             | `unique_numbers = set()`   |
+| Add item       | Add an element               | `unique_numbers.add(6)`    |
+| Remove item    | Remove an element            | `unique_numbers.remove(1)` |
+
 
 ```python
 # creating a emply set
@@ -384,6 +448,7 @@ print(var.symmetric_difference(var2)) #only print unique values from two sets.
 ---
 
 ## ☀️ Dictionary <a name="dictionary"></a>
+- **Description**: Dictionaries store data as key-value pairs.
 ```python
 dictionary = {'age': 21} #key value)
 ```
@@ -392,6 +457,21 @@ dictionary = {'age': 21} #key value)
 - Hetrogenout element are allowed.
 - Mutable in nature ✅
 - `key` must be unique.
+
+- **Syntax**: `dict_name = {key1: value1, key2: value2, ...}`
+
+**Example:**
+```python
+person = {'name': 'Alice', 'age': 30}
+print(person['name'])  # Accessing value by key
+```
+
+| Operation      | Description                  | Syntax                      |
+|----------------|------------------------------|-----------------------------|
+| Create         | Create a new dictionary      | `person = {}`              |
+| Add item       | Add a new key-value pair     | `person['name'] = 'Alice'` |
+| Access item    | Get value by key             | `person['age']`            |
+| Remove item    | Remove key-value pair        | `del person['age']`        |
 
 ```python
 var=dict()
@@ -725,9 +805,38 @@ print(calendar.month(2021, 1))
 # 18 19 20 21 22 23 24
 # 25 26 27 28 29 30 31
 ```
+Example of using the `math` module:
+```python
+import math
+print(math.sqrt(16))  # Outputs: 4.0
+```
+| Operation       | Description                     | Syntax                        |
+|-----------------|---------------------------------|-------------------------------|
+| Import module    | Import built-in or external module| `import module_name`        |
+
+#### **Creating Your Own Module**
 🚀 User defined module
+**Example_01**
 
 ![module](https://github.com/user-attachments/assets/00e4a621-deaf-473b-93f8-639c46a0c1af)
+
+**Example_02**
+Save the following code in `mymodule.py`:
+```python
+def greet(name):
+    return f"Hello, {name}!"
+```
+Then, import it in your program:
+```python
+import mymodule
+print(mymodule.greet("Akashdip"))
+```
+
+| Operation       | Description                     | Syntax                        |
+|-----------------|---------------------------------|-------------------------------|
+| Create module   | Create a `.py` file            | `def function_name():`       |
+| Import module   | Use the defined functions       | `import module_name`         |
+
 
 ---
 
@@ -864,142 +973,7 @@ greet("Akash","Good Morning","How are you?")
 # output: TypeError: greet() takes 2 positional arguments but 3 were given
 ```
 ---
-
-# Strings
-Strings are sequences of characters and can be manipulated in various ways.
-
-**Example:**
-```python
-text = "Hello, World!"
-print(text[0])  # Accessing the first character
-print(text.lower())  # Convert to lowercase
-print(text.upper())  # Convert to uppercase
-print(text.replace("World", "Python"))  # Replace substring
-```
-![](https://github.com/akashdip2001/college-final-year-project/raw/main/img/colour_line.png)
-
-## Part 2 (Job Preparation)
-# Python Study Guide for Job Exam
-
-## Table of Contents:
-1. [Python Basics](#1-python-basics)
-2. [Data Structures](#2-data-structures)
-   - [Lists](#lists)
-   - [Tuples](#tuples)
-   - [Dictionaries](#dictionaries)
-   - [Sets](#sets)
-   - [DSA](https://github.com/akashdip2001/dsa-using-python)
-3. [Functions](#3-functions)
-4. [Object-Oriented Programming (OOP)](#classes--objects)
-   - [Classes & Objects](#classes--objects)
-   - [Inheritance](#inheritance)
-   - [Encapsulation](#encapsulation)
-   - [Polymorphism](#polymorphism)
-5. [File Handling](#5-file-handling)
-6. [Libraries & Modules](#6-libraries--modules)
-7. [Exception Handling](#7-exception-handling)
-8. [Common Interview Questions](#8-common-interview-questions)
-9. [Best Documentation Resources](#9-best-documentation-resources)
-10. [**Projects**](#Projects)
-11. [**EXAM**](#EXAM)
-
----
-
-### 1. Python Basics
-Python is a powerful and easy-to-learn language. It uses dynamic typing, meaning you don't have to declare variable types.
-
-**Example:**
-```python
-name = "John"
-age = 25
-print(f"My name is {name} and I am {age} years old.")
-```
-
-**Syntax Explanation:**
-- `name = "John"`: Assigns the string "John" to the variable `name`.
-- `age = 25`: Assigns the integer `25` to the variable `age`.
-- `print(...)`: Outputs the formatted string to the console.
-
----
-
-### 2. Data Structures
-Data structures in Python help store and organize data efficiently.
-
-## **Lists**
-- **Description**: Lists are ordered, mutable sequences.
-- **Syntax**: `list_name = [item1, item2, ...]`
-
-**Example:**
-```python
-fruits = ['apple', 'banana', 'cherry']
-fruits.append('orange')  # Add item
-print(fruits[1])         # Accessing item
-```
-
-| Operation      | Description                  | Syntax                    |
-|----------------|------------------------------|---------------------------|
-| Create         | Create a new list            | `fruits = []`            |
-| Add item       | Append an item               | `fruits.append('orange')`|
-| Access item    | Get an item by index         | `fruits[1]`              |
-| Remove item    | Remove an item               | `fruits.remove('banana')`|
-
----
-
-## **Tuples**
-- **Description**: Tuples are ordered, immutable sequences.
-- **Syntax**: `tuple_name = (item1, item2, ...)`
-
-**Example:**
-```python
-coordinates = (10, 20)
-print(coordinates[0])  # Accessing tuple item
-```
-
-| Operation      | Description                  | Syntax                      |
-|----------------|------------------------------|-----------------------------|
-| Create         | Create a new tuple           | `coordinates = ()`         |
-| Access item    | Get an item by index         | `coordinates[0]`           |
-
----
-
-## **Dictionaries**
-- **Description**: Dictionaries store data as key-value pairs.
-- **Syntax**: `dict_name = {key1: value1, key2: value2, ...}`
-
-**Example:**
-```python
-person = {'name': 'Alice', 'age': 30}
-print(person['name'])  # Accessing value by key
-```
-
-| Operation      | Description                  | Syntax                      |
-|----------------|------------------------------|-----------------------------|
-| Create         | Create a new dictionary      | `person = {}`              |
-| Add item       | Add a new key-value pair     | `person['name'] = 'Alice'` |
-| Access item    | Get value by key             | `person['age']`            |
-| Remove item    | Remove key-value pair        | `del person['age']`        |
-
----
-
-## **Sets**
-- **Description**: Sets are unordered collections with no duplicate elements.
-- **Syntax**: `set_name = {item1, item2, ...}`
-
-**Example:**
-```python
-unique_numbers = {1, 2, 3, 4, 5}
-unique_numbers.add(6)  # Adding element
-```
-
-| Operation      | Description                  | Syntax                      |
-|----------------|------------------------------|-----------------------------|
-| Create         | Create a new set             | `unique_numbers = set()`   |
-| Add item       | Add an element               | `unique_numbers.add(6)`    |
-| Remove item    | Remove an element            | `unique_numbers.remove(1)` |
-
----
-
-### 3. Functions
+# One short ✅
 Functions in Python are defined using the `def` keyword.
 
 **Syntax**: 
@@ -1041,10 +1015,40 @@ print(greet())  # Outputs: Hello, Stranger!
 | Define function   | Create a function                 | `def function_name():`      |
 | Call function     | Execute the function              | `function_name(arguments)`   |
 
+---
+
+# Strings
+Strings are sequences of characters and can be manipulated in various ways.
+
+**Example:**
+```python
+text = "Hello, World!"
+print(text[0])  # Accessing the first character
+print(text.lower())  # Convert to lowercase
+print(text.upper())  # Convert to uppercase
+print(text.replace("World", "Python"))  # Replace substring
+```
+![](https://github.com/akashdip2001/college-final-year-project/raw/main/img/colour_line.png)
+
+## Part 2 (Job Preparation)
+# Python Study Guide for Job Exam
+
+## Contents:
+1. [Object-Oriented Programming (OOP)](#classes--objects)
+   - [Classes & Objects](#classes--objects)
+   - [Inheritance](#inheritance)
+   - [Encapsulation](#encapsulation)
+   - [Polymorphism](#polymorphism)
+2. [File Handling](#2-file-handling)
+3. [Exception Handling](#3-exception-handling)
+4. [Common Interview Questions](#common-interview-questions)
+5. [Best Documentation Resources](#best-documentation-resources)
+6. [**Projects**](#Projects)
+7. [**EXAM**](#EXAM)
 
 ---
 
-### 4. Object-Oriented Programming (OOP)
+# 1. Object-Oriented Programming (OOP)
 
 OOP is a programming paradigm where you model real-world things as objects with attributes (data) and behaviors (methods).
 
@@ -1163,7 +1167,7 @@ animal_sound(dog)   # Outputs: Bark
 
 ---
 
-### 5. File Handling
+# 2. File Handling
 
 - File is nothing but name of `memory location` on disk that stores data permanantly.
 - Why not Variable, a=10 ❓ Because of, after code Run complete, the data auto Delete by system (pc)
@@ -1308,40 +1312,7 @@ else:
 
 ---
 
-### 6. Libraries & Modules
-Libraries and modules allow code reusability. A module is a file containing Python code.
-
-#### **Importing a Module**
-Example of using the `math` module:
-```python
-import math
-print(math.sqrt(16))  # Outputs: 4.0
-```
-
-| Operation       | Description                     | Syntax                        |
-|-----------------|---------------------------------|-------------------------------|
-| Import module    | Import built-in or external module| `import module_name`        |
-
-#### **Creating Your Own Module**
-Save the following code in `mymodule.py`:
-```python
-def greet(name):
-    return f"Hello, {name}!"
-```
-Then, import it in your program:
-```python
-import mymodule
-print(mymodule.greet("Akashdip"))
-```
-
-| Operation       | Description                     | Syntax                        |
-|-----------------|---------------------------------|-------------------------------|
-| Create module   | Create a `.py` file            | `def function_name():`       |
-| Import module   | Use the defined functions       | `import module_name`         |
-
----
-
-### 7. Exception Handling
+# 3. Exception Handling
 - It's nothing but `runtime-errors`.
 - It's occurs due to incorrect implementation of logic.
 
@@ -1420,7 +1391,7 @@ finally:
 
 ---
 
-### 8. Common Interview Questions
+# Common Interview Questions
 - **What are the differences between a list and a tuple?**
   - Lists are mutable, while tuples are immutable.
 - **Explain inheritance in Python.**
@@ -1434,7 +1405,7 @@ finally:
 
 ---
 
-### 9. Best Documentation Resources
+# Best Documentation Resources
 - **Python Official Docs:** [Python.org Documentation](https://docs.python.org/3/)
 - **Real Python:** [RealPython.com](https://realpython.com)
 - **W3Schools Python Tutorial:** [W3Schools Python](https://www.w3schools.com/python/)
