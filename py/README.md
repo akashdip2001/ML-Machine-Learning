@@ -1436,9 +1436,11 @@ print(mgr1.department)  # Outputs: Sales
 
 In object-oriented programming, **inheritance** allows a class to acquire properties and behaviors (methods) of another class. There are several types of inheritance:
 
+---
+
 ### 1. 🛩️ **Single Inheritance** <a name="single-inheritance"></a>
-<img align="right" alt="python_logo" width="650" src="https://github.com/user-attachments/assets/4733b0ac-daeb-4241-b469-f0fca2a04d59"> 
    - A subclass inherits from only one superclass.
+<img align="right" alt="python_logo" width="650" src="https://github.com/user-attachments/assets/4733b0ac-daeb-4241-b469-f0fca2a04d59">
    
 **Example**:
    ```python
@@ -1449,11 +1451,14 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
      class Child(Parent):
          pass
    ```
+---
 
 ### 2. 🛩️ **Multiple Inheritance** <a name="multiple-inheritance"></a>
    - A subclass inherits from more than one superclass.
-   - **Example**:
-     ```python
+     <img align="right" alt="python_logo" width="200" src="https://github.com/user-attachments/assets/2e7d318e-4078-446d-b404-15564e9200be">
+
+**Example**:
+```python
      class Parent1:
          pass
 
@@ -1462,13 +1467,18 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
 
      class Child(Parent1, Parent2):
          pass
-     ```
+```
    - In Python, multiple inheritance can lead to complexities, which are managed using the **Method Resolution Order (MRO)**.
+
+---
 
 ### 3. 🛩️ **Multilevel Inheritance** <a name="multilevel-inheritance"></a>
    - A class inherits from a superclass, which in turn inherits from another superclass, forming a hierarchy.
-   - **Example**:
-     ```python
+<br>
+     <img align="right" alt="python_logo" width="550" src="https://github.com/user-attachments/assets/eae48197-63bf-4ec8-804d-5abe6aedcc66">   
+
+**Example**:
+```python
      class Grandparent:
          pass
 
@@ -1477,12 +1487,16 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
 
      class Child(Parent):
          pass
-     ```
+```
+
+---
 
 ### 4. 🛩️ **Hierarchical Inheritance** <a name="hierarchical-inheritance"></a>
    - Multiple subclasses inherit from the same superclass.
-   - **Example**:
-     ```python
+     <img align="right" alt="python_logo" width="480" src="https://github.com/user-attachments/assets/e7e19b6f-0b77-4017-87aa-5ba6be0a4329">
+     
+**Example**:
+```python
      class Parent:
          pass
 
@@ -1491,7 +1505,9 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
 
      class Child2(Parent):
          pass
-     ```
+```
+
+---
 
 ### 5. 🛩️ **Hybrid Inheritance** <a name="hybrid-inheritance"></a>
    - A combination of two or more types of inheritance, often involving multiple and multilevel inheritance. 
