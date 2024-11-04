@@ -62,10 +62,10 @@ Taste of Pyrhon
 13. [File Handling](#2-file-handling)
 14. [Object-Oriented Programming (OOP)](#oop)
       - [Classes & Objects](#classes--objects)
-        -[Constructor](#constructor) ☀️
-           1. [Default constructor](#default-constructor)
-           2. [Parameteriged constructor](#parameteriged-constructor)
-        -[Access Modifires](#Access-Modifires) 🌳
+         1. [Constructor](#constructor) ☀️
+            - [Default constructor](#default-constructor)
+            - [Parameteriged constructor](#parameteriged-constructor)
+         3. [Access Modifires](#Access-Modifires) 🌳
       - [Inheritance](#inheritance)
       - [Encapsulation](#encapsulation)
       - [Polymorphism](#polymorphism)
