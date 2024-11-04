@@ -1260,6 +1260,7 @@ class A:
         print(age," ",name," ",address)
 
 obj=A(10,"Akash","Kalkata")
+#output: 10   Akash   Kolkata
 ```
 ##### use None
 ```python
@@ -1269,6 +1270,7 @@ class A:
         print(age," ",name," ",address)
 
 obj=A(10,"Akash",None)
+#output: 10   Akash   Kolkata
 ```
 ---
 
