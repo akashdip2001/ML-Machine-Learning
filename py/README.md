@@ -1253,7 +1253,23 @@ obj.show() #manually call the method.
 ```
 
 ### ☀️ Parameteriged constructor <a name="parameteriged-constructor"></a>
+```python
+# Parameteriged constructor
+class A:
+    def __init__(self,age,name,address):
+        print(age," ",name," ",address)
 
+obj=A(10,"Akash","Kalkata")
+```
+##### use None
+```python
+class A:
+    def __init__(self,age,name,address):
+        address="Kolkata" #optional
+        print(age," ",name," ",address)
+
+obj=A(10,"Akash",None)
+```
 ---
 
 ## **Inheritance**
