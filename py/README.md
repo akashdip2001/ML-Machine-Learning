@@ -1437,15 +1437,18 @@ print(mgr1.department)  # Outputs: Sales
 In object-oriented programming, **inheritance** allows a class to acquire properties and behaviors (methods) of another class. There are several types of inheritance:
 
 ### 1. 🛩️ **Single Inheritance** <a name="single-inheritance"></a>
+<img align="right" alt="python_logo" width="650" src="https://github.com/user-attachments/assets/4733b0ac-daeb-4241-b469-f0fca2a04d59"> 
    - A subclass inherits from only one superclass.
-   - **Example**:
-     ```python
+   
+**Example**:
+   ```python
+
      class Parent:
          pass
 
      class Child(Parent):
          pass
-     ```
+   ```
 
 ### 2. 🛩️ **Multiple Inheritance** <a name="multiple-inheritance"></a>
    - A subclass inherits from more than one superclass.
