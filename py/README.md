@@ -1547,7 +1547,7 @@ OOPS features
       
 - **Syntax**: Use double underscore `__` to denote private variables.
 
-  | **Name**  | **Access Modifier** | **Description**            | **Same Class** | **Same Package** | **Derived Class** `🛩️Inheritance` | **Other Classes** |
+| **Name**  | **Access Modifier** | **Description**            | **Same Class** | **Same Package** | **Derived Class** `🛩️Inheritance` | **Other Classes** |
 |-----------|---------------------|----------------------------|----------------|------------------|-------------------|-------------------|
 | `_van`    | **Protected**       | Accessible in the same class, same package, and derived (sub) classes. | ✅ | ✅               | ✅                | ❌                |
 | `__van`   | **Private**         | Accessible only within the same class. | ✅ | ❌               | ❌                | ❌                |
