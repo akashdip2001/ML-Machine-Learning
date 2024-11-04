@@ -1552,7 +1552,33 @@ OOPS features
 | `_van`    | **Protected**       | Accessible in the same class, same package, and derived (sub) classes. | ✅ | ✅               | ✅                | ❌                |
 | `__van`   | **Private**         | Accessible only within the same class. | ✅ | ❌               | ❌                | ❌                |
 
-**Example:**
+**Example 01:**
+```python
+class A:
+    _a=10 # protected #data
+    __b=20 # private
+    def dis_fun(self): #function, ----> &, data + Function = Encapsulation
+        print(self._a)
+        print(self.__b)
+
+x=A() #object
+x.dis_fun()
+
+print("Outside of class ",x._a)
+print("Outside of class ",x.__b)
+```
+output:
+```go
+PS C:\Users\akash\Desktop\Py Projects\Python-Projects> python -u "c:\Users\akash\Desktop\Py Projects\Python-Projects\00 Test\Encapsulation.py"
+10 ✅
+20 ✅
+Outside of class  10 ✅ 
+Traceback (most recent call last): ⚠️
+  File "c:\Users\akash\Desktop\Py Projects\Python-Projects\00 Test\Encapsulation.py", line 12, in <module>
+    print("Outside of class ",x.__b)
+                              ^^^^^
+AttributeError: 'A' object has no attribute '__b'
+```
 ```python
 class Employee:
     def __init__(self, name, salary):
