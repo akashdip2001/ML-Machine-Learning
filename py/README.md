@@ -1055,7 +1055,7 @@ print(text.replace("World", "Python"))  # Replace substring
 - We can't combnied single functions in Large projects.
 - Can't easily manupulate codes.
 
-## ✅ OOP
+## ✅ OOP [video](https://youtu.be/6soT3DMBJGQ)
 - Work with `Objects`.
 - We have `Class`, can combined `Variables` & `Functions`, and access this `classes` through `Obj`.
   
@@ -1072,15 +1072,98 @@ OOPS features
 ```
 
 ## **Classes & Objects**
-- **Description**: A class defines a blueprint for creating objects.
-- **Syntax**: 
+- **class**: A class defines a blueprint for creating objects. (No memory created).
+- **Syntax**:
+```python
+class ClassName:
+    # variables
+    # methods
+```
 ```python
 class ClassName:
     def __init__(self, parameters):
         # Constructor
 ```
+- **object**: Object is Real-World entity has some `properties` or `behaviour` whish is represented by `class Variables & methods`. it's create memory for class.
+```python
+obj_name = class_name()
+```
+**Example:**
+```python
+class A:
+   pass
+obj=A()
+```
 
-**Example:** [video](https://youtu.be/6soT3DMBJGQ)
+**Example:**  [video - Classes & Objects](https://youtu.be/pdEA5Qkgraw)
+```python
+#with default python constructor
+class A:
+    age=10
+    print(age)
+
+#output: 10 (One Time)
+```
+```python
+class A:
+    age=10
+    print(age)
+obj=A()
+obj2=A()
+
+#output: 10 (One Time)
+```
+###### ⬆️ with default python constructor, you have to print every time to get the value.
+```python
+#create a class with constructor
+class A:
+    def __init__(self): #self is default reference parameter which refers to the object
+        age=10
+        print(age)
+obj=A()
+obj2=A()
+
+#output: 10
+#        10
+```
+###### ⬆️ if you create your own constrictor, you must have an object.
+```python
+#call document object in side a function
+class A:
+    "Akashdip Mahapatra 01" #The document must in 1st line.
+    age = 10
+    "Akashdip Mahapatra 02" #output: None
+    def fun(self):
+        "Akashdip Mahapatra 03"
+        name="Akash coding"
+        print(self.age)
+        print(name)
+obj=A()
+print(obj.age) # call through object
+print(A.age) # call through class 
+print(obj.__doc__)
+
+obj.fun()
+print(obj.fun.__doc__) # call through object
+```
+```python
+# with default python constructor
+class A:
+    def fun(self,age,name,address):
+        print(age," ",name," ",address)
+
+obj=A()
+obj.fun(10,"Akash","Kalkata")
+
+
+# without default python constructor
+class A:
+    def __init__(self,age,name,address):
+        print(age," ",name," ",address)
+
+obj=A(10,"Akash","Kalkata")
+```
+ [⬆️ Hard to understand](https://youtu.be/pdEA5Qkgraw)
 ```python
 class Employee:
     def __init__(self, name, id, salary):
