@@ -1274,7 +1274,7 @@ obj=A(10,"Akash",None)
 #output: 10   Akash   Kolkata
 ```
 ---
-### Access Modifires <a name="access-modifires"></a>
+### 🌳🌳 Access Modifires <a name="access-modifires"></a>
 
 | **Name**  | **Access Modifier** | **Description**            | **Same Class** | **Same Package** | **Derived Class** `🛩️Inheritance` | **Other Classes** |
 |-----------|---------------------|----------------------------|----------------|------------------|-------------------|-------------------|
@@ -1329,7 +1329,7 @@ class A:
 
 obj = A()
 #print("Outside the class:", obj.a, obj._b) #output:10   20   30
-print("Outside the class:", obj.a, obj._b, obj.__c) #output: Error
+print("Outside the class:", obj.a, obj._b, obj.__c) #output: ⚠️ Error
 ```
 ```python
 class Car:
