@@ -77,7 +77,8 @@ Taste of Pyrhon
            1. [Over-loading](#overloading)
            2. [Over-riding](#overriding)
 15. [Multi Threading](#multi-threading)
-16. 
+16. [Python DATABASE Connectivity](#python-database-connectivity)
+
 17. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
 18. [*more*](https://www.codewithharry.com/tutorial/python/)
 19. [**Part 2 (Job Preparation - in One Short)**](#part-2-job-preparation)
