@@ -74,6 +74,8 @@ Taste of Pyrhon
            5. [Hybrid Inheritance](#hybrid-inheritance)
       - [Encapsulation](#encapsulation)
       - [Polymorphism](#polymorphism)
+           1. [Over-loading](#Over-loading)
+           2. [Over-riding](#Over-riding)
 15. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
 16. [*more*](https://www.codewithharry.com/tutorial/python/)
 17. [**Part 2 (Job Preparation - in One Short)**](#part-2-job-preparation)
@@ -1075,9 +1077,9 @@ OOPS features
 │
 │── Class & Obj: class is a BluePrint which have no memeory, But through obj. we access the class's members(Variable & Functions).
 │── inheritance: with this you can access a class obj. in another class.
-│── polymorphism: create multiple obj with a same class, for many operations.
 │── encapsulation: bind Variables & Functions in a single unit. (Ex: Class)
-└── abstraction: use for security, removing unnecessary details from an object to make it simpler and more efficient.
+│── abstraction: use for security, removing unnecessary details from an object to make it simpler and more efficient.
+└── polymorphism: create multiple obj with a same class, for many operations.
 ```
 
 ## **Classes & Objects**
@@ -1535,11 +1537,11 @@ In object-oriented programming, **inheritance** allows a class to acquire proper
 ```yaml
 OOPS features
 │
-│── # Class & Obj - class is a BluePrint which have no memeory, But through obj. we access the class's members(Variable & Functions).
-│── # inheritance - with this you can access a class obj. in another class.
-│── # polymorphism - create multiple obj with a same class, for many operations.
-│── encapsulation: bind Variables(data) & Functions in a single unit. (Ex: Class)
-└── # abstraction - use for security, removing unnecessary details from an object to make it simpler and more efficient.
+│── # Class & Obj: class is a BluePrint which have no memeory, But through obj. we access the class's members(Variable & Functions).
+│── # inheritance: with this you can access a class obj. in another class.
+│── encapsulation: bind Variables & Functions in a single unit. (Ex: Class)
+│── # abstraction: use for security, removing unnecessary details from an object to make it simpler and more efficient.
+└── # polymorphism: create multiple obj with a same class, for many operations.
 ```
 - **Description**: Encapsulation hides private data and only allows access through public methods.
     - Python provides acces to all the variable and methods globally.
@@ -1607,10 +1609,36 @@ print(emp.get_salary())  # Correct way to access private data
 ---
 
 ## **Polymorphism**
+```yaml
+OOPS features
+│
+│── # Class & Obj: class is a BluePrint which have no memeory, But through obj. we access the class's members(Variable & Functions).
+│── # inheritance: with this you can access a class obj. in another class.
+│── # encapsulation: bind Variables & Functions in a single unit. (Ex: Class)
+│── # abstraction: use for security, removing unnecessary details from an object to make it simpler and more efficient.
+└── polymorphism: create multiple obj with a same class, for many operations.
+      │
+      │── Over-loading
+      └── Over-riding
+```
+<img align="right" alt="python_logo" width="400" src="https://github.com/user-attachments/assets/22e41b7c-8422-45a5-a6bd-2d1751cd61b9"> 
+
+##### ➡️ **same obj having different behaviour : like Me**
+**Example 01:**
+```python
+print(5+5)     #output: 10 --> 1st time its add this
+print("5"+"5") #output: 55 --> 2nd time its concate this.
+```
+**Example 02:**
+The function is same (len), But it's change behaviour with values.
+```python
+print(len("Akashdip"))     #output: 8 --> find length caracter-wise.
+print(len(["Akashdip","Arkadip"])) #output: 2 --> 2nd time fond len string-wise.
+```
 - **Description**: Polymorphism allows methods to be defined differently based on the object.
 - **Syntax**: Define methods with the same name in different classes.
 
-**Example:**
+**Example 03:**
 ```python
 class Bird:
     def sound(self):
@@ -1634,6 +1662,113 @@ animal_sound(dog)   # Outputs: Bark
 |-----------------|---------------------------------|-------------------------------|
 | Define method   | Create methods with the same name| `def sound(self):`          |
 | Call method     | Call the method on the object   | `animal.sound()`            |
+
+---
+### ✈️ Over loading <a name="Over-loading"></a>
+```python
+#Over-loading
+# The function is "show" but the behavior is different (based on the number of arguments)
+# same functon but no of parameters are different
+class A:
+    def show(self):
+        print("Wellcome")
+
+    def show(self, firstname=''):
+        print("Wellcome", firstname)
+
+    def show(self, firstname='', lastname=''):
+        print("Wellcome", firstname, lastname)
+
+a = A()
+a.show()                        #output: Wellcome
+a.show('Akash')                 #output: Wellcome Akashdip
+a.show('Akashdip', 'Mahapatra') #output: Wellcome Aka.. Ma...
+```
+⬆️ This called function Over-loading. one function can Over-load another function.
+⚠️But also use: But it's not ❌ Polymorphism.
+```python
+class A:
+    def show(self, firstname='', lastname=''):
+        print("Wellcome", firstname, lastname)
+
+a = A()
+a.show()                        #output: Wellcome
+a.show('Akash')                 #output: Wellcome Akashdip
+a.show('Akashdip', 'Mahapatra') #output: Wellcome Aka.. Ma...
+```
+**Explane:**
+##### Difference Between the Two Examples
+
+1. **First Example**: Tries to define multiple `show` methods with different parameters (method overloading). However, **Python only keeps the last definition**, so only the last `show` method is used. This is not true ❓ polymorphism.
+
+2. **Second Example**: Uses a single `show` method with default values for parameters. This lets it handle different numbers of arguments without needing multiple methods. This is **not polymorphism**; it’s just using default arguments.
+
+### ✈️ Over riding <a name="Over-riding"></a>
+
+❓ **true polymorphism** in Python, we can use **inheritance** and **method overriding**. This allows different classes to have methods with the same name but different implementations, which is a core principle of polymorphism.
+**Example 01:**
+```python
+class A:
+    def show(self, firstname='', lastname=''):
+        print("Welcome", firstname, lastname)
+
+class B(A):
+    def show(self, firstname='', lastname=''):
+        print("Hello from B:", firstname, lastname)
+
+class C(A):
+    def show(self, firstname='', lastname=''):
+        print("Greetings from C:", firstname, lastname)
+
+# Demonstrating polymorphism
+a = A()
+b = B()
+c = C()
+
+a.show("Alice", "Anderson")   # Output: Welcome Alice Anderson
+b.show("Bob", "Brown")        # Output: Hello from B: Bob Brown
+c.show("Charlie", "Clark")    # Output: Greetings from C: Charlie Clark
+```
+#### Explanation
+
+- **Class `A`** has a `show` method that prints "Welcome".
+- **Class `B`** and **Class `C`** inherit from `A` but **override** the `show` method with different messages.
+- **Polymorphism** is demonstrated here because `show` behaves differently based on the object type (`A`, `B`, or `C`).
+
+#### Key Point
+With polymorphism, the same method name (`show`) can be used in different classes to perform different actions.
+
+**Example 02:**
+```python
+class Animal:
+    def sound(self):
+        print("Some generic animal sound")
+
+class Dog(Animal):
+    def sound(self):  # Overriding the sound method in Animal
+        print("Woof Woof")
+
+class Cat(Animal):
+    def sound(self):  # Overriding the sound method in Animal
+        print("Meow Meow")
+
+# Demonstrating overriding
+animal = Animal()
+dog = Dog()
+cat = Cat()
+
+animal.sound()   # Output: Some generic animal sound
+dog.sound()      # Output: Woof Woof
+cat.sound()      # Output: Meow Meow
+```
+
+#### Explanation
+- **Class `Animal`** has a method `sound` that gives a generic animal sound.
+- **Class `Dog`** and **Class `Cat`** inherit from `Animal` but **override** the `sound` method to provide specific sounds.
+- When calling `sound()` on `dog` and `cat`, we get behavior specific to `Dog` and `Cat`, respectively.
+
+#### Key Point
+In overriding, the subclass method **replaces** the superclass method. When we call `sound()` on a `Dog` or `Cat` object, we see the overridden version of `sound` defined in each subclass.
 
 ---
 
