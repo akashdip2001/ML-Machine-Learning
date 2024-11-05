@@ -74,8 +74,8 @@ Taste of Pyrhon
            5. [Hybrid Inheritance](#hybrid-inheritance)
       - [Encapsulation](#encapsulation)
       - [Polymorphism](#polymorphism)
-           1. [Over-loading](#Over-Loading)
-           2. [Over-riding](#Over-Riding)
+           1. [Over-loading](#overloading)
+           2. [Over-riding](#overriding)
 15. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
 16. [*more*](https://www.codewithharry.com/tutorial/python/)
 17. [**Part 2 (Job Preparation - in One Short)**](#part-2-job-preparation)
@@ -1664,7 +1664,7 @@ animal_sound(dog)   # Outputs: Bark
 | Call method     | Call the method on the object   | `animal.sound()`            |
 
 ---
-### ✈️ Over loading <a name="Over-Loading"></a>
+### ✈️ Over loading <a name="overloading"></a>
 ```python
 #Over-loading
 # The function is "show" but the behavior is different (based on the number of arguments)
@@ -1704,7 +1704,7 @@ a.show('Akashdip', 'Mahapatra') #output: Wellcome Aka.. Ma...
 2. **Second Example**: Uses a single `show` method with default values for parameters. This lets it handle different numbers of arguments without needing multiple methods. This is **not polymorphism**; it’s just using default arguments.
 
 ---
-### ✈️ Over riding <a name="Over-Riding"></a>
+### ✈️ Over riding <a name="overriding"></a>
 
 ❓ **true polymorphism** in Python, we can use **inheritance** and **method overriding**. This allows different classes to have methods with the same name but different implementations, which is a core principle of polymorphism.
 **Example 01:**
