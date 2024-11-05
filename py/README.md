@@ -1564,8 +1564,11 @@ class A:
 x=A() #object
 x.dis_fun()
 
-print("Outside of class ",x._a)
+print("Outside of class ",x._a) #call using Class-obj
 print("Outside of class ",x.__b)
+## same output:
+#print("Outside of class ",A._a) ✅ #call using Class-name
+#print("Outside of class ",A.__b) ⚠️
 ```
 output:
 ```go
@@ -1579,6 +1582,10 @@ Traceback (most recent call last): ⚠️
                               ^^^^^
 AttributeError: 'A' object has no attribute '__b'
 ```
+- we use __b only inside the class using Class-members
+- we use _b also outside the class using Class-obj. 
+
+**Example 02:**
 ```python
 class Employee:
     def __init__(self, name, salary):
