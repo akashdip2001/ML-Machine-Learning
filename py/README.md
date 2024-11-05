@@ -76,11 +76,13 @@ Taste of Pyrhon
       - [Polymorphism](#polymorphism)
            1. [Over-loading](#overloading)
            2. [Over-riding](#overriding)
-15. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
-16. [*more*](https://www.codewithharry.com/tutorial/python/)
-17. [**Part 2 (Job Preparation - in One Short)**](#part-2-job-preparation)
-18. [Projects](#Projects)
-19. [**EXAM**](#EXAM)
+15. [Multi Threading](#multi-threading)
+16. 
+17. [*Source code*](https://github.com/akashdip2001/Python-Course-10h)
+18. [*more*](https://www.codewithharry.com/tutorial/python/)
+19. [**Part 2 (Job Preparation - in One Short)**](#part-2-job-preparation)
+20. [Projects](#Projects)
+21. [**EXAM**](#EXAM)
 
 ---
 
@@ -1994,6 +1996,125 @@ finally:
 | Operation       | Description                     | Syntax                        |
 |-----------------|---------------------------------|-------------------------------|
 | Finally block   | Code that always runs           | `finally:`                   |
+
+---
+# Multi Threading <a name="multi-threading"></a>
+
+Multi Threading is a technique which allows a CPU to execute multiple threads (small small programs) of one process at a same Time.
+
+### ☁️ Why MultiThreading ?
+The purpose od MultiThreading is to run multiple task & functions at the same time.
+
+### ☁️ Single-Threading Vs Multi-Threading
+<img align="middle" alt="python_logo" width="800" src="https://github.com/user-attachments/assets/4b9d4275-aec4-4712-a796-61fcd3d28b77"> 
+
+### ☁️ What is Thread ?
+- Thread is a `pre-define class` which is available in `threading module`.
+- Thread is a basic unit of CPU & it is well known for independent execution.
+
+#### ☁️ Thread class methods:
+
+| **Method**               | **Description**                                                                                   |
+|--------------------------|---------------------------------------------------------------------------------------------------|
+| `start()`                | Starts the thread’s activity by calling its `run` method.                                         |
+| `run()`                  | Defines the thread’s activity. Called when `start()` is invoked; can be overridden in a subclass. |
+| `join(timeout=None)`     | Waits for the thread to finish; optional `timeout` specifies max time to wait.                    |
+| `is_alive()`             | Returns `True` if the thread is still running; otherwise, `False`.                               |
+| `getName()`              | Returns the name of the thread.                                                                   |
+| `setName(name)`          | Sets a new name for the thread.                                                                   |
+| `isDaemon()`             | Returns `True` if the thread is a daemon thread; otherwise, `False`.                              |
+| `setDaemon(daemonic)`    | Sets the thread as a daemon thread (`True`) or a non-daemon thread (`False`).                     |
+| `current_thread()`       | Returns the current thread object; used to get the main or any active thread.                     |
+| `active_count()`         | Returns the number of currently active threads.                                                   |
+| `enumerate()`            | Lists all active thread objects.                                                                  |
+
+#### ☁️☁️ **Single Threading:** Run one by one using only one Thread (MAIN THREAD) by default in Python.
+###### To experiance the 10 sec time ---> use sleep class from Time package. So it can exicute every line after 1 sec.
+<img align="right" alt="singleThreading" width="400" src="https://github.com/user-attachments/assets/3dd81f06-dd26-44d3-b33d-1647500a51fd"> 
+
+```python
+## Single Threading
+#from time import sleep
+class A:
+    def run(self):
+        for i in range(5):
+            print("Hello")
+#           sleep(1)
+                                       # output:
+class B:                               # Hello
+    def run(self):                     # Hello
+        for i in range(5):             # Hello
+            print("Hi")                # Hello
+#           sleep(1)                   # Hello
+                                       # Hi
+t1 = A()                               # Hi
+t2 = B()                               # Hi
+                                       # Hi
+t1.run()                               # Hi
+t2.run()                               
+
+```
+#### ☁️☁️ **Multi Threading:** Run at same time using threads (parallel execution).
+```python
+# #Multi Threading
+from time import sleep
+from threading import Thread
+
+class A(Thread):  # Inherit from Thread
+    def run(self):  # Correctly define the run method
+        for i in range(5):
+            print("Hello")
+            sleep(1)
+
+class B(Thread):  # Inherit from Thread
+    def run(self):  # Correctly define the run method
+        for i in range(5):
+            print("Hi")
+            sleep(1)
+
+# Create instances of A and B
+t1 = A()
+t2 = B()
+
+# Start the threads
+t1.start()
+t2.start()
+
+
+# output:
+# Hello
+# Hi
+# HiHello
+
+# HelloHi
+
+# Hi
+# Hello
+# Hi
+# Hello
+```
+```python
+# Start the threads
+# ⬆️ ... 
+t1.start()
+t2.start()
+
+# Wait for both threads to complete
+t1.join()
+t2.join()
+
+# output:
+# Hello
+# Hi
+# Hello
+# Hi
+# Hello
+# Hi
+# Hello
+# Hi
+# Hello
+# Hi
+```
 
 ---
 
