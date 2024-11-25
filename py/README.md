@@ -2155,8 +2155,19 @@ This study guide provides you with a strong foundation in Python for your upcomi
 
 ### Projects
 
-| [**Projects**](https://github.com/akashdip2001/Python-Projects) |
-| --- |
+```yaml
+Py Projects
+│
+│── Python Projects
+│── Django Projects
+│     │
+│     │── Twitter: (under Devlopment)
+│     └── ...
+└── ...    
+```
+
+| [notes](https://github.com/akashdip2001/ML-Machine-Learning/blob/main/py/README.md) | [**Python Projects**](https://github.com/akashdip2001/Python-Projects) | [**Django Projects**](https://github.com/akashdip2001/pyTweet) |
+| --- | --- | --- |
 
 <div style="display: flex; justify-content: space-around;">
    <img src="sources/pdf/img/python_roadmap.jpg" alt="python projects" style="width: 28%; height: auto;"/>
