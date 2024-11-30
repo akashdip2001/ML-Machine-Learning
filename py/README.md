@@ -2166,8 +2166,8 @@ Py Projects
 └── ...    
 ```
 
-| [notes](https://github.com/akashdip2001/ML-Machine-Learning/blob/main/py/README.md) | [**Python Projects**](https://github.com/akashdip2001/Python-Projects) | [**Django Projects**](https://github.com/akashdip2001/pyTweet) |
-| --- | --- | --- |
+| [notes](https://github.com/akashdip2001/ML-Machine-Learning/blob/main/py/README.md) | [Python Projects](https://github.com/akashdip2001/Python-Projects) | [Django Projects](https://github.com/akashdip2001/pyTweet) | [python-advance](https://github.com/akashdip2001/python-advance) |
+| --- | --- | --- | --- |
 
 <div style="display: flex; justify-content: space-around;">
    <img src="sources/pdf/img/python_roadmap.jpg" alt="python projects" style="width: 28%; height: auto;"/>
