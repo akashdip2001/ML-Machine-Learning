@@ -1069,7 +1069,7 @@ print(text.replace("World", "Python"))  # Replace substring
 - We can't combnied single functions in Large projects.
 - Can't easily manupulate codes.
 
-## ✅ OOP [video_1](https://youtu.be/Rq_3gA2h1RA) [video_2](https://youtu.be/70JeRslVOrk) [video_3](https://youtu.be/6soT3DMBJGQ)
+## ✅ OOP [( video_1, or](https://youtu.be/Rq_3gA2h1RA) [video_2, or](https://youtu.be/70JeRslVOrk) [video_3 )](https://youtu.be/6soT3DMBJGQ)
 - Work with `Objects`.
 - We have `Class`, can combined `Variables` & `Functions`, and access this `classes` through `Obj`.
   
