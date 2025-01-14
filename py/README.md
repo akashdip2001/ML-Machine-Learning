@@ -2388,3 +2388,7 @@ print(UserMainCode.electionResult(10, ["A", "B", "D", "C", "A", "B", "D", "A", "
 ```
 
 ---
+
+![Screenshot_14-1-2025_234015_docs google com](https://github.com/user-attachments/assets/0e780e40-8eab-4343-b032-b3c904a98ee1)
+
+
