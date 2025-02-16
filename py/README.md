@@ -17,6 +17,10 @@ Taste of Pyrhon
 100 Python Practice Problems. [Link](https://github.com/akashdip2001/ML-Machine-Learning/blob/main/py/QA.md)
 
 ---
+<div style="display: flex; align-items: center; gap: 10px;" align="right">
+<a href="https://www.linkedin.com/posts/akashdip2001_python-cisconetworkingacademy-openedg-activity-7296757851341959168-IhOj?utm_source=share&utm_medium=member_desktop&rcm=ACoAADQRwRQBthwu1pD7TKHPClAilXa9CMan1H8"><img src="https://github.com/user-attachments/assets/8378642d-b779-44ef-939b-dede8c8dc004" width="140px" height="140px" /></a> &nbsp; &nbsp;
+<a href="https://www.credly.com/badges/ee48f5b9-60c7-42a4-9ea4-4d9fee52d17b/public_url"><img src="https://github.com/user-attachments/assets/9d157163-1a6d-4d03-ae2b-0dbefb52b426" width="140px" height="140px" /></a> 
+</div>
 
 ## Table of Contents
 1. [History of Python](#history-of-python)
