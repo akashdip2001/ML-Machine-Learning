@@ -354,3 +354,5 @@ cv2.waitKey(1)
 * Bring them close → volume decreases.
 * You see the volume % and bar update in real-time.
 * Visual markers show where your fingers are.
+
+---
