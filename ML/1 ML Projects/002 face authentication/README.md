@@ -51,6 +51,15 @@ face_recognition
 pip install -r requirements.txt
 ```
 
+```bash
+# If you install wrong packages
+pip uninstall face_recognition face_recognition_models -y
+
+pip install dlib
+pip install face_recognition
+pip install git+https://github.com/ageitgey/face_recognition_models
+```
+
 ### 4. Run the script:
 
 ```bash
